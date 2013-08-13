@@ -1,0 +1,34 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Atom                                       */
+//*    TITLE: Bubble Heading                             */
+//*------------------------------------------------------*/
+
+.bubble-heading {
+    display: inline-block;
+    position: relative;
+    @include rem('margin-bottom', 32px);
+    @include rem('margin-left', -10px);
+    @include rem('padding', 8px 45px 4px 45px);
+    background-color: $lightNavy;
+    @include rem('font-size', 48px);
+    color: #effcfc;
+    line-height: 1.1;
+    text-transform: uppercase;
+    border-bottom: 4px solid $teal;
+    border-radius: 2px;
+}
+
+.bubble-arrow {
+    position: absolute;
+    left: 41px;
+    bottom: -20px;
+    width: 0;
+    height: 0;
+    @include rem('border-left', 10px solid transparent);
+    @include rem('border-right', 10px solid transparent);
+    border-top: 20px solid $teal;
+}

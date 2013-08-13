@@ -2,18 +2,31 @@
 /*                  Thinking Elephants                  */
 /*------------------------------------------------------*/
 /*  PROJECT: 130202                                     */
-//*   CLIENT: HOME Psychological Services                */
-/*    TITLE: Manifest Stylesheeet                       */
+/*   CLIENT: HOME Psychological Services                */
+/*    TITLE: CSS Manifest                               */
 /*------------------------------------------------------*/
+
+@import "compass/css3/columns";
+@import "compass/css3/transition";
 
 @import "utilities/normalize";
 @import "utilities/reset";
 @import "utilities/clearfix";
-
+@import "utilities/grid";
 @import "utilities/mixins";
 @import "utilities/colors";
+@import "utilities/typography";
 
-@import "atoms/grid";
+@import "atoms/scaffolding";
+@import "atoms/wrapper";
 @import "atoms/headings";
 @import "atoms/text";
 @import "atoms/links";
+
+@import "molecules/bubble-heading";
+
+@import "organisms/site-header";
+@import "organisms/site-footer";
+@import "organisms/profile-panel";
+
+@import "pages/profile-page";

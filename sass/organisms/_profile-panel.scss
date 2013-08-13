@@ -1,0 +1,58 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Organism                                   */
+//*    TITLE: Profile Panel                              */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+%cv-title-type {
+	font-family: "garamond-premier-pro-subhead-i4","garamond-premier-pro-subhead",serif;
+	font-style: italic;
+	font-weight: 400;
+	@include rem('font-size', 36px);
+	color: $lightNavy;
+}
+
+%cv-item-type {
+	font-family: "garamond-premier-pro-n4","garamond-premier-pro",serif;
+	font-style: normal;
+	font-weight: 400;
+	@include rem('font-size', 18px);
+	line-height: 1.75;
+	color: $xDarkNavy;
+}
+
+// STRUCTURE
+
+.profile-panel {
+	@include rem('height', 320px);
+	// @include rem('margin', 10px 0);
+	border-bottom: 4px solid $teal;
+}
+
+.cv-overlay {
+	position: relative;
+	// width: 45.7446808511%;
+	height: 87.5%;
+	@include rem('padding', 20px);
+	background-color: #fcfefe;
+	background-color: rgba(255,255,255,0.75);
+}
+
+.cv-title {
+	@include rem('margin', 12px 0 12px 0);
+	@include rem('padding-left', 4px);
+	@extend %cv-title-type;
+}
+
+.cv-items {
+	@include rem('padding-left', 12px);
+
+	> li {
+		@extend %cv-item-type;
+	}
+}

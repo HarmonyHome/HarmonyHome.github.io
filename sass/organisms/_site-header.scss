@@ -1,0 +1,78 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Organism                                   */
+//*    TITLE: Site Header                                */
+//*------------------------------------------------------*/
+
+header {
+    background-color: #feffff;
+    border-top: 10px solid $navy;
+    border-bottom: 4px solid #a6e0d0;
+    @include rem('margin-bottom', 32px);
+}
+
+.header-wrapper {
+	@include container;
+	@include rem('padding-bottom', 6px);
+}
+
+.logo-nav {
+	@include span-columns(3,12);
+	@include rem('margin', 20px auto 10px);
+
+	> img {
+		max-width: 45.4545454545%;
+		@include rem('padding-top', 8px);
+	}
+}
+
+.logo-tag {
+	@include rem('margin', 16px 0 0);
+	font-family: "garamond-premier-pro-i4","garamond-premier-pro",serif;
+	font-style: italic;
+	font-weight: 400;
+	@include rem('font-size', 18px);
+	color: #4db4ae;
+}
+
+.primary-nav {
+	@include push(1);
+	@include span-columns(8,12);
+	@include omega;
+	@include rem('padding', 64px 0 4px);
+}
+
+.primary-menu > li {
+	display: inline-block;
+	position: relative;
+	@include rem('margin-right', 12px)
+}
+
+.primary-menu > li > a {
+	&,
+	&:link,
+	&:visited,
+	&:focus,
+	&:active {
+		position: relative;
+		@include rem('padding', 69px 8px 6px);
+		@extend %leagueGothic;
+		@include rem('font-size', 24px);
+		color: #0375b3;
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 2px solid transparent;
+		@include transition(all 300ms ease-out);
+	}
+
+	&:hover,
+	&.active-nav {
+		color: #037fc3;
+		background-color: #e5f6f1;
+		border-bottom: 2px solid #74ceb6;
+		@include transition(all 300ms ease-out);
+	}
+}

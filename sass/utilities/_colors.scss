@@ -7,32 +7,57 @@
 //*    TITLE: Colors config                              */
 //*------------------------------------------------------*/
 
-// BLUE
+// NAVY
 
-$lightNavy: #0a3864; // title block background blue
-$navy: #093054; // heading color
-$darkNavy: #072745; // body text color
+$xLightBlue      : #e9f7ff; // +22
+$lightBlue       : #037fc3; // +5  (upper navigation link text hover)
+$blue            : #0375b3; // +4  (upper navigation link text, a:hover)
+$darkBlue        : #036aa2; // +3  (lower navigation link text)
+$xLightNavy      : #035f91; // +2  (a color)
+$lightNavy       : #025481; // +1
+$navy            : #024970; // 0
+$darkNavy        : #023e5f; // -1
+$xDarkNavy       : #01334f; // -2
+$xxDarkNavy      : #01283e; // -3
 
-$smokeBlue: #517591;
+// TEAL
 
-// YELLOW
-
-$gold: #fecb00;
-
-// GRAYSCALES
-
-$black: #000000;
-$darkGrey: #202020;
-$lightGrey: #fafafa;
-$white: #fcfcfc;
-
-// PRODUCT SLIDER COLORS
-// $: #004088;
-// $: #f1f1f1;
-// $: #f2f2f6;
-// $: #f5f5f5;
-// $: #f7fafe;
-// $: #fefefe;
+//$              : #feffff; // +9
+//$              : #f2faf8; // +8
+//$              : #e5f6f1; // +7   (active nav background color)
+//$              : #d8f1eb; // +6
+//$              : #ccede4; // +5
+//$              : #bfe9dd; // +4
+//$              : #a6e0d0; // +2
+//$              : #9adbca; // +1   (multicolumn p divider color)
+$teal            : #8dd7c3; // 0
+$darkTeal        : #74ceb6; // -2
+$xLightGreen     : #4ec1a2; // -5
+$lightGreen      : #308a72; // -10  (footer text color)
+$Green           : #236453; // -13
+$darkGreen       : #1a4b3e; // -15  (p color)
+$xDarkGreen      : #163e33; // -16
 
 
 
+// MESS
+//$              : #4db4ae; //      (logo tag color)
+//$              : #bac9c9;
+//$              : #c2cac8;
+$red             : #cc0000; //      (broken link color)
+//$              : #d0eee6; //      (footer body background color)
+//$              : #dcdcdc;
+//$              : #eaeded;
+//$              : #ececec;
+//$              : #ecfcfc;
+//$              : #eeeeee;
+//$              : #effcfc; //      (bubble heading text color)
+//$              : #f3f6f6; //      (footer addendum bar top border color)
+//$              : #f5f5f5;
+//$              : #f6ffff;
+//$              : #f8fafa;
+//$              : #fafdfd;
+//$              : #fafefe;
+//$              : #fcfefe;
+//$              : #fdfdfd;
+$brightWhite     : #ffffff;

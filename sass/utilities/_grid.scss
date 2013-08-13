@@ -1,0 +1,25 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Utility                                    */
+//*    TITLE: Grid by Susy                               */
+//*------------------------------------------------------*/
+
+// Font Sizes ------------------------------------------------------------------
+$rhythm-unit           : rem;
+$base-font-size        : 1.25rem;
+$base-line-height      : 1.625;
+$relative-font-sizing  : true;
+
+// Grid ------------------------------------------------------------------------
+
+$total-columns         : 12;
+$column-width          : 60px;
+$gutter-width          : 20px;
+$grid-padding          : 10px;
+
+// This import must go last ----------------------------------------------------
+
+@import "susy";

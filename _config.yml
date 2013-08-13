@@ -1,0 +1,189 @@
+# JEKYLL CONFIG
+# Do not use tabs in this file, it will fuck up build!
+
+name: "HOME Psychological Services | Jekyll Prototype"
+description: "harmonyhome.com.hk redesign"
+
+baseurl: /harmonyhome
+
+url: "local-03.harmonyhome.com.hk"
+
+host:
+
+port: 4000
+
+siteurl: "http://mj12albert.github.io/harmonyhome/"
+
+paginate: 10
+
+markdown: rdiscount
+
+exclude:
+  - .gitignore
+  - .compass
+  - sass
+
+permalink: /:categories/:title/
+
+pygments: false
+
+# Prose.io Configuration Settings
+
+prose:
+  rooturl: "_posts"
+  siteurl: "http://mj12albert.github.io/harmonyhome/"
+  relativeLinks: "http://mj12albert.github.io/harmonyhome/links.jsonp"
+  media: "media"
+  metadata:
+    _posts/articles:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "article"
+      - name: "lang"
+        field:
+          element: "hidden"
+          value: "en"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "writing articles"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+      - name: "excerpt"
+        field:
+          element: "text"
+          label: "A short excerpt of the article"
+          value: ""
+    _posts/advice:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "article"
+      - name: "lang"
+        field:
+          element: "hidden"
+          value: "en"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "writing advice"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+    _posts/workshops:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "workshop"
+      - name: "lang"
+        field:
+          element: "hidden"
+          value: "en"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "services workshops"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Short Title for the listing and URL"
+          value: ""
+      - name: "excerpt"
+        field:
+          element: "text"
+          label: "A brief description for the listing"
+          value: ""
+      - name: "workshop-name"
+        field:
+          element: "text"
+          label: "Full Title of the Workshop"
+          value: ""
+      - name: "target-audience"
+        field:
+          element: "text"
+          label: "Target Audience"
+          value: ""
+    #   - name: "objectives"
+    #     field:
+    #       element:"text"
+    #       label: "Objectives"
+    #       value: ""
+      - name: "sessions"
+        field:
+          element: "text"
+          label: "Session information"
+          value: ""
+    _posts/newscolumns:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "lang"
+        field:
+          element: "hidden"
+          value: "en"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "press newscolumns"
+      - name: "clipping-title"
+        field:
+          element: "text"
+          label: "Title of the clipping"
+          value: ""
+      - name: "publication-date"
+        field:
+          element: "text"
+          label: "Publication date of the clipping"
+          value: ""
+      - name: "external-url"
+        field:
+          element: "text"
+          label: "Paste the public link to the file here!"
+          value: ""
+    _posts/periodicals:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "lang"
+        field:
+          element: "hidden"
+          value: "en"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "press periodicals"
+      - name: "clipping-title"
+        field:
+          element: "text"
+          label: "Title of the clipping"
+          value: ""
+      - name: "publication-name"
+        field:
+          element: "text"
+          label: "Name of the publication"
+          value: ""
+      - name: "publication-date"
+        field:
+          element: "text"
+          label: "Publication date of the clipping"
+          value: ""
+      - name: "external-url"
+        field:
+          element: "text"
+          label: "Paste the public link to the file here!"
+          value: ""
+
+

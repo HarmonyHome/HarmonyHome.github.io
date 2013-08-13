@@ -3,35 +3,18 @@
 //*------------------------------------------------------*/
 //*  PROJECT: 130202                                     */
 //*   CLIENT: HOME Psychological Services                */
-//*    CLASS: Utility                                    */
-//*    TITLE: CSS Reset                                  */
+//*    CLASS: Atom                                       */
+//*    TITLE: Headings                                   */
 //*------------------------------------------------------*/
 
-html {
-	font-size: 100%;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	@extend %leagueGothic;
+    font-style: normal;
+    line-height: 1;
+    color: $navy;
 }
 
-a {
-  text-decoration: none;
-  outline: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-   margin: 0;
-   padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-p:empty {
-  display: none;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-  list-style: none;
+h1 {
+	@include rem('font-size', 32px)
 }

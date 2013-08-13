@@ -1,0 +1,43 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Atom                                       */
+//*    TITLE: Text                                       */
+//*------------------------------------------------------*/
+
+// BASE TEXT STYLE
+
+p {
+    font-family: "garamond-premier-pro-n4","garamond-premier-pro",serif;
+    font-style: normal;
+    font-weight: 400;
+    @include rem('font-size', 20px);
+    line-height: 1.625;
+    color: #1a4b3e;
+    // color: $green;
+    text-rendering: optimizeLegibility;
+}
+
+// LEDE COPY
+
+%type-lede-copy {
+	@include rem('font-size', 24px);
+}
+
+// BODY COPY
+
+%type-body-copy {
+	@include rem('font-size', 18px);
+}
+
+%type-two-column {
+	@include column-count(2);
+	@include column-gap(32px);
+	@include column-gap(2rem);
+	@include column-rule(1px solid #9adbca);
+}
+
+// TAIL COPY
+

@@ -1,0 +1,179 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Organism                                   */
+//*    TITLE: Site Footer                                */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+// Footer Body Text
+
+%type-footer-base {
+	font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
+	font-style: normal;
+	font-weight: 400;
+	@include rem('font-size', 16px);
+	line-height: 1.375;
+	color: $lightGreen;
+}
+
+// Footer Fine Print
+
+%type-footer-fine-print {
+	font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
+	font-style: normal;
+	font-weight: 400;
+	@include rem('font-size', 14px);
+	line-height: 1.5;
+	color: #bac9c9;
+}
+
+// STRUCTURE
+
+footer {
+	background-color: $brightWhite;
+	border-top: 4px solid #f6ffff;
+}
+
+// Footer Navigation
+
+.secondary-menu {
+	@include container;
+	@include rem('padding-top', 10px);
+	@include rem('padding-bottom', 10px);
+}
+
+.secondary-menu > li {
+	display: inline-block;
+	width: 8.8%;
+	margin-right: 2.5%;
+	text-align: center;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	&:nth-child(n+5) {
+		text-align: right;
+	}
+}
+
+.secondary-menu > li > a {
+	&,
+	&:link,
+	&:visited,
+	&:focus,
+	&:active {
+		@include rem('padding', 6px);
+		@extend %leagueGothic;
+		@include rem('font-size', 21px);
+		line-height: 1;
+		color: $navy;
+	    border-bottom: 3px solid transparent;
+		@include transition(all 300ms ease-out)
+	}
+
+	&:hover {
+		color: #036aa2;
+		border-bottom: 3px solid #036aa2;
+		@include transition(all 300ms ease-out)
+	}
+}
+
+// Footer Body
+
+.footer-body {
+	@include rem ('padding', 4px 0);
+	border-top: 5px solid #d8f1eb;
+	background-color: #d0eee6;
+}
+
+.footer-info {
+	// @include container;
+	@include span-columns(8,12);
+	@include rem('margin-top', 60px);
+}
+
+.footer-name {
+	@include rem('margin', 0 auto 10px);
+	@extend %leagueGothic;
+	@include rem('font-size', 21px);
+	line-height: 1;
+	color: $navy;
+	text-transform: uppercase;
+}
+
+.footer-address {
+	@include span-columns(4,8);
+
+	&,
+	> a,
+	> a:link,
+	> a:visited,
+	> a:hover,
+	> a:focus,
+	> a:active {
+		@extend %type-footer-base;
+	}
+
+	> a:hover {
+		color: $navy;
+	}
+}
+
+.footer-contact {
+	@include span-columns(4,8);
+	@include omega;
+	@extend %type-footer-base;
+}
+
+#footer-obf > a {
+	@extend %type-footer-base;
+
+	&:hover {
+		color: $navy;
+	}
+}
+
+.footer-logo {
+	// @include container;
+	@include span-columns(4,12);
+	@include omega;
+}
+
+// Footer Addendum Bar
+
+.footer-addendum {
+	@include span-columns(12,12);
+	@include rem('padding', 5px);
+	background-color: $xLightBlue;
+	border-top: 4px solid #f3f6f6;
+}
+
+.fine-print {
+	display: inline;
+	margin-right: 4%;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	&,
+	> a,
+	> a:link,
+	> a:visited,
+	> a:hover,
+	> a:focus,
+	> a:active {
+		// margin-left: 0;
+		@extend %type-footer-fine-print;
+	}
+
+	> a:hover {
+		color: #036aa2;
+	}
+
+}
