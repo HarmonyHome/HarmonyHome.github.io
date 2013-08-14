@@ -10,7 +10,7 @@
 // BASE TEXT STYLE
 
 p {
-    font-family: "garamond-premier-pro-n4","garamond-premier-pro",serif;
+    font-family: "garamond-premier-pro-n4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
     font-style: normal;
     font-weight: 400;
     @include rem('font-size', 20px);

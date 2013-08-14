@@ -1,0 +1,58 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Molecule                                   */
+//*    TITLE: “Sidekick” Pane                            */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+.sidekick-title {
+	margin: 0;
+	@include rem('padding', 16px 20px 0);
+	@extend %beta;
+	line-height: 1.25;
+
+	@include at-breakpoint($breakpoint-tablet) {
+		> br {
+			display: none;
+		}
+	}
+}
+
+.sidekick-descr {
+	@include rem('padding', 12px 20px 20px);
+	@include rem('font-size', 18px);
+
+	@include at-breakpoint($breakpoint-tablet) {
+		@include rem('padding-top', 8px);
+	}
+}
+
+// STRUCTURE
+
+.sidekick {
+	@include span-columns(4,12);
+	@include nth-omega(3n);
+	background-color: $brightWhite;
+	background-color: rgba(255,255,255,0.8);
+	border-top: 2px solid $navy;
+	border-bottom: 2px solid $darkMint;
+
+	@include at-breakpoint($breakpoint-tablet) {
+		@include span-columns(12,12);
+		@include omega;
+		background-color: $brightWhite;
+
+		&:not(:first-of-type) {
+			border-top: none;
+			border-bottom: 2px solid $mint;
+		}
+
+		&:last-of-type {
+			border-bottom: 2px solid $navy;
+		}
+	}
+}

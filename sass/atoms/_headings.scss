@@ -7,14 +7,25 @@
 //*    TITLE: Headings                                   */
 //*------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6 {
 	@extend %leagueGothic;
-    font-style: normal;
     line-height: 1;
     color: $navy;
 }
 
-h1 {
-	@include rem('font-size', 32px)
+
+// LVL 1 HEADING
+%alpha{
+	@extend %leagueGothic;
+    @include rem('font-size', 48px);
+    line-height: 1.1;
+}
+
+%beta {
+	font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead",serif;
+	font-style: normal;
+	font-weight: 400;
+	@include rem('font-size', 24px);
+	line-height: 1.625;
+	color: $xDarkNavy;
 }

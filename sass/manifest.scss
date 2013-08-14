@@ -25,16 +25,21 @@
 @import "atoms/headings";
 @import "atoms/text";
 @import "atoms/links";
-@import "atoms/slider";
 @import "atoms/misc";
 
 @import "molecules/bubble-heading";
 @import "molecules/bubble-link";
+@import "molecules/sidekick-pane";
 @import "molecules/descr-panel";
 
 @import "organisms/site-header";
 @import "organisms/site-footer";
 
+@import "pages/home-page";
 @import "pages/profile-page";
 @import "pages/services-page";
+// @import "pages/writing-page";
+// @import "pages/press-page";
+@import "pages/contact-page";
 
+@import "_shame.scss";

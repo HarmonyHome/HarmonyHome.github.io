@@ -8,41 +8,41 @@ title: Contact | HOME Psychological Services
 
 <!-- Business Info -->
 <section class="business-info">
-    <!-- <div class="wrapper"> -->
-        <h1 class="bubble-heading">Find Us<div class="bubble-arrow"></div></h1>
+    <h1 class="bubble-heading">Find Us<div class="bubble-arrow"></div></h1>
 
-        <div class="column twelve clear map-wrapper">
-            <div class="map-canvas"><script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script></div>
-            <div class="business-info">
-                <p class="contact-item">Office Address</p>
+    <div class="map-wrapper">
+        <div id="map-canvas"><script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script></div>
 
-                <span class="address">
-                    <p>Room 702, 7/F</p>
-                    <p>Hong Kong House</p>
-                    <p>17-19 Wellington St</p>
-                    <p>Hong Kong</p>
-                </span>
+        <div class="contact-overlay vcard">
+            <h2 class="contact-item">Office Address</h2>
+            <div class="adr">
+                <p class="fn n org contact-info">HOME Psychological Services</p>
+                <p class="street-address contact-info">Room 702, 7/F</p>
+                <p class="street-address contact-info">Hong Kong House</p>
+                <p class="street-address contact-info">17-19 Wellington St</p>
+                <p class="country-name contact-info">Hong Kong</p>
+            </div>
 
-                <span class="contact">
-                    <p><span class="contact-item">Tel:</span>&nbsp;&nbsp;(852)&nbsp;2875-8233</p>
-                    <p><span class="contact-item">Fax:</span>&nbsp;&nbsp;(852)&nbsp;2530-9438</p>
-                    <p class="email"><span class="contact-item">Email:</span>&nbsp;&nbsp;<!--ROT13 Begin--><span id="obf"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:vadhvevrf@unezbalubzr.pbz.ux\" gnetrg=\"_oynax\">vadhvevrf@unezbalubzr.pbz.ux</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script><noscript><span style="unicode-bidi:bidi-override;direction:rtl;">kh.moc.emohynomrah@seiriuqni</span></noscript><!--ROT13 End--></p>
-                </span>
-            </div><div id="evanesco"><a class="google-map" href="https://maps.google.com/maps?q=Hong+Kong+House,+Wellington+Street,+Central,+Hong+Kong&hl=en&ll=22.28177,114.156387&spn=0.001474,0.002312&sll=43.89525,-78.862436&sspn=0.073478,0.147972&oq=hong+kong+house+wellington&hnear=Hong+Kong+House,+17-19+Wellington+St,+Hong+Kong&t=m&z=19&iwloc=A" target="_blank">Google Maps&nbsp;&raquo;</a></div>
+            <span class="digits">
+                <h2 class="contact-item">Tel:</h2><p class="contact-info">&nbsp;&nbsp;(852)&nbsp;2875-8233</br></p>
+                <h2 class="contact-item">Fax:</h2><p class="contact-info">&nbsp;&nbsp;(852)&nbsp;2530-9438</br></p>
+                <h2 class="contact-item">Email:</h2><p class="contact-info email"&nbsp;&nbsp;<!--ROT13 Begin--><span id="obf"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:vadhvevrf@unezbalubzr.pbz.ux\" gnetrg=\"_oynax\">vadhvevrf@unezbalubzr.pbz.ux</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script><noscript><span style="unicode-bidi:bidi-override;direction:rtl;">kh.moc.emohynomrah@seiriuqni</span></noscript><!--ROT13 End--></p>
+            </span>
         </div>
 
-    <!-- </div> -->
+        <div class="evanesco"><a class="google-map" href="https://maps.google.com/maps?q=Hong+Kong+House,+Wellington+Street,+Central,+Hong+Kong&hl=en&ll=22.28177,114.156387&spn=0.001474,0.002312&sll=43.89525,-78.862436&sspn=0.073478,0.147972&oq=hong+kong+house+wellington&hnear=Hong+Kong+House,+17-19+Wellington+St,+Hong+Kong&t=m&z=19&iwloc=A" target="_blank">Google Maps&nbsp;&raquo;</a></div>
+    </div>
 </section>
 
 
 <!-- Email Form -->
-<section>
-    <div class="wrapper">
-        <h2 class="column bubble-heading">Email Us<div class="bubble-arrow"></div></h2>
-    </div>
+<section class="contact-form">
+    <!-- <div class="wrapper"> -->
+    <h2 class="bubble-heading">Email Us<div class="bubble-arrow"></div></h2>
+    <!-- </div> -->
 
-    <form class="wrapper">
-        <div class="column four email-form">
+    <form class="enquiry">
+        <div class="email-form">
             <label class="">Tell us your name:</label>
             <input class="clear form-field" name="name" type="text" placeholder="">
 
@@ -53,7 +53,7 @@ title: Contact | HOME Psychological Services
             <input class="clear form-field" name="tel" type="text" placeholder="">
         </div>
 
-        <div class="column seven offset-one email-form">
+        <div class="email-form">
             <label class="">How Can We Help?</label>
             <textarea name="message" placeholder="" type="text" class="clear"></textarea>
         </div>

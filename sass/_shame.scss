@@ -9,3 +9,20 @@
 //                                                                             /
 //=============================================================================/
 
+// These particular heading are so narrow that the wide block of text in their
+// section cannot clear the space to the right of the heading.
+//
+// Using the post() function to insert empty columns after the heading to force
+// the actual grid items back into alignment.
+
+.book-promo > .bubble-heading {
+	@include post(3);
+
+	@include at-breakpoint($breakpoint-iphone) {
+		@include post(0);
+	}
+}
+
+.cogmed-promo > .bubble-heading {
+	@include post(4);
+}

@@ -1,0 +1,24 @@
+// 1280+
+@include at-breakpoint($breakpoint-medScreen) {
+
+}
+
+// 768-800
+@include at-breakpoint($breakpoint-smScreen) {
+
+}
+
+// 400-768
+@include at-breakpoint($breakpoint-tablet) {
+
+}
+
+// 320-400
+@include at-breakpoint($breakpoint-phone) {
+
+}
+
+// 320-
+@include at-breakpoint($breakpoint-iPhone) {
+
+}

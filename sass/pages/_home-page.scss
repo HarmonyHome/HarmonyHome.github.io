@@ -1,0 +1,123 @@
+//=============================================================================/
+//                 THINKING ELEPHANTS, A DESIGN COOPERATIVE                    /
+//=============================================================================/
+//                                                                             /
+//  PROJECT: 130202                                                            /
+//   CLIENT: HOME Psychological Services                                       /
+//    CLASS: Page                                                              /
+//    TITLE: Home Page                                                         /
+//                                                                             /
+//=============================================================================/
+
+@import "organisms/slider";
+
+// TYPOGRAPHY
+
+// STRUCTURE
+
+.about-us,
+.book-promo,
+.cogmed-promo {
+	// @include susy-grid-background;
+	@include container;
+	@include rem('margin-bottom', 56px);
+
+	@include at-breakpoint($breakpoint-tablet) {
+		@include rem('margin-bottom', 20px);
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.cogmed-promo {
+	@include at-breakpoint($breakpoint-tablet) {
+		margin-bottom: 0;
+	}
+}
+
+.about-us {
+	background-color: transparent;
+	position: relative;
+	z-index: 15;
+	@include rem('margin-top', -40px);
+
+	@include at-breakpoint($breakpoint-smScreen) {
+		@include rem('margin-top', -28px);
+	}
+
+	@include at-breakpoint($breakpoint-tablet) {
+		@include rem('margin-top', -12px);
+		// margin-top: 0;
+	}
+}
+
+.book-promo-panel {
+	@extend %descr-panel;
+	@include span-columns(9,12);
+    background: url(../assets/book-bg.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include at-breakpoint($breakpoint-tablet) {
+		@include span-columns(12,12);
+		@include omega;
+		margin-bottom: 0;
+    }
+}
+
+.promo-descr {
+	@include rem('padding', 16px 20px);
+
+	&:not(:last-of-type) {
+		padding-bottom: 1px;
+	}
+}
+
+.book-cover {
+	@include span-columns(3,12);
+	@include omega;
+
+	> img {
+		max-width: 100%;
+		border: 1px solid #eaeded;
+	}
+
+    @include at-breakpoint($breakpoint-tablet) {
+		// @include span-columns(12,12);
+		// @include omega;
+    	display: none;
+    }
+}
+
+.cogmed-logo {
+	@include span-columns(4,12);
+	@include rem('margin-top',20px);
+
+	> img {
+		position: relative;
+		max-width: 100%;
+	}
+
+    @include at-breakpoint($breakpoint-tablet) {
+		// @include span-columns(12,12);
+		// @include omega;
+    	display: none;
+    }
+
+}
+
+.cogmed-promo-panel {
+	@extend %descr-panel;
+	@include span-columns(8,12);
+	@include omega;
+    background: url(../assets/cogmed-bg.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include at-breakpoint($breakpoint-tablet) {
+		@include span-columns(12,12);
+		@include omega;
+		margin-bottom: 0;
+		border-bottom: none;
+    }
+}
+
+

@@ -21,14 +21,21 @@
     border-bottom: 4px solid $teal;
     border-radius: 2px;
 
+    @include at-breakpoint($breakpoint-smScreen) {
+        margin-left: 0;
+        @include rem('font-size', 40px);
+    }
+
     @include at-breakpoint($breakpoint-tablet) {
         @include rem('padding-left', 20px);
         @include rem('padding-right', 20px);
     }
 
-    @include at-breakpoint($breakpoint-smScreen) {
+    @include at-breakpoint($breakpoint-phone) {
         margin-left: 0;
-        @include rem('font-size', 40px);
+        @include rem('padding-left', 16px);
+        @include rem('padding-right', 16px);
+        @include rem('font-size', 32px);
     }
 
 }
@@ -42,4 +49,8 @@
     @include rem('border-left', 10px solid transparent);
     @include rem('border-right', 10px solid transparent);
     @include rem('border-top', 20px solid $teal);
+
+    @include at-breakpoint($breakpoint-tablet) {
+        left: 18px;
+    }
 }

@@ -18,7 +18,8 @@
     }
 
     @include at-breakpoint($breakpoint-phone) {
-        @include isolate-grid (3,9);
+        // @include isolate-grid (3,9);
+        @include isolate-grid (3,6);
     }
 
 }

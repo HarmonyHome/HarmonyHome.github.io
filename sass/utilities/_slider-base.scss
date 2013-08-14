@@ -3,8 +3,8 @@
 //*------------------------------------------------------*/
 //*  PROJECT: 130202                                     */
 //*   CLIENT: HOME Psychological Services                */
-//*    CLASS: Atom                                       */
-//*    TITLE: Another fucking slider                     */
+//*    CLASS: Utility                                    */
+//*    TITLE: Slider Base Styles                         */
 //*------------------------------------------------------*/
 
 // Browser Resets
@@ -21,17 +21,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-// Base Style
-
-.flexslider {
-    margin: 0;
-    padding: 0;
-    height: 496px;
-    height: 31rem;
-    position: relative;
-    z-index: 5;
 }
 
 // Hide slides before JS is loaded. Avoids image jumping.
@@ -76,10 +65,56 @@ html[xmlns] .slides {
 // Direction Nav
 
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../assets/direction-nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
-.flex-direction-nav .flex-next {background-position: 100% 0; right: 0px; }
-.flex-direction-nav .flex-prev {left: -36px;}
+.flex-direction-nav a {
+    width: 30px;
+    height: 30px;
+    margin: -20px 0 0;
+    display: block;
+    background: url(../assets/direction-nav.png) no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 0;
+    // -webkit-transition: all .3s ease;
+    @include transition(all 300ms ease);
+
+    // @include at-breakpoint($breakpoint-tablet) {
+    //     width: 20px;
+    //     width: 20px;
+    // }
+}
+
+.flex-direction-nav .flex-next {
+    background-position: 100% 0;
+    right: 0px;
+
+    @include at-breakpoint($breakpoint-tablet) {
+        opacity: 1;
+        right: 0;
+    }
+
+    @include at-breakpoint($breakpoint-phone) {
+        display: none;
+    }
+}
+
+.flex-direction-nav .flex-prev {
+    left: -36px;
+
+    @include at-breakpoint($breakpoint-tablet) {
+        opacity: 1;
+        left: 0;
+    }
+
+    @include at-breakpoint($breakpoint-phone) {
+        display: none;
+    }
+}
+
 .flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
 .flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+

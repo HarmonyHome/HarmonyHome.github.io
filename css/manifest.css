@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*============================================================================*/
 /*                  THINKING ELEPHANTS, A DESIGN COOPERATIVE                  */
 /*============================================================================*/
@@ -66,36 +67,42 @@ a:hover {
   outline: 0;
 }
 
-/* line 125, ../sass/utilities/_normalize.scss */
+/* line 120, ../sass/utilities/_normalize.scss */
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+/* line 130, ../sass/utilities/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 134, ../sass/utilities/_normalize.scss */
+/* line 139, ../sass/utilities/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 142, ../sass/utilities/_normalize.scss */
+/* line 147, ../sass/utilities/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 150, ../sass/utilities/_normalize.scss */
+/* line 155, ../sass/utilities/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 160, ../sass/utilities/_normalize.scss */
+/* line 165, ../sass/utilities/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 172, ../sass/utilities/_normalize.scss */
+/* line 177, ../sass/utilities/_normalize.scss */
 code,
 kbd,
 pre,
@@ -104,22 +111,22 @@ samp {
   font-size: 1em;
 }
 
-/* line 181, ../sass/utilities/_normalize.scss */
+/* line 186, ../sass/utilities/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
 
-/* line 189, ../sass/utilities/_normalize.scss */
+/* line 194, ../sass/utilities/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 197, ../sass/utilities/_normalize.scss */
+/* line 202, ../sass/utilities/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 206, ../sass/utilities/_normalize.scss */
+/* line 211, ../sass/utilities/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -128,45 +135,45 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 213, ../sass/utilities/_normalize.scss */
+/* line 218, ../sass/utilities/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 217, ../sass/utilities/_normalize.scss */
+/* line 222, ../sass/utilities/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 229, ../sass/utilities/_normalize.scss */
+/* line 234, ../sass/utilities/_normalize.scss */
 img {
   border: 0;
 }
 
-/* line 237, ../sass/utilities/_normalize.scss */
+/* line 242, ../sass/utilities/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 249, ../sass/utilities/_normalize.scss */
+/* line 254, ../sass/utilities/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 261, ../sass/utilities/_normalize.scss */
+/* line 266, ../sass/utilities/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 272, ../sass/utilities/_normalize.scss */
+/* line 277, ../sass/utilities/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 286, ../sass/utilities/_normalize.scss */
+/* line 291, ../sass/utilities/_normalize.scss */
 button,
 input,
 select,
@@ -176,19 +183,19 @@ textarea {
   margin: 0;
 }
 
-/* line 298, ../sass/utilities/_normalize.scss */
+/* line 303, ../sass/utilities/_normalize.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 310, ../sass/utilities/_normalize.scss */
+/* line 315, ../sass/utilities/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 325, ../sass/utilities/_normalize.scss */
+/* line 330, ../sass/utilities/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -197,20 +204,20 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 335, ../sass/utilities/_normalize.scss */
+/* line 340, ../sass/utilities/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 345, ../sass/utilities/_normalize.scss */
+/* line 350, ../sass/utilities/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 356, ../sass/utilities/_normalize.scss */
+/* line 361, ../sass/utilities/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -218,26 +225,26 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 369, ../sass/utilities/_normalize.scss */
+/* line 374, ../sass/utilities/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 378, ../sass/utilities/_normalize.scss */
+/* line 383, ../sass/utilities/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 388, ../sass/utilities/_normalize.scss */
+/* line 393, ../sass/utilities/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 396, ../sass/utilities/_normalize.scss */
+/* line 401, ../sass/utilities/_normalize.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -245,7 +252,7 @@ button:focus {
   outline: none;
 }
 
-/* line 408, ../sass/utilities/_normalize.scss */
+/* line 413, ../sass/utilities/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -322,8 +329,7 @@ ul {
 }
 
 /* line 32, ../sass/utilities/_fonts.scss */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6, a.bubble-link, a.bubble-link:link, a.bubble-link:visited, a.bubble-link:hover, a.bubble-link:focus, a.bubble-link:active, .primary-menu > li > a, .primary-menu > li > a:link, .primary-menu > li > a:visited, .primary-menu > li > a:focus, .primary-menu > li > a:active, .secondary-menu > li > a, .secondary-menu > li > a:link, .secondary-menu > li > a:visited, .secondary-menu > li > a:focus, .secondary-menu > li > a:active, .footer-name, .expt-item {
+h1, h2, h3, h4, h5, h6, a.bubble-link, a.bubble-link:link, a.bubble-link:visited, a.bubble-link:hover, a.bubble-link:focus, a.bubble-link:active, .primary-menu > li > a, .primary-menu > li > a:link, .primary-menu > li > a:visited, .primary-menu > li > a:hover, .primary-menu > li > a:focus, .primary-menu > li > a:active, .secondary-menu > li > a, .secondary-menu > li > a:link, .secondary-menu > li > a:visited, .secondary-menu > li > a:focus, .secondary-menu > li > a:active, .footer-name, .expt-item {
   font-family: 'League Gothic';
   font-style: normal;
   font-weight: 400;
@@ -352,23 +358,26 @@ html {
   clear: both;
 }
 
-/* line 11, ../sass/atoms/_headings.scss */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-style: normal;
+/* line 10, ../sass/atoms/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   color: #024970;
 }
 
-/* line 18, ../sass/atoms/_headings.scss */
-h1 {
-  font-size: 32px;
-  font-size: 2rem;
+/* line 24, ../sass/atoms/_headings.scss */
+.sidekick-title {
+  font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.625;
+  color: #01334f;
 }
 
 /* line 12, ../sass/atoms/_text.scss */
 p {
-  font-family: "garamond-premier-pro-n4","garamond-premier-pro",serif;
+  font-family: "garamond-premier-pro-n4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -399,7 +408,7 @@ p {
 }
 
 /* line 38, ../sass/atoms/_text.scss */
-.sku-descr, .profile-body, .expt-body {
+.sku-descr, .profile-body, .expt-body, .contact-info, a[href^="mailto"], a[href^="mailto"]:link, a[href^="mailto"]:visited, a[href^="mailto"]:hover, a[href^="mailto"]:focus, a[href^="mailto"]:active {
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -455,7 +464,7 @@ p {
 
 /* line 10, ../sass/atoms/_links.scss */
 a {
-  font-family: "garamond-premier-pro-n4","garamond-premier-pro",serif;
+  font-family: "garamond-premier-pro-n4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -479,141 +488,23 @@ a:hover {
   font-size: 1.5rem;
   line-height: 1.125;
 }
+/* line 43, ../sass/atoms/_links.scss */
+.sku-title > a, .sku-title > a:link, .sku-title > a:visited, .sku-title > a:focus, .sku-title > a:active, .sku-title > a:hover {
+  font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-style: normal;
+  font-weight: 400;
+}
 
-/* line 40, ../sass/atoms/_links.scss */
+/* line 53, ../sass/atoms/_links.scss */
 .sku-follow {
   float: right;
   margin: 4px 0 8px;
   margin:  0.25rem 0 0.5rem;
   padding-right: 20px;
   padding-right: 1.25rem;
-  font-family: "garamond-premier-pro-i4","garamond-premier-pro",serif;
+  font-family: "garamond-premier-pro-i4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
-}
-
-/* line 14, ../sass/atoms/_slider.scss */
-.flex-container a:active,
-.flexslider a:active,
-.flex-container a:focus,
-.flexslider a:focus {
-  outline: none;
-}
-
-/* line 20, ../sass/atoms/_slider.scss */
-.slides,
-.flex-control-nav,
-.flex-direction-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* line 28, ../sass/atoms/_slider.scss */
-.flexslider {
-  margin: 0;
-  padding: 0;
-  height: 496px;
-  height: 31rem;
-  position: relative;
-  z-index: 5;
-}
-
-/* line 38, ../sass/atoms/_slider.scss */
-.flexslider .slides > li {
-  display: none;
-}
-
-/* line 43, ../sass/atoms/_slider.scss */
-.flexslider .slides img {
-  width: 100%;
-  display: block;
-}
-
-/* line 48, ../sass/atoms/_slider.scss */
-.flex-pauseplay span {
-  text-transform: capitalize;
-}
-
-/* line 53, ../sass/atoms/_slider.scss */
-.slides:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-/* line 62, ../sass/atoms/_slider.scss */
-html[xmlns] .slides {
-  display: block;
-}
-
-/* line 66, ../sass/atoms/_slider.scss */
-* html .slides {
-  height: 1%;
-}
-
-/* line 72, ../sass/atoms/_slider.scss */
-.no-js .slides > li:first-child {
-  display: block;
-}
-
-/* line 78, ../sass/atoms/_slider.scss */
-.flex-direction-nav {
-  *height: 0;
-}
-
-/* line 79, ../sass/atoms/_slider.scss */
-.flex-direction-nav a {
-  width: 30px;
-  height: 30px;
-  margin: -20px 0 0;
-  display: block;
-  background: url(../assets/direction-nav.png) no-repeat 0 0;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  cursor: pointer;
-  text-indent: -9999px;
-  opacity: 0;
-  -webkit-transition: all .3s ease;
-}
-
-/* line 80, ../sass/atoms/_slider.scss */
-.flex-direction-nav .flex-next {
-  background-position: 100% 0;
-  right: 0px;
-}
-
-/* line 81, ../sass/atoms/_slider.scss */
-.flex-direction-nav .flex-prev {
-  left: -36px;
-}
-
-/* line 82, ../sass/atoms/_slider.scss */
-.flexslider:hover .flex-next {
-  opacity: 0.8;
-  right: 5px;
-}
-
-/* line 83, ../sass/atoms/_slider.scss */
-.flexslider:hover .flex-prev {
-  opacity: 0.8;
-  left: 5px;
-}
-
-/* line 84, ../sass/atoms/_slider.scss */
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
-  opacity: 1;
-}
-
-/* line 85, ../sass/atoms/_slider.scss */
-.flex-direction-nav .flex-disabled {
-  opacity: 0.3 !important;
-  filter: alpha(opacity=30);
-  cursor: default;
 }
 
 /* UNDER CONSTRUCTION NAVLINKS */
@@ -630,7 +521,7 @@ html[xmlns] .slides {
 
 /* line 23, ../sass/atoms/_misc.scss */
 .zh {
-  font-size: 94%;
+  font-size: 93%;
 }
 
 /* line 10, ../sass/molecules/_bubble-heading.scss */
@@ -652,6 +543,14 @@ html[xmlns] .slides {
   border-bottom: 4px solid #8dd7c3;
   border-radius: 2px;
 }
+@media (max-width: 800px) {
+  /* line 10, ../sass/molecules/_bubble-heading.scss */
+  .bubble-heading {
+    margin-left: 0;
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 768px) {
   /* line 10, ../sass/molecules/_bubble-heading.scss */
   .bubble-heading {
@@ -661,16 +560,20 @@ html[xmlns] .slides {
     padding-right: 1.25rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   /* line 10, ../sass/molecules/_bubble-heading.scss */
   .bubble-heading {
     margin-left: 0;
-    font-size: 40px;
-    font-size: 2.5rem;
+    padding-left: 16px;
+    padding-left: 1rem;
+    padding-right: 16px;
+    padding-right: 1rem;
+    font-size: 32px;
+    font-size: 2rem;
   }
 }
 
-/* line 36, ../sass/molecules/_bubble-heading.scss */
+/* line 43, ../sass/molecules/_bubble-heading.scss */
 .bubble-arrow {
   position: absolute;
   left: 41px;
@@ -683,6 +586,12 @@ html[xmlns] .slides {
   border-right:  0.625rem solid transparent;
   border-top: 20px solid #8dd7c3;
   border-top:  1.25rem solid #8dd7c3;
+}
+@media (max-width: 768px) {
+  /* line 43, ../sass/molecules/_bubble-heading.scss */
+  .bubble-arrow {
+    left: 18px;
+  }
 }
 
 /* line 16, ../sass/molecules/_bubble-link.scss */
@@ -742,8 +651,74 @@ a.bubble-link:hover {
   }
 }
 
+/* line 12, ../sass/molecules/_sidekick-pane.scss */
+.sidekick-title {
+  margin: 0;
+  padding: 16px 20px 0;
+  padding:  1rem 1.25rem 0;
+  line-height: 1.25;
+}
+@media (max-width: 768px) {
+  /* line 19, ../sass/molecules/_sidekick-pane.scss */
+  .sidekick-title > br {
+    display: none;
+  }
+}
+
+/* line 25, ../sass/molecules/_sidekick-pane.scss */
+.sidekick-descr {
+  padding: 12px 20px 20px;
+  padding:  0.75rem 1.25rem 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+@media (max-width: 768px) {
+  /* line 25, ../sass/molecules/_sidekick-pane.scss */
+  .sidekick-descr {
+    padding-top: 8px;
+    padding-top: 0.5rem;
+  }
+}
+
+/* line 36, ../sass/molecules/_sidekick-pane.scss */
+.sidekick {
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 2px solid #024970;
+  border-bottom: 2px solid #bfe9dd;
+}
+/* line 184, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_grid.scss */
+.sidekick:nth-child(3n) {
+  float: right;
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  /* line 36, ../sass/molecules/_sidekick-pane.scss */
+  .sidekick {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+    float: right;
+    margin-right: 0;
+    background-color: white;
+  }
+  /* line 49, ../sass/molecules/_sidekick-pane.scss */
+  .sidekick:not(:first-of-type) {
+    border-top: none;
+    border-bottom: 2px solid #ccede4;
+  }
+  /* line 54, ../sass/molecules/_sidekick-pane.scss */
+  .sidekick:last-of-type {
+    border-bottom: 2px solid #024970;
+  }
+}
+
 /* line 10, ../sass/molecules/_descr-panel.scss */
-.workshop-panel, .outreach-panel {
+.book-promo-panel, .cogmed-promo-panel, .workshop-panel, .outreach-panel {
   width: 100%;
   float: left;
   margin-right: 2.12766%;
@@ -791,7 +766,7 @@ header {
 .logo-tag {
   margin: 16px 0 0;
   margin:  1rem 0 0;
-  font-family: "garamond-premier-pro-i4","garamond-premier-pro",serif;
+  font-family: "garamond-premier-pro-i4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
   font-size: 18px;
@@ -822,8 +797,8 @@ header {
   margin-right: 0.75rem;
 }
 
-/* line 55, ../sass/organisms/_site-header.scss */
-.primary-menu > li > a, .primary-menu > li > a:link, .primary-menu > li > a:visited, .primary-menu > li > a:focus, .primary-menu > li > a:active {
+/* line 56, ../sass/organisms/_site-header.scss */
+.primary-menu > li > a, .primary-menu > li > a:link, .primary-menu > li > a:visited, .primary-menu > li > a:hover, .primary-menu > li > a:focus, .primary-menu > li > a:active {
   position: relative;
   padding: 69px 8px 6px;
   padding:  4.3125rem 0.5rem 0.375rem;
@@ -838,7 +813,7 @@ header {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-/* line 68, ../sass/organisms/_site-header.scss */
+/* line 69, ../sass/organisms/_site-header.scss */
 .primary-menu > li > a:hover, .primary-menu > li > a.active-nav {
   color: #037fc3;
   background-color: #e5f6f1;
@@ -857,7 +832,7 @@ header {
 .footer-address > a:hover,
 .footer-address > a:focus,
 .footer-address > a:active, .footer-contact, #footer-obf > a {
-  font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
+  font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -874,7 +849,7 @@ header {
 .fine-print > a:hover,
 .fine-print > a:focus,
 .fine-print > a:active {
-  font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
+  font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1115,9 +1090,557 @@ footer {
   }
 }
 
+/* line 14, ../sass/utilities/_slider-base.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+/* line 20, ../sass/utilities/_slider-base.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 27, ../sass/utilities/_slider-base.scss */
+.flexslider .slides > li {
+  display: none;
+}
+
+/* line 32, ../sass/utilities/_slider-base.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 37, ../sass/utilities/_slider-base.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* line 42, ../sass/utilities/_slider-base.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 51, ../sass/utilities/_slider-base.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 55, ../sass/utilities/_slider-base.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* line 61, ../sass/utilities/_slider-base.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* line 67, ../sass/utilities/_slider-base.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 68, ../sass/utilities/_slider-base.scss */
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0 0;
+  display: block;
+  background: url(../assets/direction-nav.png) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/* line 89, ../sass/utilities/_slider-base.scss */
+.flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: 0px;
+}
+@media (max-width: 768px) {
+  /* line 89, ../sass/utilities/_slider-base.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0;
+  }
+}
+@media (max-width: 400px) {
+  /* line 89, ../sass/utilities/_slider-base.scss */
+  .flex-direction-nav .flex-next {
+    display: none;
+  }
+}
+
+/* line 103, ../sass/utilities/_slider-base.scss */
+.flex-direction-nav .flex-prev {
+  left: -36px;
+}
+@media (max-width: 768px) {
+  /* line 103, ../sass/utilities/_slider-base.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0;
+  }
+}
+@media (max-width: 400px) {
+  /* line 103, ../sass/utilities/_slider-base.scss */
+  .flex-direction-nav .flex-prev {
+    display: none;
+  }
+}
+
+/* line 116, ../sass/utilities/_slider-base.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.8;
+  right: 5px;
+}
+
+/* line 117, ../sass/utilities/_slider-base.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.8;
+  left: 5px;
+}
+
+/* line 118, ../sass/utilities/_slider-base.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 119, ../sass/utilities/_slider-base.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0.3 !important;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* line 16, ../sass/organisms/_slider.scss */
+.lede, .quote {
+  font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  font-size: 2.375rem;
+  line-height: 1.625;
+  color: #01283e;
+}
+@media (max-width: 768px) {
+  /* line 16, ../sass/organisms/_slider.scss */
+  .lede, .quote {
+    font-size: 26px;
+    font-size: 1.625rem;
+  }
+}
+@media (max-width: 400px) {
+  /* line 16, ../sass/organisms/_slider.scss */
+  .lede, .quote {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+/* line 33, ../sass/organisms/_slider.scss */
+.lede-quote, .quote-credit {
+  font-family: "garamond-premier-pro-i4","garamond-premier-pro",serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.25;
+  color: #163e33;
+}
+@media (max-width: 800px) {
+  /* line 33, ../sass/organisms/_slider.scss */
+  .lede-quote, .quote-credit {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
+@media (max-width: 768px) {
+  /* line 33, ../sass/organisms/_slider.scss */
+  .lede-quote, .quote-credit {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 400px) {
+  /* line 33, ../sass/organisms/_slider.scss */
+  .lede-quote, .quote-credit {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+
+/* line 54, ../sass/organisms/_slider.scss */
+.lede {
+  width: 91.48936%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  margin: 118px auto 10px 30px;
+  margin:  7.375rem auto 0.625rem 1.875rem;
+}
+@media (max-width: 768px) {
+  /* line 54, ../sass/organisms/_slider.scss */
+  .lede {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 400px) {
+  /* line 54, ../sass/organisms/_slider.scss */
+  .lede {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+    float: right;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* line 71, ../sass/organisms/_slider.scss */
+.lede-quote {
+  width: 91.48936%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  margin-top: 0;
+  margin-left: 30px;
+  margin-left: 1.875rem;
+  padding-top: 19px;
+  padding-top: 1.1875rem;
+  border-top: 2px solid #236453;
+}
+@media (max-width: 768px) {
+  /* line 71, ../sass/organisms/_slider.scss */
+  .lede-quote {
+    padding-top: 8px;
+    padding-top: 0.5rem;
+  }
+}
+@media (max-width: 400px) {
+  /* line 71, ../sass/organisms/_slider.scss */
+  .lede-quote {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+    float: right;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* line 90, ../sass/organisms/_slider.scss */
+.quote {
+  width: 91.48936%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  margin: 160px auto 10px 30px;
+  margin:  10rem auto 0.625rem 1.875rem;
+}
+@media (max-width: 768px) {
+  /* line 90, ../sass/organisms/_slider.scss */
+  .quote {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 400px) {
+  /* line 90, ../sass/organisms/_slider.scss */
+  .quote {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+    float: right;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 20%;
+  }
+}
+
+/* line 108, ../sass/organisms/_slider.scss */
+.quote-credit {
+  width: 91.48936%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  margin-top: 0;
+  margin-left: 30px;
+  margin-left: 1.875rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  text-align: right;
+  border-top: 2px solid #236453;
+}
+@media (max-width: 400px) {
+  /* line 108, ../sass/organisms/_slider.scss */
+  .quote-credit {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+    float: right;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* line 126, ../sass/organisms/_slider.scss */
+.hero {
+  position: relative;
+  z-index: 5;
+  margin-top: -32px;
+  margin-top: -2rem;
+  border-bottom: 1px solid #a6e0d0;
+}
+
+/* line 133, ../sass/organisms/_slider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+  height: 496px;
+  height: 31rem;
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  /* line 133, ../sass/organisms/_slider.scss */
+  .flexslider {
+    height: 320px;
+    height: 20rem;
+  }
+}
+
+/* line 149, ../sass/organisms/_slider.scss */
+.slide-panel {
+  width: 100%;
+  height: 496px;
+  height: 31rem;
+}
+@media (max-width: 768px) {
+  /* line 149, ../sass/organisms/_slider.scss */
+  .slide-panel {
+    height: 320px;
+    height: 20rem;
+  }
+}
+
+/* line 164, ../sass/organisms/_slider.scss */
+#slide-1 {
+  background: url(../assets/splash-1.jpg) no-repeat center 12%;
+  background-size: cover;
+}
+
+/* line 169, ../sass/organisms/_slider.scss */
+#slide-2 {
+  background: url(../assets/splash-2.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+
+/* line 174, ../sass/organisms/_slider.scss */
+#slide-3 {
+  background: url(../assets/splash-3.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+/* line 179, ../sass/organisms/_slider.scss */
+#slide-4 {
+  background: url(../assets/splash-4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 184, ../sass/organisms/_slider.scss */
+#slide-5 {
+  background: url(../assets/splash-5.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+/* line 20, ../sass/pages/_home-page.scss */
+.about-us,
+.book-promo,
+.cogmed-promo {
+  *zoom: 1;
+  max-width: 940px;
+  _width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+  margin-bottom: 3.5rem;
+}
+/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.about-us:after,
+.book-promo:after,
+.cogmed-promo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 768px) {
+  /* line 20, ../sass/pages/_home-page.scss */
+  .about-us,
+  .book-promo,
+  .cogmed-promo {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 32, ../sass/pages/_home-page.scss */
+  .cogmed-promo {
+    margin-bottom: 0;
+  }
+}
+
+/* line 38, ../sass/pages/_home-page.scss */
+.about-us {
+  background-color: transparent;
+  position: relative;
+  z-index: 15;
+  margin-top: -40px;
+  margin-top: -2.5rem;
+}
+@media (max-width: 800px) {
+  /* line 38, ../sass/pages/_home-page.scss */
+  .about-us {
+    margin-top: -28px;
+    margin-top: -1.75rem;
+  }
+}
+@media (max-width: 768px) {
+  /* line 38, ../sass/pages/_home-page.scss */
+  .about-us {
+    margin-top: -12px;
+    margin-top: -0.75rem;
+  }
+}
+
+/* line 54, ../sass/pages/_home-page.scss */
+.book-promo-panel {
+  width: 74.46809%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  background: url(../assets/book-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  /* line 54, ../sass/pages/_home-page.scss */
+  .book-promo-panel {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* line 67, ../sass/pages/_home-page.scss */
+.promo-descr {
+  padding: 16px 20px;
+  padding:  1rem 1.25rem;
+}
+/* line 70, ../sass/pages/_home-page.scss */
+.promo-descr:not(:last-of-type) {
+  padding-bottom: 1px;
+}
+
+/* line 75, ../sass/pages/_home-page.scss */
+.book-cover {
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  *margin-left: -20px;
+  display: inline;
+}
+/* line 79, ../sass/pages/_home-page.scss */
+.book-cover > img {
+  max-width: 100%;
+  border: 1px solid #eaeded;
+}
+@media (max-width: 768px) {
+  /* line 75, ../sass/pages/_home-page.scss */
+  .book-cover {
+    display: none;
+  }
+}
+
+/* line 91, ../sass/pages/_home-page.scss */
+.cogmed-logo {
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+/* line 95, ../sass/pages/_home-page.scss */
+.cogmed-logo > img {
+  position: relative;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  /* line 91, ../sass/pages/_home-page.scss */
+  .cogmed-logo {
+    display: none;
+  }
+}
+
+/* line 108, ../sass/pages/_home-page.scss */
+.cogmed-promo-panel {
+  width: 65.95745%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  *margin-left: -20px;
+  display: inline;
+  background: url(../assets/cogmed-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  /* line 108, ../sass/pages/_home-page.scss */
+  .cogmed-promo-panel {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
 /* line 12, ../sass/organisms/_profile-panel.scss */
 .cv-title {
-  font-family: "garamond-premier-pro-subhead-i4","garamond-premier-pro-subhead",serif;
+  font-family: "garamond-premier-pro-subhead-i4","garamond-premier-pro-subhead","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
   font-size: 36px;
@@ -1127,7 +1650,7 @@ footer {
 
 /* line 20, ../sass/organisms/_profile-panel.scss */
 .cv-items > li {
-  font-family: "garamond-premier-pro-n4","garamond-premier-pro",serif;
+  font-family: "garamond-premier-pro-n4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1355,29 +1878,24 @@ footer {
 @media (max-width: 400px) {
   /* line 10, ../sass/organisms/_outreach-grid.scss */
   .outreach-grid > a {
-    width: 31.42857%;
+    width: 47.82609%;
     float: left;
-    margin-right: 2.85714%;
+    margin-right: 4.34783%;
     margin-right: -100%;
   }
   /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-  .outreach-grid > a:nth-child(3n + 1) {
+  .outreach-grid > a:nth-child(2n + 1) {
     margin-left: 0%;
     clear: left;
   }
   /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-  .outreach-grid > a:nth-child(3n + 2) {
-    margin-left: 34.28571%;
-    clear: none;
-  }
-  /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-  .outreach-grid > a:nth-child(3n + 3) {
-    margin-left: 68.57143%;
+  .outreach-grid > a:nth-child(2n + 2) {
+    margin-left: 52.17391%;
     clear: none;
   }
 }
 
-/* line 26, ../sass/organisms/_outreach-grid.scss */
+/* line 27, ../sass/organisms/_outreach-grid.scss */
 .outreach-thumbnail {
   max-width: 100%;
   border-bottom: 4px solid transparent;
@@ -1391,7 +1909,7 @@ footer {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-/* line 37, ../sass/organisms/_outreach-grid.scss */
+/* line 38, ../sass/organisms/_outreach-grid.scss */
 .outreach-thumbnail:hover {
   border-bottom: 4px solid #8dd7c3;
   -webkit-backface-visibility: hidden;
@@ -1525,4 +2043,158 @@ footer {
 .outreach-panel {
   background: url(../assets/services-outreach.jpg) no-repeat center center;
   background-size: cover;
+}
+
+/* line 12, ../sass/organisms/_contact-panel.scss */
+.contact-item {
+  font-family: "garamond-premier-pro-subhead-n6","garamond-premier-pro-subhead","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1.375;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: #023e5f;
+  text-rendering: auto;
+}
+
+/* line 24, ../sass/organisms/_contact-panel.scss */
+.contact-info {
+  padding-left: 10px;
+  padding-left: 0.625rem;
+  line-height: 1.25;
+}
+
+/* line 36, ../sass/organisms/_contact-panel.scss */
+a[href^="mailto"], a[href^="mailto"]:link, a[href^="mailto"]:visited, a[href^="mailto"]:hover, a[href^="mailto"]:focus, a[href^="mailto"]:active {
+  color: #0375b3;
+}
+/* line 41, ../sass/organisms/_contact-panel.scss */
+a[href^="mailto"]:hover {
+  color: #035f91;
+}
+
+/* line 54, ../sass/organisms/_contact-panel.scss */
+.google-map, .google-map:link, .google-map:visited, .google-map:hover, .google-map:focus, .google-map:active {
+  float: right;
+  padding: 2px 4px 0 0;
+  padding:  0.125rem 0.25rem 0 0;
+  font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #c2cac8;
+}
+/* line 64, ../sass/organisms/_contact-panel.scss */
+.google-map:hover {
+  color: #0375b3;
+}
+
+/* line 71, ../sass/organisms/_contact-panel.scss */
+.map-wrapper {
+  width: 100%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  *margin-left: -20px;
+  display: inline;
+  position: relative;
+}
+
+/* line 77, ../sass/organisms/_contact-panel.scss */
+#map-canvas {
+  height: 352px;
+  height: 22rem;
+}
+
+/* line 83, ../sass/organisms/_contact-panel.scss */
+.contact-overlay {
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 296px;
+  height: 18.5rem;
+  padding: 24px 32px 0 32px;
+  padding:  1.5rem 2rem 0 2rem;
+  background-color: #fcfefe;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 400px) {
+  /* line 83, ../sass/organisms/_contact-panel.scss */
+  .contact-overlay {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+
+/* line 99, ../sass/organisms/_contact-panel.scss */
+.adr {
+  margin: 4px 0 6px;
+  margin:  0.25rem 0 0.375rem;
+}
+
+/* line 105, ../sass/organisms/_contact-panel.scss */
+.digits > .contact-item,
+.digits > .contact-info {
+  display: inline;
+}
+
+/* line 112, ../sass/organisms/_contact-panel.scss */
+.evanesco {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+  height: 2rem;
+  background-color: #f2faf8;
+  border-top: 4px solid #8dd7c3;
+}
+
+/* line 18, ../sass/pages/_contact-page.scss */
+.business-info,
+.contact-form {
+  *zoom: 1;
+  max-width: 940px;
+  _width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.business-info:after,
+.contact-form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 768px) {
+  /* line 18, ../sass/pages/_contact-page.scss */
+  .business-info,
+  .contact-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 18, ../sass/_shame.scss */
+.book-promo > .bubble-heading {
+  margin-right: 25.53191%;
+}
+@media (max-width: 320px) {
+  /* line 18, ../sass/_shame.scss */
+  .book-promo > .bubble-heading {
+    margin-right: NaN%;
+  }
+}
+
+/* line 26, ../sass/_shame.scss */
+.cogmed-promo > .bubble-heading {
+  margin-right: 34.04255%;
 }

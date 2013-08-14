@@ -8,7 +8,7 @@
 //*------------------------------------------------------*/
 
 a {
-	font-family: "garamond-premier-pro-n4","garamond-premier-pro",serif;
+	font-family: "garamond-premier-pro-n4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
 	font-style: normal;
 	font-weight: 400;
     @include rem('font-size', 20px);
@@ -19,11 +19,11 @@ a {
 	&:visited,
 	&:focus,
 	&:active {
-		color: #035f91;
+		color: $xLightNavy;
 	}
 
 	&:hover {
-		color: #0375b3;
+		color: $blue;
 	}
 }
 
@@ -33,6 +33,19 @@ a {
 	@include rem('padding-left', 16px);
 	@include rem('font-size', 24px);
 	line-height: 1.125;
+
+	> a {
+		&,
+		&:link,
+		&:visited,
+		&:focus,
+		&:active,
+		&:hover {
+			font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+			font-style: normal;
+			font-weight: 400;
+		}
+	}
 }
 
 // TEMPLATED CONTENT SKU FOLLOW LINK
@@ -41,7 +54,7 @@ a {
 	float: right;
 	@include rem('margin', 4px 0 8px);
 	@include rem('padding-right', 20px);
-	font-family: "garamond-premier-pro-i4","garamond-premier-pro",serif;
+	font-family: "garamond-premier-pro-i4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
 	font-style: italic;
 	font-weight: 400;
 }

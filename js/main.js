@@ -18,13 +18,13 @@ function Harmony() {
     // SET ACTIVE NAV
 
     var nav = {
-      all: $('ul.primary-navigation a'),
-      home: $('ul.primary-navigation #nav-btn-1'),
-      profile: $('ul.primary-navigation #nav-btn-2'),
-      services: $('ul.primary-navigation #nav-btn-3'),
-      writing: $('ul.primary-navigation #nav-btn-4'),
-      press: $('ul.primary-navigation #nav-btn-5'),
-      contact: $('ul.primary-navigation #nav-btn-6')
+      all: $('ul.primary-menu a'),
+      home: $('ul.primary-menu #nav-btn-1'),
+      profile: $('ul.primary-menu #nav-btn-2'),
+      services: $('ul.primary-menu #nav-btn-3'),
+      writing: $('ul.primary-menu #nav-btn-4'),
+      press: $('ul.primary-menu #nav-btn-5'),
+      contact: $('ul.primary-menu #nav-btn-6')
     }
 
     var dir = $.url().attr('directory').substring(1);

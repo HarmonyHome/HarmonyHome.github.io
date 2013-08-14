@@ -7,7 +7,20 @@
 //*    TITLE: Contact Page                               */
 //*------------------------------------------------------*/
 
+@import "organisms/contact-panel";
+@import "organisms/contact-form";
+
 // TYPOGRAPHY
 
 // STRUCTURE
+
+.business-info,
+.contact-form {
+	@include container;
+
+	@include at-breakpoint($breakpoint-tablet) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
 
