@@ -1,12 +1,15 @@
-/*------------------------------------------------------*/
-/*                  Thinking Elephants                  */
-/*------------------------------------------------------*/
-/*  PROJECT: 130202                                     */
-/*   CLIENT: HOME Psychological Services                */
-/*    TITLE: CSS Manifest                               */
-/*------------------------------------------------------*/
+/*============================================================================*/
+/*                  THINKING ELEPHANTS, A DESIGN COOPERATIVE                  */
+/*============================================================================*/
+/*                                                                            */
+/*  PROJECT: 130202                                                           */
+/*   CLIENT: HOME Psychological Services                                      */
+/*    TITLE: CSS Manifest                                                     */
+/*                                                                            */
+/*============================================================================*/
 
 @import "compass/css3/columns";
+@import "compass/css3/filter";
 @import "compass/css3/transition";
 
 @import "utilities/normalize";
@@ -15,18 +18,23 @@
 @import "utilities/grid";
 @import "utilities/mixins";
 @import "utilities/colors";
-@import "utilities/typography";
+@import "utilities/fonts";
 
 @import "atoms/scaffolding";
 @import "atoms/wrapper";
 @import "atoms/headings";
 @import "atoms/text";
 @import "atoms/links";
+@import "atoms/slider";
+@import "atoms/misc";
 
 @import "molecules/bubble-heading";
+@import "molecules/bubble-link";
+@import "molecules/descr-panel";
 
 @import "organisms/site-header";
 @import "organisms/site-footer";
-@import "organisms/profile-panel";
 
 @import "pages/profile-page";
+@import "pages/services-page";
+

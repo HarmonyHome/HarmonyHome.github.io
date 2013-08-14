@@ -26,3 +26,22 @@ a {
 		color: #0375b3;
 	}
 }
+
+// TEMPLATED CONTENT SKU TITLE LINK
+
+.sku-title {
+	@include rem('padding-left', 16px);
+	@include rem('font-size', 24px);
+	line-height: 1.125;
+}
+
+// TEMPLATED CONTENT SKU FOLLOW LINK
+
+.sku-follow {
+	float: right;
+	@include rem('margin', 4px 0 8px);
+	@include rem('padding-right', 20px);
+	font-family: "garamond-premier-pro-i4","garamond-premier-pro",serif;
+	font-style: italic;
+	font-weight: 400;
+}

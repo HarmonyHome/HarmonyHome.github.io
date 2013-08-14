@@ -9,7 +9,7 @@
 
 // NAVY
 
-$xLightBlue      : #e9f7ff; // +22
+$xLightBlue      : #e9f7ff; // +22 (expertise highlight item text shadow color)
 $lightBlue       : #037fc3; // +5  (upper navigation link text hover)
 $blue            : #0375b3; // +4  (upper navigation link text, a:hover)
 $darkBlue        : #036aa2; // +3  (lower navigation link text)
@@ -23,18 +23,18 @@ $xxDarkNavy      : #01283e; // -3
 // TEAL
 
 //$              : #feffff; // +9
-//$              : #f2faf8; // +8
-//$              : #e5f6f1; // +7   (active nav background color)
-//$              : #d8f1eb; // +6
-//$              : #ccede4; // +5
-//$              : #bfe9dd; // +4
-//$              : #a6e0d0; // +2
+$white           : #f2faf8; // +8
+//$xLightMint    : #e5f6f1; // +7   (active nav background color)
+//$lightMint     : #d8f1eb; // +6
+$mint            : #ccede4; // +5
+$darkMint        : #bfe9dd; // +4
+$xDarkMint       : #a6e0d0; // +2
 //$              : #9adbca; // +1   (multicolumn p divider color)
 $teal            : #8dd7c3; // 0
 $darkTeal        : #74ceb6; // -2
 $xLightGreen     : #4ec1a2; // -5
 $lightGreen      : #308a72; // -10  (footer text color)
-$Green           : #236453; // -13
+$green           : #236453; // -13
 $darkGreen       : #1a4b3e; // -15  (p color)
 $xDarkGreen      : #163e33; // -16
 
@@ -44,7 +44,7 @@ $xDarkGreen      : #163e33; // -16
 //$              : #4db4ae; //      (logo tag color)
 //$              : #bac9c9;
 //$              : #c2cac8;
-$red             : #cc0000; //      (broken link color)
+$red             : #cc0000; //      (wip link color)
 //$              : #d0eee6; //      (footer body background color)
 //$              : #dcdcdc;
 //$              : #eaeded;
@@ -57,7 +57,7 @@ $red             : #cc0000; //      (broken link color)
 //$              : #f6ffff;
 //$              : #f8fafa;
 //$              : #fafdfd;
-//$              : #fafefe;
-//$              : #fcfefe;
+//$              : #fafefe; //      (expertise item text color)
+//$              : #fcfefe; //      (templated content listing unit background color)
 //$              : #fdfdfd;
 $brightWhite     : #ffffff;

@@ -15,8 +15,7 @@ p {
     font-weight: 400;
     @include rem('font-size', 20px);
     line-height: 1.625;
-    color: #1a4b3e;
-    // color: $green;
+    color: $darkGreen;
     text-rendering: optimizeLegibility;
 }
 
@@ -24,6 +23,14 @@ p {
 
 %type-lede-copy {
 	@include rem('font-size', 24px);
+
+    @include at-breakpoint($breakpoint-tablet) {
+        @include rem('padding', 0 20px);
+    }
+
+    @include at-breakpoint($breakpoint-phone) {
+        @include rem('font-size', 20px);
+    }
 }
 
 // BODY COPY
@@ -37,7 +44,23 @@ p {
 	@include column-gap(32px);
 	@include column-gap(2rem);
 	@include column-rule(1px solid #9adbca);
+
+    @include at-breakpoint($breakpoint-tablet) {
+        @include rem('padding', 0 20px);
+    }
+
+    @include at-breakpoint($breakpoint-phone) {
+        @include column-count(1);
+        @include rem('font-size', 20px);
+    }
+}
+
+.sku-descr {
+    @include rem('padding', 10px 20px);
+    @extend %type-body-copy;
 }
 
 // TAIL COPY
+
+
 

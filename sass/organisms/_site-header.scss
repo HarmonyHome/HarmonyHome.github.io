@@ -11,12 +11,8 @@ header {
     background-color: #feffff;
     border-top: 10px solid $navy;
     border-bottom: 4px solid #a6e0d0;
-    @include rem('margin-bottom', 32px);
-}
-
-.header-wrapper {
-	@include container;
 	@include rem('padding-bottom', 6px);
+    @include rem('margin-bottom', 32px);
 }
 
 .logo-nav {

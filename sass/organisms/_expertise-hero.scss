@@ -1,0 +1,59 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Organism                                   */
+//*    TITLE: Expertise Hero Block                       */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+%expt-item-type {
+	@extend %leagueGothic;
+	@include rem('font-size', 48px);
+	line-height: 1.1875;
+	color: #fafefe;
+	letter-spacing: -1px;
+	text-shadow: 1px 1px 0px $darkTeal;
+
+	@include at-breakpoint($breakpoint-tablet) {
+		@include rem('font-size', 40px);
+	}
+
+	@include at-breakpoint($breakpoint-phone) {
+		@include rem('font-size', 32px);
+		letter-spacing: 0;
+		text-shadow: 1px 1px 0px $green;
+	}
+}
+
+// STRUCTURE
+
+.expertise-hero {
+	@include span-columns(12);
+	@include omega;
+	position: relative;
+	background: url(../assets/services-counseling.jpg) no-repeat center center;
+	background-size: cover;
+	border-bottom: 4px solid $white;
+	box-shadow: 0px 4px $navy;
+}
+
+.expt-item {
+	float: right;
+	@include rem('padding', 2px 12px);
+	background-color: #ccede4;
+	background-color: rgba(204,237,237,0.85);
+	@extend %expt-item-type;
+
+	@include at-breakpoint ($breakpoint-phone) {
+		float: none;
+	}
+
+	> .expt-item-highlight {
+	    color: $darkBlue;
+	    text-shadow: 1px 1px 0px $xLightBlue;
+	}
+
+}

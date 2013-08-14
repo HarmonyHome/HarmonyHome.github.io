@@ -9,75 +9,70 @@ title: Services | HOME Psychological Services
 <!-- BODY -->
 
 <!-- Counseling -->
-<section class="first">
-    <div class="wrapper">
-        <h2 class="column bubble-heading">Counseling<div class="bubble-arrow"></div></h2>
+<section class="counseling">
+    <h1 class="bubble-heading">Counseling<div class="bubble-arrow"></div></h1>
 
-        <div class="column twelve expertise-splash">
-            <h3 class="column clear expertise"><span class="expertise-highlight">Child Development</span></h3>
-            <h3 class="column expertise">Intellectual Development</h3>
-            <h3 class="column expertise">Learning Difficulties &amp; Disorders</h3>
-            <h3 class="column expertise"><span class="expertise-highlight">Social &amp; Communication Skills</span></h3>
-            <h3 class="column expertise"><span class="expertise-highlight">Memory &amp; Attention</span></h3>
-            <h3 class="column expertise"><span class="expertise-highlight">Autism</span> &amp; Autistic Spectrum Disorders</h3>
-            <h3 class="column expertise"><span class="expertise-highlight">Parenting</span> &amp; Parent-Child Interactions</h3>
-            <h3 class="column expertise">Emotional-Behavioural <span class="expertise-highlight">Development &amp; Disorders</span></h3>
-        </div>
-
-        <div class="column twelve">
-            <p class="profile-lede">HOME Psychological Services provides assessments, counseling, and intervention across a range of psychological disciplines. We have over 10 years of clinical experience working with children, adolescents, and families.</p>
-            <p class="profile-body">Our practice is guided by the tenets of positive psychology – seeking fulfillment in normal life by focusing on positive human qualities, diverting mainstream psychology’s preoccupation with human weaknesses. Consultations and sessions can be held individually or in a group setting. Our practice is conducted in English, Cantonese, or Mandarin. We are also experienced in assessing and treating more specialized issues in adults with a focus on females, the elderly, and married couples.</p>
-        </div>
-
+    <div class="expertise-hero">
+        <h2 class="expt-item"><span class="expt-item-highlight">Child Development</span></h2>
+        <h2 class="expt-item">Intellectual Development</h2>
+        <h2 class="expt-item">Learning Difficulties &amp; Disorders</h2>
+        <h2 class="expt-item"><span class="expt-item-highlight">Social &amp; Communication Skills</span></h2>
+        <h2 class="expt-item"><span class="expt-item-highlight">Memory &amp; Attention</span></h2>
+        <h2 class="expt-item"><span class="expt-item-highlight">Autism</span> &amp; Autistic Spectrum Disorders</h2>
+        <h2 class="expt-item"><span class="expt-item-highlight">Parenting</span> &amp; Parent-Child Interactions</h2>
+        <h2 class="expt-item">Emotional-Behavioural <span class="expt-item-highlight">Development &amp; Disorders</span></h2>
     </div>
+
+    <p class="expt-lede">HOME Psychological Services provides assessments, counseling, and intervention across a range of psychological disciplines. We have over 10 years of clinical experience working with children, adolescents, and families.</p>
+
+    <p class="expt-body">Our practice is guided by the tenets of positive psychology – seeking fulfillment in normal life by focusing on positive human qualities, diverting mainstream psychology’s preoccupation with human weaknesses. Consultations and sessions can be held individually or in a group setting. Our practice is conducted in English, Cantonese, or Mandarin. We are also experienced in assessing and treating more specialized issues in adults with a focus on females, the elderly, and married couples.</p>
+
 </section>
 
 
 <!-- Workshops -->
 <section class="workshops">
-    <div class="wrapper">
-        <h2 class="column bubble-heading">Workshops<div class="bubble-arrow"></div></h2>
-        <div class="column twelve workshop-panel">
-            <p class="workshop-lede">In addition to our regular counseling services, we offer a variety of workshops, courses, and training sessions addressing specific issues. All workshops can be tailored to meet individual needs, and scheduled on-demand. <a href="/contact">Get in touch with us</a> to find out more, or to book a course!</p>
-        </div>
 
-        {% for post in site.posts limit: 12 %}
-            {% if post.categories contains 'workshops' %}
+    <h1 class="bubble-heading">Workshops<div class="bubble-arrow"></div></h1>
 
-                <div class="column six workshop-unit">
-                    <a class="workshop-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    <p>{{ post.excerpt }}</p>
-                    <a class="more" href="{{ site.baseurl }}{{ post.url }}">Learn More&nbsp;&raquo;</a>
-                </div>
-
-            {% endif %}
-        {% endfor %}
-
-        <a class="column clear bubble-link" href="{{ site.baseurl }}/services/workshops">More Workshops&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
-
+    <div class="workshop-panel">
+        <p class="workshop-descr">In addition to our regular counseling services, we offer a variety of workshops, courses, and training sessions addressing specific issues. All workshops are scheduled on-demand, and can be tailored to meet your individual needs. <a href="{{ site.baseurl }}/contact">Get in touch with us</a> to find out more, or to book a course!</p>
     </div>
+
+    {% for post in site.posts limit: 12 %}
+        {% if post.categories contains 'workshops' %}
+
+            <div class="workshop-unit">
+                <h2 class="sku-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                <p class="sku-descr">{{ post.excerpt }}</p>
+                <a class="sku-follow" href="{{ site.baseurl }}{{ post.url }}">Learn More&nbsp;&raquo;</a>
+            </div>
+
+        {% endif %}
+    {% endfor %}
+
+    <a class="bubble-link" href="{{ site.baseurl }}/services/workshops">More Workshops&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
+
 </section>
 
 
 <!-- Outreach -->
-<section class="">
-    <div class="wrapper">
-        <h2 class="column bubble-heading">Community Outreach<div class="bubble-arrow"></div></h2>
-        <div class="column twelve outreach-panel">
-            <p class="workshop-lede">We perform outreach services at community organizations and schools in Hong Kong like these. We can offer general consultation services, or seminars and workshops on specialized topics. If you represent a similar organization, <a href="/130202-HarmonyHome/Prototype/contact">get in touch with us</a> to see how we might partner together.</p>
-        </div>
-        <div class="outreach-partners">
-            <a class="column fifth" href="http://www.amazelearning.com/en_index.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/amaze-learning-solutions.jpg"></a>
-            <a class="column fifth" href="http://www.heat.org.hk/heat_main.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-heat.jpg"></a>
-            <a class="column fifth" href="http://www.caritas.org.hk" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-hk.jpg"></a>
-            <a class="column fifth" href="http://www.pelletier.edu.hk/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-pelletier-school.jpg"></a>
-            <a class="column fifth" href="http://www.children818.com/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/children-818.jpg"></a>
-            <a class="column fifth" href="http://www.greenfieldicnc.org/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/greenfield-icnc.jpg"></a>
-            <a class="column fifth" href="http://www.hkdpc.com/index.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/hkdpc.jpg"></a>
-            <a class="column fifth" href="http://www.linkscdc.com/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/links-cdc.jpg"></a>
-            <a class="column fifth" href="http://ujcdc.sjs.org.hk/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/st-james-settlement-uncle-james.jpg"></a>
-            <a class="column fifth" href="http://www.stpaul.org.hk/internet/index.php/services/specialist/child_dev" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/st-pauls-hospital.jpg"></a>
-        </div>
+<section class="outreach">
+    <h1 class="bubble-heading">Community Outreach<div class="bubble-arrow"></div></h1>
+    <div class="outreach-panel">
+        <p class="outreach-descr">We perform outreach services at community organizations and schools in Hong Kong like these. We can offer general consultation services, or seminars and workshops on specialized topics. If you represent a similar organization, <a href="{{ site.baseurl }}/contact">get in touch with us</a> to see how we might partner together.</p>
+    </div>
+    <div class="outreach-grid">
+        <a href="http://www.amazelearning.com/en_index.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/amaze-learning-solutions.jpg"></a>
+        <a href="http://www.heat.org.hk/heat_main.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-heat.jpg"></a>
+        <a href="http://www.caritas.org.hk" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-hk.jpg"></a>
+        <a href="http://www.pelletier.edu.hk/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-pelletier-school.jpg"></a>
+        <a href="http://www.children818.com/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/children-818.jpg"></a>
+        <a href="http://www.greenfieldicnc.org/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/greenfield-icnc.jpg"></a>
+        <a href="http://www.hkdpc.com/index.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/hkdpc.jpg"></a>
+        <a href="http://www.linkscdc.com/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/links-cdc.jpg"></a>
+        <a href="http://ujcdc.sjs.org.hk/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/st-james-settlement-uncle-james.jpg"></a>
+        <a href="http://www.stpaul.org.hk/internet/index.php/services/specialist/child_dev" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/st-pauls-hospital.jpg"></a>
     </div>
 </section>
 

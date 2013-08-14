@@ -14,7 +14,7 @@ port: 4000
 
 siteurl: "http://mj12albert.github.io/harmonyhome/"
 
-paginate: 10
+# paginate: 10
 
 markdown: rdiscount
 

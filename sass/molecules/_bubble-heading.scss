@@ -11,7 +11,7 @@
     display: inline-block;
     position: relative;
     @include rem('margin-bottom', 32px);
-    @include rem('margin-left', -10px);
+    @include rem('margin-left', -$grid-padding);
     @include rem('padding', 8px 45px 4px 45px);
     background-color: $lightNavy;
     @include rem('font-size', 48px);
@@ -20,6 +20,17 @@
     text-transform: uppercase;
     border-bottom: 4px solid $teal;
     border-radius: 2px;
+
+    @include at-breakpoint($breakpoint-tablet) {
+        @include rem('padding-left', 20px);
+        @include rem('padding-right', 20px);
+    }
+
+    @include at-breakpoint($breakpoint-smScreen) {
+        margin-left: 0;
+        @include rem('font-size', 40px);
+    }
+
 }
 
 .bubble-arrow {
@@ -30,5 +41,5 @@
     height: 0;
     @include rem('border-left', 10px solid transparent);
     @include rem('border-right', 10px solid transparent);
-    border-top: 20px solid $teal;
+    @include rem('border-top', 20px solid $teal);
 }

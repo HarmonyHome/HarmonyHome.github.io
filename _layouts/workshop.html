@@ -1,0 +1,37 @@
+---
+layout: workshop
+---
+
+{% include header.html %}
+
+<!-- BODY -->
+
+<section class="first">
+    <div class="wrapper template">
+        <h2 class="column bubble-heading"><!--WORKSHOP NAME-->{{ page.workshop-name }}<div class="bubble-arrow"></div></h2>
+
+        <h3 class="column clear">Target Audience</h3>
+        <p class="column ten clear"><!-- TARGET AUDIENCE -->{{ page.target-audience }}</p>
+
+        <h3 class="column clear">Sessions</h3>
+        <p class="column ten clear"><!-- SESSION INFO -->{{ page.sessions }}</p>
+
+        {% if page.objectives != null %}
+            <h3 class="column clear">Objectives</h3>
+            <ul class="column ten clear">
+            <!-- OBJECTIVES IN LIST FORMAT -->
+                {% for item in page.objectives %}
+
+                    <li>{{ item }}</li>
+
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        {{ content }}
+
+    </div>
+</section>
+
+
+{% include footer.html %}

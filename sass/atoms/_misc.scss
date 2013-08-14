@@ -4,14 +4,22 @@
 //*  PROJECT: 130202                                     */
 //*   CLIENT: HOME Psychological Services                */
 //*    CLASS: Atom                                       */
-//*    TITLE: Scaffolding                                */
+//*    TITLE: Junk Drawer                                */
 //*------------------------------------------------------*/
 
-html {
-    background-color: $white;
-    overflow-x: hidden;
+/* UNDER CONSTRUCTION NAVLINKS */
+
+.wip {
+    color: #cc0000 !important;
 }
 
-%clear {
-	clear: both;
+.wip:hover {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+// TWEAK FOR CHINESE TYPE
+
+.zh {
+    font-size: 94%;
 }

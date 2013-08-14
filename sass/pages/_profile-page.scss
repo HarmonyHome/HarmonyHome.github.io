@@ -7,23 +7,35 @@
 //*    TITLE: Profile Page                               */
 //*------------------------------------------------------*/
 
+@import "organisms/profile-panel";
+
 // TYPOGRAPHY
 
 .profile-lede {
+	// @include span-columns(12,12);
+	@include omega;
 	@extend %type-lede-copy;
 	@include rem('margin', 24px 0 28px);
 }
 
 .profile-body {
-	@extend %type-two-column;
+	// @include span-columns(12,12);
+	@include omega;
 	@extend %type-body-copy;
+	@extend %type-two-column;
 }
 
 // STRUCTURE
 
 .partner {
+	// @include susy-grid-background;
 	@include container;
 	@include rem('margin-bottom', 56px);
+
+	@include at-breakpoint($breakpoint-tablet) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 // PROFILE PHOTOS

@@ -8,6 +8,7 @@
 //*------------------------------------------------------*/
 
 // Font Sizes ------------------------------------------------------------------
+
 $rhythm-unit           : rem;
 $base-font-size        : 1.25rem;
 $base-line-height      : 1.625;
@@ -19,6 +20,18 @@ $total-columns         : 12;
 $column-width          : 60px;
 $gutter-width          : 20px;
 $grid-padding          : 10px;
+
+// Grid Overlay ----------------------------------------------------------------
+// Add this include before any "@include container":
+// @include susy-grid-background;
+
+// Breakpoints -----------------------------------------------------------------
+
+$breakpoint-medScreen: 1280px;
+$breakpoint-smScreen: 0 800px;
+$breakpoint-tablet: 0 768px;
+$breakpoint-phone: 0 400px;
+$breakpoint-iphone: 0 320px;
 
 // This import must go last ----------------------------------------------------
 

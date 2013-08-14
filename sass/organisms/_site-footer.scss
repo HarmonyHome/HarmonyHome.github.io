@@ -29,6 +29,10 @@
 	@include rem('font-size', 14px);
 	line-height: 1.5;
 	color: #bac9c9;
+
+	@include at-breakpoint($breakpoint-smScreen) {
+		@include rem('font-size', 12px);
+	}
 }
 
 // STRUCTURE
@@ -44,6 +48,10 @@ footer {
 	@include container;
 	@include rem('padding-top', 10px);
 	@include rem('padding-bottom', 10px);
+
+	@include at-breakpoint($breakpoint-tablet) {
+		display: none;
+	}
 }
 
 .secondary-menu > li {
@@ -95,6 +103,13 @@ footer {
 	// @include container;
 	@include span-columns(8,12);
 	@include rem('margin-top', 60px);
+
+	@include at-breakpoint($breakpoint-phone) {
+		@include span-columns(12,12);
+		@include rem('margin-top', 24px);
+		@include rem('margin-bottom', 24px);
+		@include omega;
+	}
 }
 
 .footer-name {
@@ -122,12 +137,22 @@ footer {
 	> a:hover {
 		color: $navy;
 	}
+
+	@include at-breakpoint($breakpoint-phone) {
+		@include span-columns(12,12);
+		@include omega;
+	}
 }
 
 .footer-contact {
 	@include span-columns(4,8);
 	@include omega;
 	@extend %type-footer-base;
+
+	@include at-breakpoint($breakpoint-phone) {
+		@include span-columns(12,12);
+		@include omega;
+	}
 }
 
 #footer-obf > a {
@@ -142,12 +167,17 @@ footer {
 	// @include container;
 	@include span-columns(4,12);
 	@include omega;
+
+	@include at-breakpoint($breakpoint-tablet) {
+		display: none;
+	}
 }
 
 // Footer Addendum Bar
 
 .footer-addendum {
 	@include span-columns(12,12);
+	@include omega;
 	@include rem('padding', 5px);
 	background-color: $xLightBlue;
 	border-top: 4px solid #f3f6f6;
@@ -174,6 +204,10 @@ footer {
 
 	> a:hover {
 		color: #036aa2;
+	}
+
+	@include at-breakpoint($breakpoint-tablet) {
+		margin-right: 2.5%;
 	}
 
 }
