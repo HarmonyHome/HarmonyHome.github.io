@@ -30,3 +30,7 @@
 .advice > .bubble-heading {
 	@include post(8);
 }
+
+.news-columns > .bubble-heading {
+	@include post(6);
+}

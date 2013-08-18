@@ -59,10 +59,10 @@
 .archive-list-unit {
 	&.two-up {
 		@include span-columns(6,12);
-		@include nth-omega(2n);
+		@include nth-omega(2n-1);
 
 		> .sku-title {
-			display: inline-block;
+			// display: inline-block;
 			@include rem('padding-top', 14px);
 			@include rem('padding-bottom', 14px);
 			@include rem('font-size', 24px);
@@ -97,19 +97,24 @@
 
 	&.three-up {
 		@include span-columns(4,12);
-		@include nth-omega(3n);
+		@include nth-omega(3n+1);
 
-		> .sku-title {
+		// > .sku-title {
 
-		}
+		// }
 
-		> .sku-follow {
+		// > .sku-follow {
 
-		}
+		// }
 
 		@include at-breakpoint($breakpoint-tablet) {
 			@include span-columns(6,12);
-			@include nth-omega(2n);
+			@include nth-omega(2n+1);
+		}
+
+		@include at-breakpoint($breakpoint-phone) {
+			@include span-columns(12,12);
+			@include omega;
 		}
 	}
 

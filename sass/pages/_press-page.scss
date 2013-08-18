@@ -11,3 +11,112 @@
 
 // STRUCTURE
 
+.periodicals,
+.news-columns {
+	// @include susy-grid-background;
+	@include container;
+
+	@include at-breakpoint($breakpoint-tablet) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// Periodicals
+
+.press-splash {
+	@include span-columns(12,12);
+	@include omega;
+	background: url(../assets/press-splash.jpg) no-repeat left center;
+	background-size: cover;
+	@include rem('height', 340px);
+	// margin-bottom: 0;
+	border-bottom: 4px solid $teal;
+	box-shadow: 0px 0px 1px 0px #ececec;
+}
+
+.press-splash-caption {
+	@include span-columns(12,12);
+	@include omega;
+	@include rem('margin-top', 5px);
+	@include rem('margin-bottom', 60px);
+	font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
+	font-style: normal;
+	font-weight: 400;
+	@include rem('font-size', 14px);
+	text-align: right;
+
+	@include at-breakpoint($breakpoint-phone) {
+		@include rem('font-size', 18px);
+		text-align: left;
+	}
+}
+
+.archive-list-unit {
+	&.periodicals-unit {
+
+		background: transparent;
+		border: none;
+
+		> .sku-title {
+			display: block;
+		    background-color: #fcfefe;
+		    background-color: rgba(255,255,255,0.8);
+			@include rem('padding', 10px 16px 6px);
+			@include rem('font-size', 24px);
+			line-height: 1.625;
+			border-bottom: 2px solid $teal;
+		}
+
+		> .sku-publ-name {
+			float: right;
+			@include rem('padding', 2px 6px 6px 0);
+		    font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
+		    font-style: normal;
+		    font-weight: 400;
+			@include rem('font-size', 16px);
+			// color: $green;
+		}
+	}
+}
+
+
+// News Columns
+
+.newscolumns-unit {
+
+	background: transparent;
+	border: none;
+
+	> .sku-title {
+		display: block;
+	    background-color: #fcfefe;
+	    background-color: rgba(255,255,255,0.8);
+		@include rem('padding', 10px 16px 6px);
+		@include rem('font-size', 20px);
+		line-height: 1.625;
+		border-bottom: 2px solid $teal;
+
+		@include at-breakpoint($breakpoint-tablet) {
+			@include rem('padding-left', 12px);
+			@include rem('padding-right', 10px);
+			@include rem('font-size', 24px);
+		}
+
+		@include at-breakpoint($breakpoint-phone) {
+			@include rem('padding-left', 16px);
+			// @include rem('padding-right', 10px);
+			// @include rem('font-size', 16px);
+		}
+	}
+
+	> .sku-publ-date {
+		float: right;
+		@include rem('padding', 2px 6px 6px 0);
+	    font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
+	    font-style: normal;
+	    font-weight: 400;
+		@include rem('font-size', 16px);
+		// color: $green;
+	}
+}
