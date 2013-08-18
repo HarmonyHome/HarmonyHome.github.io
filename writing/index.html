@@ -1,0 +1,50 @@
+---
+layout: default
+title: Writing | HOME Psychological Services
+---
+
+{% include header.html %}
+
+<!-- ARTICLES -->
+<section class="articles archive-list">
+    <!-- <div class="wrapper"> -->
+        <h1 class="column bubble-heading">Articles<div class="bubble-arrow"></div></h1>
+
+        {% for post in site.posts %}
+            {% if post.categories contains 'articles' limit: 3 %}
+
+                <div class="archive-list-unit">
+                    <h2 class="sku-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="sku-descr">{{ post.excerpt }}</p>
+                    <a class="sku-follow" href="{{ site.baseurl }}{{ post.url }}">Read More&nbsp;&raquo;</a>
+                </div>
+
+            {% endif %}
+        {% endfor %}
+
+        <a class="column clear bubble-link" href="{{ site.baseurl }}/writing/articles">More Articles&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
+
+    <!-- </div> -->
+</section>
+
+
+<!-- ADVICE -->
+<section class="advice archive-list">
+    <h1 class="column bubble-heading">Advice<div class="bubble-arrow"></div></h1>
+
+    {% for post in site.posts %}
+        {% if post.categories contains 'advice' limit: 9 %}
+
+            <div class="archive-list-unit two-up">
+                <h2 class="sku-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                <a class="sku-follow" href="{{ site.baseurl }}{{ post.url }}">Read&nbsp;&raquo;</a>
+            </div>
+
+        {% endif %}
+    {% endfor %}
+
+    <a class="column clear bubble-link" href="{{ site.baseurl }}/writing/advice">More Advice&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
+
+</section>
+
+{% include footer.html %}

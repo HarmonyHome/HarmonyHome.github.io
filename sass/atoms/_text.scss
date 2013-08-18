@@ -56,7 +56,6 @@ p {
 }
 
 .sku-descr {
-    @include rem('padding', 10px 20px);
     @extend %type-body-copy;
 }
 

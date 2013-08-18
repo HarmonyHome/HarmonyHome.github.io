@@ -19,6 +19,7 @@ a.bubble-link {
 	    clear: both;
 	    @include rem('margin-top', 20px);
 	    @include rem('margin-right', -10px);
+	    @include rem('margin-bottom', 32px);
 	    @include rem('padding', 9px 10px 7px 30px);
 	    background-color: $navy;
 		@extend %leagueGothic;
@@ -30,6 +31,11 @@ a.bubble-link {
 	    border-radius: 2px;
 	    border-bottom: 2px solid $teal;
 	    @include transition(all 300ms ease-out);
+
+	    @include at-breakpoint($breakpoint-smScreen) {
+	        margin-left: 0;
+	        @include rem('font-size', 26px);
+	    }
 	}
 
 	&:hover {
@@ -38,6 +44,7 @@ a.bubble-link {
 	    border-bottom: 2px solid $xLightGreen;
 	    @include transition(all 300ms ease-out);
 	}
+
 }
 
 .bubble-link-arrow {

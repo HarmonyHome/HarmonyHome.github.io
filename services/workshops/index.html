@@ -1,0 +1,29 @@
+---
+layout: default
+lang: en
+title: Workshops | HOME Psychological Services
+---
+
+{% include header.html %}
+
+<!-- COMPLETE LIST OF WORKSHOPS -->
+<section class="archive-list archive-workshop">
+    <!-- <div class="wrapper"> -->
+        <h1 class="column bubble-heading">Workshops<div class="bubble-arrow"></div></h1>
+
+        {% for post in site.posts %}
+            {% if post.categories contains 'workshops' %}
+
+                <div class="archive-list-unit">
+                    <h2 class="sku-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="sku-descr">{{ post.excerpt }}</p>
+                    <a class="sku-follow" href="{{ site.baseurl }}{{ post.url }}">Learn More&nbsp;&raquo;</a>
+                </div>
+
+            {% endif %}
+        {% endfor %}
+
+    <!-- </div> -->
+</section>
+
+{% include footer.html %}

@@ -1,0 +1,53 @@
+---
+layout: default
+lang: en
+title: Press | HOME Psychological Services
+---
+
+{% include header.html %}
+
+<!-- BODY -->
+
+<!-- PERIODICALS -->
+<section class="periodicals">
+    <h1 class="bubble-heading">Periodicals<div class="bubble-arrow"></div></h1>
+
+    <div class="twelve press-splash"></div>
+    <p class="twelve press-splash-caption">An interview with Winnie about parenting, following the launch of her book. Published in Pop Club magazine.</p>
+
+    {% for post in site.posts limit: 24 %}
+        {% if post.categories contains 'periodicals' %}
+
+            <div class="six periodicals-list-unit">
+                <a class="title" href="{{ post.external-url }}" target="_blank">{{ post.clipping-title }}</a>
+                <p class="pub-meta">{{ post.publication-name }},&nbsp;{{ post.publication-date }}</p>
+            </div>
+
+        {% endif %}
+    {% endfor %}
+
+</section>
+
+
+<!-- NEWS COLUMNS -->
+<section class="">
+    <div class="wrapper">
+        <h1 class="bubble-heading">News Columns<div class="bubble-arrow"></div></h1>
+
+        {% for post in site.posts limit: 30 %}
+            {% if post.categories contains 'newscolumns' %}
+
+                <div class="four newscolumns-list-unit">
+                    <a class="title" href="{{ post.external-url }}" target="_blank">{{ post.clipping-title }}</a>
+<!--                <p>{{ post.publication-name }}</p> -->
+                    <p class="clear pub-date">{{ post.publication-date }}</p>
+                </div>
+
+            {% endif %}
+        {% endfor %}
+
+    </div>
+</section>
+
+
+{% include footer.html %}

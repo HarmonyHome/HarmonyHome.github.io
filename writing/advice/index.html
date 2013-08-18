@@ -1,0 +1,28 @@
+---
+layout: default
+title: Advice | HOME Psychological Services
+---
+
+{% include header.html %}
+
+<!-- ADVICE -->
+<section class="first">
+    <div class="wrapper">
+        <h2 class="column bubble-heading">Advice<div class="bubble-arrow"></div></h2>
+
+        {% for post in site.posts %}
+            {% if post.categories contains 'advice' %}
+
+                <div class="column twelve advice-list-unit clear">
+                    <a class="column three advice-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    <p class="column advice-excerpt clear">{{ post.excerpt }}</p>
+<!--                     <a class="column two more" href="{{ site.baseurl }}{{ post.url }}">Read More&nbsp;&raquo;</a>-->
+                </div>
+
+            {% endif %}
+        {% endfor %}
+
+    </div>
+</section>
+
+{% include footer.html %}

@@ -1,0 +1,117 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Template                                   */
+//*    TITLE: Archive List                               */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+// STRUCTURE
+
+.archive-list {
+	@include container;
+}
+
+.archive-list-unit {
+	@include span-columns(12,12);
+	@include omega;
+	@include rem('margin', 20px 0);
+    background-color: #fcfefe;
+    background-color: rgba(255,255,255,0.8);
+    border-top: 2px solid $xLightBlue;
+    border-bottom: 4px solid $teal;
+
+	> .sku-title {
+		@include rem('padding', 20px 0 4px 24px);
+		@include rem('font-size', 24px);
+
+		@include at-breakpoint($breakpoint-phone) {
+			@include rem('padding-left', 16px);
+		}
+	}
+
+	> .sku-descr {
+		@include rem('padding', 16px 0 0 24px);
+		@include rem('font-size', 20px);
+
+		@include at-breakpoint($breakpoint-tablet) {
+			@include rem('padding-right', 20px);
+		}
+
+		@include at-breakpoint($breakpoint-phone) {
+			@include rem('padding-right', 16px);
+		}
+	}
+
+	> .sku-follow {
+		@include rem('margin', 16px 16px 4px 0);
+		@include rem('padding', 8px);
+
+		@include at-breakpoint($breakpoint-tablet) {
+			@include rem('margin-right', 10px);
+		}
+	}
+}
+
+.archive-list-unit {
+	&.two-up {
+		@include span-columns(6,12);
+		@include nth-omega(2n);
+
+		> .sku-title {
+			display: inline-block;
+			@include rem('padding-top', 14px);
+			@include rem('padding-bottom', 14px);
+			@include rem('font-size', 24px);
+			line-height: 1;
+		}
+
+		> .sku-follow {
+			@include rem('margin-top', 6px);
+			@include rem('margin-bottom', 2px);
+			font-family: "garamond-premier-pro-caption-i4","garamond-premier-pro-caption",serif;
+			font-style: italic;
+			font-weight: 400;
+			@include rem('font-size', 22px);
+			line-height: 1.375;
+		}
+
+		@include at-breakpoint($breakpoint-tablet) {
+			@include span-columns(12,12);
+			@include omega;
+
+			> .sku-title {
+				@include rem('font-size', 20px);
+				line-height: 1;
+			}
+
+			> .sku-follow {
+				@include rem('font-size', 18px);
+				line-height: 1.375;
+			}
+		}
+	}
+
+	&.three-up {
+		@include span-columns(4,12);
+		@include nth-omega(3n);
+
+		> .sku-title {
+
+		}
+
+		> .sku-follow {
+
+		}
+
+		@include at-breakpoint($breakpoint-tablet) {
+			@include span-columns(6,12);
+			@include nth-omega(2n);
+		}
+	}
+
+}
+

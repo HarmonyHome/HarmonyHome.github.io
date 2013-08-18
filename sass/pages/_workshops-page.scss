@@ -1,0 +1,18 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Page                                       */
+//*    TITLE: Workshops Archive                          */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+// STRUCTURE
+
+@import "templates/archive-list";
+
+.archive-workshop > .archive-list-unit:last-of-type {
+	@include rem('margin-bottom', 60px);
+}

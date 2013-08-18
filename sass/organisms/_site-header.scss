@@ -55,7 +55,7 @@ header {
 	&:focus,
 	&:active {
 		position: relative;
-		@include rem('padding', 69px 8px 6px);
+		@include rem('padding', 64px 8px 6px);
 		@extend %leagueGothic;
 		@include rem('font-size', 24px);
 		color: #0375b3;
