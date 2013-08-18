@@ -14,13 +14,36 @@
 
 // STRUCTURE
 
-.business-info,
-.contact-form {
+.business-info {
+	// @include susy-grid-background;
 	@include container;
 
 	@include at-breakpoint($breakpoint-tablet) {
 		padding-left: 0;
 		padding-right: 0;
 	}
+}
+
+.enquiries {
+	@include container;
+
+	@include at-breakpoint($breakpoint-tablet) {
+		@include rem('padding-left', 32px);
+		padding-right: 0;
+
+		> .bubble-heading {
+			@include rem('margin-left', -32px);
+		}
+	}
+
+	@include at-breakpoint($breakpoint-phone) {
+		@include rem('padding-left', 10px);
+		padding-right: 0;
+
+		> .bubble-heading {
+			@include rem('margin-left', -10px);
+		}
+	}
+
 }
 

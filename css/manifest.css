@@ -276,14 +276,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 24, ../sass/utilities/_reset.scss */
-p {
+p, .user-input-type, .contact-label {
   margin: 0;
   padding: 0;
-}
-
-/* line 29, ../sass/utilities/_reset.scss */
-p:empty {
-  display: none;
 }
 
 /* line 33, ../sass/utilities/_reset.scss */
@@ -291,6 +286,13 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* line 40, ../sass/utilities/_reset.scss */
+input,
+textarea {
+  border: none;
+  outline: none;
 }
 
 /* line 26, ../sass/utilities/_clearfix.scss */
@@ -336,9 +338,15 @@ h1, h2, h3, h4, h5, h6, a.bubble-link, a.bubble-link:link, a.bubble-link:visited
 }
 
 /* line 10, ../sass/atoms/_scaffolding.scss */
-html {
+html, body {
   background-color: #f2faf8;
   overflow-x: hidden;
+}
+@media (max-width: 400px) {
+  /* line 10, ../sass/atoms/_scaffolding.scss */
+  html, body {
+    font-size: 95%;
+  }
 }
 
 /* line 10, ../sass/atoms/_wrapper.scss */
@@ -376,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 12, ../sass/atoms/_text.scss */
-p {
+p, .user-input-type, .contact-label {
   font-family: "garamond-premier-pro-n4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
@@ -505,6 +513,26 @@ a:hover {
   font-family: "garamond-premier-pro-i4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
+}
+
+/* line 13, ../sass/atoms/_forms.scss */
+input,
+textarea {
+  display: block;
+  background-color: #fafdfd;
+  box-shadow: 0px 0px 2px 0px #e4e7e7;
+  border-bottom: 2px solid #8dd7c3;
+  border-radius: 1px;
+  -webkit-appearance: none;
+}
+@media (max-width: 400px) {
+  /* line 13, ../sass/atoms/_forms.scss */
+  input,
+  textarea {
+    border-top: 1px solid #e4e7e7;
+    border-left: 1px solid #e4e7e7;
+    border-right: 1px solid #e4e7e7;
+  }
 }
 
 /* UNDER CONSTRUCTION NAVLINKS */
@@ -682,9 +710,9 @@ a.bubble-link:hover {
 
 /* line 36, ../sass/molecules/_sidekick-pane.scss */
 .sidekick {
-  width: 31.91489%;
+  width: 31.914893617%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   background-color: white;
   background-color: rgba(255, 255, 255, 0.8);
@@ -701,7 +729,7 @@ a.bubble-link:hover {
   .sidekick {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
     background-color: white;
@@ -721,7 +749,7 @@ a.bubble-link:hover {
 .book-promo-panel, .cogmed-promo-panel, .workshop-panel, .outreach-panel {
   width: 100%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
@@ -748,9 +776,9 @@ header {
 
 /* line 18, ../sass/organisms/_site-header.scss */
 .logo-nav {
-  width: 23.40426%;
+  width: 23.4042553191%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin: 20px auto 10px;
   margin:  1.25rem auto 0.625rem;
@@ -776,10 +804,10 @@ header {
 
 /* line 37, ../sass/organisms/_site-header.scss */
 .primary-nav {
-  margin-left: 8.51064%;
-  width: 65.95745%;
+  margin-left: 8.5106382979%;
+  width: 65.9574468085%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -954,9 +982,9 @@ footer {
 
 /* line 102, ../sass/organisms/_site-footer.scss */
 .footer-info {
-  width: 65.95745%;
+  width: 65.9574468085%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin-top: 60px;
   margin-top: 3.75rem;
@@ -966,7 +994,7 @@ footer {
   .footer-info {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     margin-top: 24px;
     margin-top: 1.5rem;
     margin-bottom: 24px;
@@ -989,9 +1017,9 @@ footer {
 
 /* line 124, ../sass/organisms/_site-footer.scss */
 .footer-address {
-  width: 48.3871%;
+  width: 48.3870967742%;
   float: left;
-  margin-right: 3.22581%;
+  margin-right: 3.2258064516%;
   display: inline;
 }
 /* line 137, ../sass/organisms/_site-footer.scss */
@@ -1003,7 +1031,7 @@ footer {
   .footer-address {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
   }
@@ -1011,9 +1039,9 @@ footer {
 
 /* line 147, ../sass/organisms/_site-footer.scss */
 .footer-contact {
-  width: 48.3871%;
+  width: 48.3870967742%;
   float: left;
-  margin-right: 3.22581%;
+  margin-right: 3.2258064516%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -1025,7 +1053,7 @@ footer {
   .footer-contact {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
   }
@@ -1038,9 +1066,9 @@ footer {
 
 /* line 166, ../sass/organisms/_site-footer.scss */
 .footer-logo {
-  width: 31.91489%;
+  width: 31.914893617%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -1058,7 +1086,7 @@ footer {
 .footer-addendum {
   width: 100%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -1292,9 +1320,9 @@ html[xmlns] .slides {
 
 /* line 54, ../sass/organisms/_slider.scss */
 .lede {
-  width: 91.48936%;
+  width: 91.4893617021%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin: 118px auto 10px 30px;
   margin:  7.375rem auto 0.625rem 1.875rem;
@@ -1310,7 +1338,7 @@ html[xmlns] .slides {
   .lede {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
     margin-left: 0;
@@ -1319,9 +1347,9 @@ html[xmlns] .slides {
 
 /* line 71, ../sass/organisms/_slider.scss */
 .lede-quote {
-  width: 91.48936%;
+  width: 91.4893617021%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin-top: 0;
   margin-left: 30px;
@@ -1342,7 +1370,7 @@ html[xmlns] .slides {
   .lede-quote {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
     margin-left: 0;
@@ -1351,9 +1379,9 @@ html[xmlns] .slides {
 
 /* line 90, ../sass/organisms/_slider.scss */
 .quote {
-  width: 91.48936%;
+  width: 91.4893617021%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin: 160px auto 10px 30px;
   margin:  10rem auto 0.625rem 1.875rem;
@@ -1369,7 +1397,7 @@ html[xmlns] .slides {
   .quote {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
     margin-left: 0;
@@ -1379,9 +1407,9 @@ html[xmlns] .slides {
 
 /* line 108, ../sass/organisms/_slider.scss */
 .quote-credit {
-  width: 91.48936%;
+  width: 91.4893617021%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin-top: 0;
   margin-left: 30px;
@@ -1396,7 +1424,7 @@ html[xmlns] .slides {
   .quote-credit {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
     margin-left: 0;
@@ -1539,9 +1567,9 @@ html[xmlns] .slides {
 
 /* line 54, ../sass/pages/_home-page.scss */
 .book-promo-panel {
-  width: 74.46809%;
+  width: 74.4680851064%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   background: url(../assets/book-bg.jpg) no-repeat center center;
   background-size: cover;
@@ -1551,7 +1579,7 @@ html[xmlns] .slides {
   .book-promo-panel {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
     margin-bottom: 0;
@@ -1570,9 +1598,9 @@ html[xmlns] .slides {
 
 /* line 75, ../sass/pages/_home-page.scss */
 .book-cover {
-  width: 23.40426%;
+  width: 23.4042553191%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -1593,9 +1621,9 @@ html[xmlns] .slides {
 
 /* line 91, ../sass/pages/_home-page.scss */
 .cogmed-logo {
-  width: 31.91489%;
+  width: 31.914893617%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin-top: 20px;
   margin-top: 1.25rem;
@@ -1614,9 +1642,9 @@ html[xmlns] .slides {
 
 /* line 108, ../sass/pages/_home-page.scss */
 .cogmed-promo-panel {
-  width: 65.95745%;
+  width: 65.9574468085%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -1630,7 +1658,7 @@ html[xmlns] .slides {
   .cogmed-promo-panel {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
     margin-bottom: 0;
@@ -1776,7 +1804,7 @@ html[xmlns] .slides {
 .expertise-hero {
   width: 100%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -1811,9 +1839,9 @@ html[xmlns] .slides {
 
 /* line 10, ../sass/organisms/_outreach-grid.scss */
 .outreach-grid > a {
-  width: 18.64407%;
+  width: 18.6440677966%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 1.6949152542%;
   display: inline;
   margin-right: -100%;
   margin-bottom: 14px;
@@ -1828,30 +1856,30 @@ html[xmlns] .slides {
 }
 /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 2) {
-  margin-left: 20.33898%;
+  margin-left: 20.3389830508%;
   clear: none;
 }
 /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 3) {
-  margin-left: 40.67797%;
+  margin-left: 40.6779661017%;
   clear: none;
 }
 /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 4) {
-  margin-left: 61.01695%;
+  margin-left: 61.0169491525%;
   clear: none;
 }
 /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 5) {
-  margin-left: 81.35593%;
+  margin-left: 81.3559322034%;
   clear: none;
 }
 @media (max-width: 800px) {
   /* line 10, ../sass/organisms/_outreach-grid.scss */
   .outreach-grid > a {
-    width: 23.40426%;
+    width: 23.4042553191%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     margin-right: -100%;
   }
   /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
@@ -1861,26 +1889,26 @@ html[xmlns] .slides {
   }
   /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(4n + 2) {
-    margin-left: 25.53191%;
+    margin-left: 25.5319148936%;
     clear: none;
   }
   /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(4n + 3) {
-    margin-left: 51.06383%;
+    margin-left: 51.0638297872%;
     clear: none;
   }
   /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(4n + 4) {
-    margin-left: 76.59574%;
+    margin-left: 76.5957446809%;
     clear: none;
   }
 }
 @media (max-width: 400px) {
   /* line 10, ../sass/organisms/_outreach-grid.scss */
   .outreach-grid > a {
-    width: 47.82609%;
+    width: 47.8260869565%;
     float: left;
-    margin-right: 4.34783%;
+    margin-right: 4.347826087%;
     margin-right: -100%;
   }
   /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
@@ -1890,7 +1918,7 @@ html[xmlns] .slides {
   }
   /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(2n + 2) {
-    margin-left: 52.17391%;
+    margin-left: 52.1739130435%;
     clear: none;
   }
 }
@@ -1986,9 +2014,9 @@ html[xmlns] .slides {
 
 /* line 65, ../sass/pages/_services-page.scss */
 .workshop-unit {
-  width: 48.93617%;
+  width: 48.9361702128%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
@@ -2030,7 +2058,7 @@ html[xmlns] .slides {
   .workshop-unit {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
     float: right;
     margin-right: 0;
     margin-bottom: 0;
@@ -2096,7 +2124,7 @@ a[href^="mailto"]:hover {
 .map-wrapper {
   width: 100%;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 2.1276595745%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -2129,23 +2157,30 @@ a[href^="mailto"]:hover {
   .contact-overlay {
     width: 100%;
     float: left;
-    margin-right: 2.12766%;
+    margin-right: 2.1276595745%;
+    float: right;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-top: 1.25rem;
+    padding-left: 12px;
+    padding-left: 0.75rem;
+    padding-right: 0;
   }
 }
 
-/* line 99, ../sass/organisms/_contact-panel.scss */
+/* line 103, ../sass/organisms/_contact-panel.scss */
 .adr {
   margin: 4px 0 6px;
   margin:  0.25rem 0 0.375rem;
 }
 
-/* line 105, ../sass/organisms/_contact-panel.scss */
+/* line 109, ../sass/organisms/_contact-panel.scss */
 .digits > .contact-item,
 .digits > .contact-info {
   display: inline;
 }
 
-/* line 112, ../sass/organisms/_contact-panel.scss */
+/* line 116, ../sass/organisms/_contact-panel.scss */
 .evanesco {
   position: absolute;
   bottom: 0;
@@ -2156,9 +2191,210 @@ a[href^="mailto"]:hover {
   border-top: 4px solid #8dd7c3;
 }
 
-/* line 18, ../sass/pages/_contact-page.scss */
-.business-info,
-.contact-form {
+/* line 18, ../sass/organisms/_contact-form.scss */
+.form-contact {
+  width: 31.914893617%;
+  float: left;
+  margin-right: 2.1276595745%;
+  display: inline;
+}
+@media (max-width: 768px) {
+  /* line 18, ../sass/organisms/_contact-form.scss */
+  .form-contact {
+    width: 100%;
+    float: left;
+    margin-right: 2.1276595745%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 28, ../sass/organisms/_contact-form.scss */
+.contact-label {
+  display: block;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  color: #023e5f;
+}
+
+/* line 35, ../sass/organisms/_contact-form.scss */
+.contact-input {
+  padding: 12px 16px;
+  padding:  0.75rem 1rem;
+}
+@media (max-width: 768px) {
+  /* line 35, ../sass/organisms/_contact-form.scss */
+  .contact-input {
+    width: 50%;
+    margin-left: 10px;
+    margin-left: 0.625rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    padding: 8px 12px;
+    padding:  0.5rem 0.75rem;
+  }
+}
+@media (max-width: 400px) {
+  /* line 35, ../sass/organisms/_contact-form.scss */
+  .contact-input {
+    width: 62.5%;
+    margin-left: 4px;
+    margin-left: 0.25rem;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    padding: 6px 10px;
+    padding:  0.375rem 0.625rem;
+  }
+}
+@media (max-width: 320px) {
+  /* line 35, ../sass/organisms/_contact-form.scss */
+  .contact-input {
+    margin-left: 2px;
+    margin-left: 0.125rem;
+  }
+}
+
+/* line 59, ../sass/organisms/_contact-form.scss */
+.form-message {
+  width: 57.4468085106%;
+  float: left;
+  margin-right: 2.1276595745%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  *margin-left: -20px;
+  display: inline;
+  margin-left: 8.5106382979%;
+}
+@media (max-width: 768px) {
+  /* line 59, ../sass/organisms/_contact-form.scss */
+  .form-message {
+    width: 100%;
+    float: left;
+    margin-right: 2.1276595745%;
+    float: right;
+    margin-right: 0;
+    margin-left: NaN%;
+  }
+}
+
+/* line 72, ../sass/organisms/_contact-form.scss */
+.message-input {
+  width: 94.0740740741%;
+  height: 236px;
+  height: 14.75rem;
+  padding: 10px 16px;
+  padding:  0.625rem 1rem;
+  resize: vertical;
+}
+@media (max-width: 768px) {
+  /* line 72, ../sass/organisms/_contact-form.scss */
+  .message-input {
+    width: 90%;
+    margin-left: 10px;
+    margin-left: 0.625rem;
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
+    padding: 6px 12px;
+    padding:  0.375rem 0.75rem;
+  }
+}
+@media (max-width: 400px) {
+  /* line 72, ../sass/organisms/_contact-form.scss */
+  .message-input {
+    margin-left: 4px;
+    margin-left: 0.25rem;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+    padding: 4px 10px;
+    padding:  0.25rem 0.625rem;
+  }
+}
+@media (max-width: 320px) {
+  /* line 72, ../sass/organisms/_contact-form.scss */
+  .message-input {
+    margin-left: 2px;
+    margin-left: 0.125rem;
+  }
+}
+
+/* line 98, ../sass/organisms/_contact-form.scss */
+.litmus {
+  display: none;
+}
+
+/* line 104, ../sass/organisms/_contact-form.scss */
+.submit-button {
+  width: 14.8936170213%;
+  float: left;
+  margin-right: 2.1276595745%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  *margin-left: -20px;
+  display: inline;
+  float: right;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding: 12px 0 8px;
+  padding:  0.75rem 0 0.5rem;
+  background-color: #024970;
+  font-family: "garamond-premier-pro-subhead-n5","garamond-premier-pro-subhead",serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  color: #f5f5f5;
+  border: none;
+  border-bottom: 2px solid #8dd7c3;
+}
+@media (max-width: 768px) {
+  /* line 104, ../sass/organisms/_contact-form.scss */
+  .submit-button {
+    width: 31.914893617%;
+    float: left;
+    margin-right: 2.1276595745%;
+    float: right;
+    margin-right: 20px;
+    margin-right: 1.25rem;
+    padding: 20px 0 15px;
+    padding:  1.25rem 0 0.9375rem;
+  }
+}
+@media (max-width: 400px) {
+  /* line 104, ../sass/organisms/_contact-form.scss */
+  .submit-button {
+    width: 48.9361702128%;
+    float: left;
+    margin-right: 2.1276595745%;
+    float: right;
+    margin-right: 16px;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  /* line 104, ../sass/organisms/_contact-form.scss */
+  .submit-button {
+    margin-right: 12px;
+    margin-right: 0.75rem;
+  }
+}
+
+/* line 146, ../sass/organisms/_contact-form.scss */
+.submit-button:hover {
+  background-color: #025481;
+  color: white;
+}
+
+/* line 17, ../sass/pages/_contact-page.scss */
+.business-info {
   *zoom: 1;
   max-width: 940px;
   _width: 940px;
@@ -2168,24 +2404,65 @@ a[href^="mailto"]:hover {
   margin-right: auto;
 }
 /* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.business-info:after,
-.contact-form:after {
+.business-info:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (max-width: 768px) {
-  /* line 18, ../sass/pages/_contact-page.scss */
-  .business-info,
-  .contact-form {
+  /* line 17, ../sass/pages/_contact-page.scss */
+  .business-info {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
+/* line 27, ../sass/pages/_contact-page.scss */
+.enquiries {
+  *zoom: 1;
+  max-width: 940px;
+  _width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.enquiries:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 768px) {
+  /* line 27, ../sass/pages/_contact-page.scss */
+  .enquiries {
+    padding-left: 32px;
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+  /* line 34, ../sass/pages/_contact-page.scss */
+  .enquiries > .bubble-heading {
+    margin-left: -32px;
+    margin-left: -2rem;
+  }
+}
+@media (max-width: 400px) {
+  /* line 27, ../sass/pages/_contact-page.scss */
+  .enquiries {
+    padding-left: 10px;
+    padding-left: 0.625rem;
+    padding-right: 0;
+  }
+  /* line 43, ../sass/pages/_contact-page.scss */
+  .enquiries > .bubble-heading {
+    margin-left: -10px;
+    margin-left: -0.625rem;
+  }
+}
+
 /* line 18, ../sass/_shame.scss */
 .book-promo > .bubble-heading {
-  margin-right: 25.53191%;
+  margin-right: 25.5319148936%;
 }
 @media (max-width: 320px) {
   /* line 18, ../sass/_shame.scss */
@@ -2196,5 +2473,5 @@ a[href^="mailto"]:hover {
 
 /* line 26, ../sass/_shame.scss */
 .cogmed-promo > .bubble-heading {
-  margin-right: 34.04255%;
+  margin-right: 34.0425531915%;
 }

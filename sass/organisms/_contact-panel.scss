@@ -93,6 +93,10 @@ a[href^="mailto"] {
 
 	@include at-breakpoint($breakpoint-phone) {
 		@include span-columns(12,12);
+		@include omega;
+		@include rem('padding-top', 20px);
+		@include rem('padding-left', 12px);
+		padding-right: 0;
 	}
 }
 
