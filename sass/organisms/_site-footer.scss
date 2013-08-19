@@ -48,6 +48,7 @@ footer {
 	@include container;
 	@include rem('padding-top', 10px);
 	@include rem('padding-bottom', 10px);
+	line-height: 1;
 
 	@include at-breakpoint($breakpoint-tablet) {
 		display: none;
