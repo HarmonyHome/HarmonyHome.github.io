@@ -11,6 +11,10 @@
 
 // STRUCTURE
 
+.advice {
+	@include rem('margin-bottom', 56px);
+}
+
 .advice-unit > .sku-title {
 	display: inline-block;
 }

@@ -24,6 +24,9 @@
 
 	@include at-breakpoint($breakpoint-tablet) {
 		@include rem('margin-bottom', 20px);
+	}
+
+	@include at-breakpoint($breakpoint-phone) {
 		padding-left: 0;
 		padding-right: 0;
 	}

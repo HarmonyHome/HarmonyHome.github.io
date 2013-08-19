@@ -32,7 +32,7 @@
 	@include container;
 	@include rem('margin-bottom', 56px);
 
-	@include at-breakpoint($breakpoint-tablet) {
+	@include at-breakpoint($breakpoint-phone) {
 		padding-left: 0;
 		padding-right: 0;
 	}

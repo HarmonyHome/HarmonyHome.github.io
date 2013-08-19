@@ -148,4 +148,19 @@
     color: $brightWhite;
 }
 
+// Validation Messages
+
+.parsley-error-list {
+    @include rem('padding', 6px 0 12px 4px);
+}
+
+.parsley-error-list > li {
+    // list-style-type: none;
+    font-family: sans-serif;
+	@include rem('font-size', 12px);
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: $red;
+}
+
 

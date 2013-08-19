@@ -1,0 +1,36 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Template                                   */
+//*    TITLE: Alt Archive List                           */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+// STRUCTURE
+
+.archive-list-alt {
+	@include container;
+}
+
+.archive-list-unit-alt {
+	@include span-columns(12,12);
+	@include omega;
+	@include rem('margin', 20px 0 10px);
+    border-bottom: 2px solid $teal;
+
+    &:last-of-type {
+    	border-bottom: none;
+    }
+
+    > .sku-title {
+    	display: inline-block;
+    	@include rem('padding-left', 10px);
+    }
+
+    > .sku-descr {
+    	@include rem('padding', 10px 10px 20px 12px);
+    }
+}

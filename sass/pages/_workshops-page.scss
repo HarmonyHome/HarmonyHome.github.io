@@ -11,8 +11,6 @@
 
 // STRUCTURE
 
-@import "templates/archive-list";
-
-.archive-workshop > .archive-list-unit:last-of-type {
-	@include rem('margin-bottom', 60px);
+.archive-workshop {
+	@include rem('margin-bottom', 56px);
 }

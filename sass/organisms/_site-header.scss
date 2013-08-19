@@ -13,6 +13,11 @@ header {
     border-bottom: 4px solid #a6e0d0;
 	@include rem('padding-bottom', 6px);
     @include rem('margin-bottom', 32px);
+
+    @include at-breakpoint($breakpoint-tablet) {
+    	@include rem('padding-bottom', 2px);
+    }
+
 }
 
 .logo-nav {
@@ -22,30 +27,96 @@ header {
 	> img {
 		max-width: 45.4545454545%;
 		@include rem('padding-top', 8px);
+
+		@include at-breakpoint($breakpoint-tablet) {
+			display: inline-block;
+			@include rem('max-width', 84px);
+			@include rem('padding-top', 14px);
+			@include rem('padding-left', 10px);
+		}
+
+		@include at-breakpoint($breakpoint-phone) {
+			@include rem('max-width', 96px);
+			@include rem('padding-top', 10px);
+		}
 	}
 }
 
 .logo-tag {
-	@include rem('margin', 16px 0 0);
+	@include rem('margin-top', 16px);
 	font-family: "garamond-premier-pro-i4","garamond-premier-pro","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
 	font-style: italic;
 	font-weight: 400;
 	@include rem('font-size', 18px);
 	color: #4db4ae;
+
+	@include at-breakpoint($breakpoint-tablet) {
+		display: none;
+	}
 }
 
 .primary-nav {
-	@include push(1);
+	// @include push(1);
 	@include span-columns(8,12);
 	@include omega;
 	@include rem('padding', 64px 0 4px);
+
+	> .nav-toggle {
+		display: none;
+		float: right;
+		@extend %leagueGothic;
+		@include rem('font-size', 26px);
+		text-transform: uppercase;
+
+		@include at-breakpoint($breakpoint-nav) {
+			display: inline-block;
+			// float: right;
+		}
+	}
+
+	@include at-breakpoint($breakpoint-medScreen) {
+		@include push(1);
+	}
+
+	@include at-breakpoint($breakpoint-tablet) {
+		@include span-columns(9,12);
+	}
+
+	@include at-breakpoint($breakpoint-nav) {
+
+	}
+}
+
+// ul #nav
+.primary-menu {
+	@include at-breakpoint($breakpoint-tablet) {
+		// display: inline-block;
+		text-align: center;
+	}
+
+	@include at-breakpoint($breakpoint-nav) {
+		margin: 0;
+		position: absolute;
+		@include rem('top', 10px);
+		right: 0;
+		left: 0;
+		z-index: 1000;
+	}
 }
 
 .primary-menu > li {
 	display: inline-block;
 	position: relative;
-	@include rem('margin-right', 12px)
+	@include rem('margin-right', 12px);
+
+	@include at-breakpoint($breakpoint-nav) {
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid $teal;
+	}
+
 }
+
 
 .primary-menu > li > a {
 	&,
@@ -55,6 +126,7 @@ header {
 	&:focus,
 	&:active {
 		position: relative;
+		z-index: 8;
 		@include rem('padding', 64px 8px 6px);
 		@extend %leagueGothic;
 		@include rem('font-size', 24px);
@@ -63,13 +135,57 @@ header {
 		text-transform: uppercase;
 		border-bottom: 2px solid transparent;
 		@include transition(all 300ms ease-out);
+
+		@include at-breakpoint($breakpoint-nav) {
+			display: block;
+			border-bottom-width: 0;
+			overflow: hidden;
+			// width: 100%;
+			height: 0;
+			line-height: 0;
+			@include rem('padding', 0 0 0 16px);
+			text-align: left;
+			color: $lightNavy;
+			background-color: #e5f6f1;
+			border: none;
+
+		}
+
 	}
 
 	&:hover,
 	&.active-nav {
 		color: #037fc3;
 		background-color: #e5f6f1;
-		border-bottom: 2px solid #74ceb6;
+		border-bottom: 2px solid $darkTeal;
 		@include transition(all 300ms ease-out);
+
+		@include at-breakpoint($breakpoint-tablet) {
+			border-bottom: 2px solid $xLightGreen;
+		}
+
+		@include at-breakpoint($breakpoint-nav) {
+			background-color: $darkMint;
+			color: $blue;
+			border: none;
+		}
 	}
+}
+
+#nav:target > li > a {
+	border-bottom-width: 1px;
+	@include rem('line-height', 52px);
+	@include rem('height', 48px);
+}
+
+a.nav-hide {
+	display: none;
+
+	@include at-breakpoint($breakpoint-nav) {
+		display: block;
+	}
+}
+
+i {
+	font-size: 97%;
 }

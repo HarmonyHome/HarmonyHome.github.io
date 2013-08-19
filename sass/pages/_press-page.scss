@@ -12,11 +12,12 @@
 // STRUCTURE
 
 .periodicals,
-.news-columns {
+.newscolumns {
 	// @include susy-grid-background;
 	@include container;
+	@include rem('margin-bottom', 56px);
 
-	@include at-breakpoint($breakpoint-tablet) {
+	@include at-breakpoint($breakpoint-phone) {
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -47,6 +48,9 @@
 	text-align: right;
 
 	@include at-breakpoint($breakpoint-phone) {
+		@include reset-columns;
+		display: inline-block;
+		@include rem('padding-left', 10px);
 		@include rem('font-size', 18px);
 		text-align: left;
 	}

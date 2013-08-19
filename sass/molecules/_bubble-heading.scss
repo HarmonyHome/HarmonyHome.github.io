@@ -42,8 +42,8 @@
 
 .bubble-arrow {
     position: absolute;
-    left: 41px;
-    bottom: -20px;
+    @include rem('left', 41px);
+    @include rem('bottom', -20px);
     width: 0;
     height: 0;
     @include rem('border-left', 10px solid transparent);

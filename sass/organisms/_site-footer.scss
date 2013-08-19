@@ -206,6 +206,10 @@ footer {
 		color: #036aa2;
 	}
 
+	@include at-breakpoint($breakpoint-lrgScreen) {
+		margin-right: 3%;
+	}
+
 	@include at-breakpoint($breakpoint-tablet) {
 		margin-right: 2.5%;
 	}

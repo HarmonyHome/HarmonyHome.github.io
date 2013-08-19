@@ -11,11 +11,12 @@
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
     <!-- <link rel="stylesheet" href="http://basehold.it/32/ff0000"> -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/manifest.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
     <script type="text/javascript" src="//use.typekit.net/jtp6pdw.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
-<body>
+<body id="page">
 
 <!-- Content Begins -->
 
@@ -27,15 +28,17 @@
             <h1 class="logo-tag">Clinical Psychological Services</h1>
         </span>
         <nav class="primary-nav">
-            <ul class="primary-menu">
+            <ul class="primary-menu" id="nav">
                 <li><a id="nav-btn-1" href="{{ site.baseurl }}/">Home</a></li>
                 <li><a id="nav-btn-2" href="{{ site.baseurl }}/profile">Profile</a></li>
                 <li><a id="nav-btn-3" href="{{ site.baseurl }}/services">Services</a></li>
                 <li><a id="nav-btn-4" href="{{ site.baseurl }}/writing">Writing</a></li>
                 <li><a id="nav-btn-5" href="{{ site.baseurl }}/press/">Press</a></li>
                 <li><a id="nav-btn-6" href="{{ site.baseurl }}/contact">Contact</a></li>
+                <li><a href="#page" class="nav-hide"><i class="icon-collapse-top"></i></a></li>
                 <!-- <li><a href="#" class="wip">中文</a></li> -->
             </ul>
+            <a href="#nav" class="nav-toggle">Menu&nbsp;&nbsp;<i class="icon-collapse"></i></a>
         </nav>
     </div>
 </header>
