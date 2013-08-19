@@ -155,7 +155,7 @@
 }
 
 .parsley-error-list > li {
-    // list-style-type: none;
+    list-style-type: none;
     font-family: sans-serif;
 	@include rem('font-size', 12px);
     text-transform: uppercase;
