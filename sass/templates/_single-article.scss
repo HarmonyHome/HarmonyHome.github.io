@@ -1,0 +1,52 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Template                                   */
+//*    TITLE: Single Article                             */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+// STRUCTURE
+
+.single-article {
+	@include container;
+	@include rem('margin-bottom', 56px);
+}
+
+.template {
+
+	> h3 {
+		@include rem('margin', 20px 0 10px);
+		font-family: "garamond-premier-pro-n6","garamond-premier-pro",serif;
+		font-style: normal;
+		font-weight: 600;
+		@include rem('font-size', 20px);
+		text-transform: uppercase;
+		font-variant: small-caps;
+		color: $darkNavy;
+	}
+
+	> h4 {
+		@include rem('margin-left', 10px);
+		@include rem('margin-bottom', 8px);
+		font-family: "garamond-premier-pro-subhead-i5","garamond-premier-pro-subhead",serif;
+		font-style: italic;
+		font-weight: 500;
+		@include rem('font-size', 22px);
+	}
+
+	> p {
+		@include span-columns(11,12);
+		@include push(0.5);
+		// @include omega;
+		@include rem('margin-bottom', 20px);
+		// @include rem('font-size', 22px);
+	}
+
+	> ul {
+
+	}
+}

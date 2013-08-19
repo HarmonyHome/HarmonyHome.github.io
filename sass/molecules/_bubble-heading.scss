@@ -12,7 +12,7 @@
     position: relative;
     @include rem('margin-bottom', 32px);
     @include rem('margin-left', -$grid-padding);
-    @include rem('padding', 8px 45px 4px 45px);
+    @include rem('padding', 8px 28px 4px 28px);
     background-color: $lightNavy;
     @include rem('font-size', 48px);
     color: #effcfc;

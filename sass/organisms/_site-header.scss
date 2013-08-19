@@ -107,6 +107,7 @@ header {
 .primary-menu > li {
 	display: inline-block;
 	position: relative;
+	list-style-type: none;
 	@include rem('margin-right', 12px);
 
 	@include at-breakpoint($breakpoint-nav) {
@@ -127,7 +128,7 @@ header {
 	&:active {
 		position: relative;
 		z-index: 8;
-		@include rem('padding', 64px 8px 6px);
+		@include rem('padding', 69px 8px 6px);
 		@extend %leagueGothic;
 		@include rem('font-size', 24px);
 		color: #0375b3;

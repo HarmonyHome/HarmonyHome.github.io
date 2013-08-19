@@ -25,6 +25,7 @@
 @import "atoms/headings";
 @import "atoms/text";
 @import "atoms/links";
+@import "atoms/lists";
 @import "atoms/forms";
 @import "atoms/misc";
 
@@ -43,8 +44,10 @@
 @import "pages/profile-page";
 @import "pages/services-page";
 	@import "pages/workshops-page";
+		// @import "templates/single-workshop";
 @import "pages/writing-page";
 	@import "pages/articles-page";
+		@import "templates/single-article";
 	@import "pages/advice-page";
 @import "pages/press-page";
 @import "pages/contact-page";
