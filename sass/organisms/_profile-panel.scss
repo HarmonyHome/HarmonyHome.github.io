@@ -61,16 +61,19 @@
 	}
 }
 
+// h2
 .cv-title {
 	@include rem('margin', 12px 0 12px 0);
 	@include rem('padding-left', 4px);
 	@extend %cv-title-type;
 }
 
+// ul
 .cv-items {
 	@include rem('padding-left', 12px);
 
 	> li {
+		list-style-type: none;
 		@extend %cv-item-type;
 	}
 }
