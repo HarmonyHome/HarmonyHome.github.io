@@ -144,6 +144,10 @@
         @include rem('height', 320px);
     }
 
+    @include at-breakpoint($breakpoint-phone) {
+        @include rem('height', 360px);
+    }
+
     @include at-breakpoint($breakpoint-iphone) {
         @include rem('height', 400px);
     }
@@ -155,6 +159,10 @@
 
     @include at-breakpoint($breakpoint-tablet) {
         @include rem('height', 320px);
+    }
+
+    @include at-breakpoint($breakpoint-phone) {
+        @include rem('height', 360px);
     }
 
     @include at-breakpoint($breakpoint-iphone) {
