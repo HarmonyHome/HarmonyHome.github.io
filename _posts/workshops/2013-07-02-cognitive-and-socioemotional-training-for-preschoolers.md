@@ -11,8 +11,6 @@ workshop-name: Cognitive & Socio-Emotional Training for Preschoolers
 
 target-audience: Preschoolers aged 3 to 5.
 
-objectives:
-
 sessions: 4 sessions, 90 minutes each.
 
 published: true

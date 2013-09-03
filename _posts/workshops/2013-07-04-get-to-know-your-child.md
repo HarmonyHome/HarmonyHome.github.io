@@ -11,15 +11,16 @@ excerpt: "A workshop to help parents bond with their children, strengthening the
 
 "target-audience": Parents or caretakers of preschoolers aged 30 months to 5 years old.
 
-objectives:
-  - To help you gain a better understanding of your child’s temperament
-  - To improve your ability to attune to your child’s needs
-  - To enhance the quality of your relationship with your child
-  - To enhance the quality of your relationship with your child
 sessions: "2-4 sessions, 75 minutes each."
 
 published: true
 ---
+
+### Objectives
+* To help you gain a better understanding of your child’s temperament
+* To improve your ability to attune to your child’s needs
+* To enhance the quality of your relationship with your child
+* To enhance the quality of your relationship with your child
 
 ### About
 

@@ -19,6 +19,7 @@
 .template {
 
 	> h3 {
+		@include span-columns($total-columns);
 		@include rem('margin', 20px 0 10px);
 		font-family: "garamond-premier-pro-n6","garamond-premier-pro",serif;
 		font-style: normal;
@@ -30,12 +31,13 @@
 	}
 
 	> h4 {
-		@include rem('margin-left', 10px);
+		@include span-columns($total-columns);
+		@include rem('margin-left', 16px);
 		@include rem('margin-bottom', 8px);
-		font-family: "garamond-premier-pro-subhead-i5","garamond-premier-pro-subhead",serif;
-		font-style: italic;
+		font-family: "garamond-premier-pro-caption-n5","garamond-premier-pro-caption",serif;
+		font-style: normal;
 		font-weight: 500;
-		@include rem('font-size', 22px);
+		@include rem('font-size', 20px);
 	}
 
 	> p {

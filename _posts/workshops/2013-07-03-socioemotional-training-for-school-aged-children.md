@@ -11,14 +11,13 @@ workshop-name: Socio-Emotional Training for School-aged Children
 
 target-audience: School-aged children aged 5-10.
 
-objectives:
-- Promote individual’s psychological well-being (self-esteem; self worth; self-efficacy)
-- Develop age appropriate social skills and ability to participate in group activities
-
 sessions: 4 sessions, 90 minutes each.
 
 published: true
 ---
+### Objectives:
+* Promote individual’s psychological well-being (self-esteem; self worth; self-efficacy)
+* Develop age appropriate social skills and ability to participate in group activities
 
 ### About
 * Get to know yourself and your partner
