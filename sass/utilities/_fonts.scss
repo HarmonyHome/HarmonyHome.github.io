@@ -7,6 +7,8 @@
 //*    TITLE: Typography config                          */
 //*------------------------------------------------------*/
 
+// League Gothic
+
 @font-face {
     font-family: 'League Gothic';
     src: url('../type/leaguegothic-regular-webfont.eot');
@@ -35,3 +37,68 @@
 	font-weight: 400;
 }
 
+// Garamond Premiere Pro
+
+%gpp {
+    font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+%gppItalic {
+    font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+%gppSemibold {
+    font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+// Garamond Premiere Pro Subhead
+
+%gppSubhead {
+    font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+%gppSubheadItalic {
+    font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+%gppSubheadMedium {
+    font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+%gppSubheadSemibold {
+    font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+// Garamond Premiere Pro Caption
+
+%gppCaption {
+    font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+%gppCaptionItalic {
+    font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+%gppCaptionMedium {
+    font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 500;
+}

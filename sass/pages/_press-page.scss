@@ -41,9 +41,7 @@
 	@include omega;
 	@include rem('margin-top', 5px);
 	@include rem('margin-bottom', 60px);
-	font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
-	font-style: normal;
-	font-weight: 400;
+	@extend %gppCaption;
 	@include rem('font-size', 14px);
 	text-align: right;
 
@@ -75,9 +73,7 @@
 		> .sku-publ-name {
 			float: right;
 			@include rem('padding', 2px 6px 6px 0);
-		    font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
-		    font-style: normal;
-		    font-weight: 400;
+			@extend %gppCaption;
 			@include rem('font-size', 16px);
 			// color: $green;
 		}
@@ -117,9 +113,7 @@
 	> .sku-publ-date {
 		float: right;
 		@include rem('padding', 2px 6px 6px 0);
-	    font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",serif;
-	    font-style: normal;
-	    font-weight: 400;
+		@extend %gppCaption;
 		@include rem('font-size', 16px);
 		// color: $green;
 	}

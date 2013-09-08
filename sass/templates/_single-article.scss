@@ -21,9 +21,7 @@
 	> h3 {
 		@include span-columns($total-columns);
 		@include rem('margin', 20px 0 10px);
-		font-family: "garamond-premier-pro-n6","garamond-premier-pro",serif;
-		font-style: normal;
-		font-weight: 600;
+		@extend %gppSemibold;
 		@include rem('font-size', 20px);
 		text-transform: uppercase;
 		font-variant: small-caps;
@@ -34,9 +32,7 @@
 		@include span-columns($total-columns);
 		@include rem('margin-left', 16px);
 		@include rem('margin-bottom', 8px);
-		font-family: "garamond-premier-pro-caption-n5","garamond-premier-pro-caption",serif;
-		font-style: normal;
-		font-weight: 500;
+		@extend %gppCaptionMedium;
 		@include rem('font-size', 20px);
 	}
 

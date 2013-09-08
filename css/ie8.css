@@ -5,7 +5,7 @@
 /*                                                                            */
 /*  PROJECT: 130202                                                           */
 /*   CLIENT: HOME Psychological Services                                      */
-/*    TITLE: CSS Manifest                                                     */
+/*    TITLE: IE Stylesheet for IE8 & down                                     */
 /*                                                                            */
 /*============================================================================*/
 /* line 29, ../sass/utilities/_normalize.scss */
@@ -330,81 +330,81 @@ textarea {
   font-style: italic;
 }
 
-/* line 34, ../sass/utilities/_fonts.scss */
+/* line 34, ../sass/utilities/_fonts-ie.scss */
 h1, h2, h3, h4, h5, h6, a.bubble-link, a.bubble-link:link, a.bubble-link:visited, a.bubble-link:hover, a.bubble-link:focus, a.bubble-link:active, .primary-nav > .nav-toggle, .primary-menu > li > a, .primary-menu > li > a:link, .primary-menu > li > a:visited, .primary-menu > li > a:hover, .primary-menu > li > a:focus, .primary-menu > li > a:active, .secondary-menu > li > a, .secondary-menu > li > a:link, .secondary-menu > li > a:visited, .secondary-menu > li > a:focus, .secondary-menu > li > a:active, .footer-name, .expt-item {
   font-family: 'League Gothic';
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 42, ../sass/utilities/_fonts.scss */
+/* line 42, ../sass/utilities/_fonts-ie.scss */
 p, ul, .user-input-type, .contact-label, a, .cv-items > li {
-  font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-n4","garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 48, ../sass/utilities/_fonts.scss */
+/* line 48, ../sass/utilities/_fonts-ie.scss */
 .sku-follow, .logo-tag, .lede-quote, .quote-credit {
-  font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-i4","garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 54, ../sass/utilities/_fonts.scss */
+/* line 54, ../sass/utilities/_fonts-ie.scss */
 .template > h3 {
-  font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-n6","garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 600;
 }
 
-/* line 62, ../sass/utilities/_fonts.scss */
+/* line 62, ../sass/utilities/_fonts-ie.scss */
 .sidekick-title, .sku-title > a, .sku-title > a:link, .sku-title > a:visited, .sku-title > a:focus, .sku-title > a:active, .sku-title > a:hover, .lede, .quote {
-  font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 68, ../sass/utilities/_fonts.scss */
+/* line 68, ../sass/utilities/_fonts-ie.scss */
 .cv-title {
-  font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-subhead-i4","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 74, ../sass/utilities/_fonts.scss */
+/* line 74, ../sass/utilities/_fonts-ie.scss */
 .submit-button {
-  font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-subhead-n5","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 500;
 }
 
-/* line 80, ../sass/utilities/_fonts.scss */
+/* line 80, ../sass/utilities/_fonts-ie.scss */
 .contact-item {
-  font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-subhead-n6","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 600;
 }
 
-/* line 88, ../sass/utilities/_fonts.scss */
+/* line 88, ../sass/utilities/_fonts-ie.scss */
 .footer-address,
 .footer-address > a, .footer-contact, #footer-obf > a, .fine-print,
 .fine-print > a, .press-splash-caption, .archive-list-unit.periodicals-unit > .sku-publ-name, .newscolumns-unit > .sku-publ-date, .google-map, .google-map:link, .google-map:visited, .google-map:hover, .google-map:focus, .google-map:active {
-  font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 94, ../sass/utilities/_fonts.scss */
+/* line 94, ../sass/utilities/_fonts-ie.scss */
 .archive-list-unit.two-up > .sku-follow {
-  font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-caption-i4","garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 100, ../sass/utilities/_fonts.scss */
+/* line 100, ../sass/utilities/_fonts-ie.scss */
 .template > h4 {
-  font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+  font-family: "garamond-premier-pro-caption-n5","garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 500;
 }

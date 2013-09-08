@@ -72,9 +72,7 @@
 		> .sku-follow {
 			@include rem('margin-top', 6px);
 			@include rem('margin-bottom', 2px);
-			font-family: "garamond-premier-pro-caption-i4","garamond-premier-pro-caption",serif;
-			font-style: italic;
-			font-weight: 400;
+			@extend %gppCaptionItalic;
 			@include rem('font-size', 22px);
 			line-height: 1.375;
 		}

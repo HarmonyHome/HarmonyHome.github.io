@@ -10,9 +10,7 @@
 // TYPOGRAPHY
 
 .contact-item {
-	font-family: "garamond-premier-pro-subhead-n6","garamond-premier-pro-subhead","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
-	font-style: normal;
-	font-weight: 600;
+	@extend %gppSubheadSemibold;
 	@include rem('font-size', 28px);
 	line-height: 1.375;
 	text-transform: lowercase;
@@ -54,9 +52,7 @@ a[href^="mailto"] {
 	&:active {
 		float: right;
 		@include rem('padding', 2px 4px 0 0);
-		font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
-		font-style: normal;
-		font-weight: 400;
+		@extend %gppCaption;
 		@include rem('font-size', 16px);
 		color: #c2cac8;
 	}

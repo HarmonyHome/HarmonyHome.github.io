@@ -14,9 +14,7 @@
 // TYPOGRAPHY
 
 %slider-giga-type {
-    font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead",serif;
-    font-style: normal;
-    font-weight: 400;
+    @extend %gppSubhead;
     @include rem('font-size', 38px);
     line-height: 1.625;
     color: $xxDarkNavy;
@@ -31,9 +29,7 @@
 }
 
 %slider-mega-type {
-    font-family: "garamond-premier-pro-i4","garamond-premier-pro",serif;
-    font-style: italic;
-    font-weight: 400;
+    @extend %gppItalic;
     @include rem('font-size', 26px);
     line-height: 1.25;
     color: $xDarkGreen;

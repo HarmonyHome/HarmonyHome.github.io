@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-// LVL 1 HEADING
+// Big Headings
 %alpha{
 	@extend %leagueGothic;
     @include rem('font-size', 48px);
@@ -22,9 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 %beta {
-	font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead",serif;
-	font-style: normal;
-	font-weight: 400;
+	@extend %gppSubhead;
 	@include rem('font-size', 24px);
 	line-height: 1.625;
 	color: $xDarkNavy;
