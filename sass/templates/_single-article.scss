@@ -16,14 +16,39 @@
 	@include rem('margin-bottom', 56px);
 }
 
+.article-header {
+	> .bubble-heading {
+		// @include rem('margin-bottom', 22px);
+	}
+
+	.bubble-arrow {
+		@include rem('left', 96px);
+	}
+}
+
+.byline {
+	@include push(0.8);
+
+	> .by {
+		@extend %gppSubheadItalic;
+		@include rem('font-size', 24px);
+	}
+
+	> .author {
+		@extend %gppSubhead;
+		@include rem('font-size', 24px);
+	}
+}
+
 .article-body {
 	@include span-columns(8,12);
 	@include push(2);
+	@include rem('margin-top', 16px);
 
 	> h2 {
-		@include pull(1);
+		@include pull(0.85);
 		@include rem('margin-top', 28px);
-		@include rem('margin-bottom', 10px);
+		@include rem('margin-bottom', 14px);
 
 		@extend %gppSubhead;
 		@include rem('font-size', 28px);
@@ -32,7 +57,7 @@
 	> h3 {
 		@include rem('margin-top', 12px);
 		@include rem('margin-left', -2px);
-		@include rem('margin-bottom', 4px);
+		@include rem('margin-bottom', 6px);
 
 		@extend %gppCaptionMedium;
 		text-transform: uppercase;

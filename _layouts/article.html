@@ -13,7 +13,9 @@ layout: article
         	<h1 class="bubble-heading">{{ page.title }}<div class="bubble-arrow"></div></h1>
 
         	{% if page.author != null %}
-        	<p class="byline">by&nbsp;</p><p class="author"><!-- AUTHOR -->{{ page.author }}</p>
+        	<div class="byline">
+        		<span class="by">by&nbsp;</span><span class="author"><!-- AUTHOR -->{{ page.author }}</span>
+        	</div>
         	{% endif %}
         </header>
 

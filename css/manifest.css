@@ -352,14 +352,14 @@ p, ul, .user-input-type, .contact-label, a, .cv-items > li {
 }
 
 /* line 62, ../sass/utilities/_fonts.scss */
-.sidekick-title, .sku-title > a, .sku-title > a:link, .sku-title > a:visited, .sku-title > a:focus, .sku-title > a:active, .sku-title > a:hover, .lede, .quote, .article-body > h2 {
+.sidekick-title, .sku-title > a, .sku-title > a:link, .sku-title > a:visited, .sku-title > a:focus, .sku-title > a:active, .sku-title > a:hover, .lede, .quote, .byline > .author, .article-body > h2 {
   font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
 }
 
 /* line 68, ../sass/utilities/_fonts.scss */
-.cv-title {
+.cv-title, .byline > .by {
   font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
@@ -2614,36 +2614,59 @@ html[xmlns] .slides {
   clear: both;
 }
 
-/* line 19, ../sass/templates/_single-article.scss */
+/* line 24, ../sass/templates/_single-article.scss */
+.article-header .bubble-arrow {
+  left: 96px;
+  left: 6rem;
+}
+
+/* line 29, ../sass/templates/_single-article.scss */
+.byline {
+  margin-left: 5.1063829787%;
+}
+/* line 32, ../sass/templates/_single-article.scss */
+.byline > .by {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+/* line 37, ../sass/templates/_single-article.scss */
+.byline > .author {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+/* line 43, ../sass/templates/_single-article.scss */
 .article-body {
   width: 65.9574468085%;
   float: left;
   margin-right: 2.1276595745%;
   display: inline;
   margin-left: 17.0212765957%;
+  margin-top: 16px;
+  margin-top: 1rem;
 }
-/* line 23, ../sass/templates/_single-article.scss */
+/* line 48, ../sass/templates/_single-article.scss */
 .article-body > h2 {
-  margin-left: -8.5106382979%;
+  margin-left: -5.4255319149%;
   margin-top: 28px;
   margin-top: 1.75rem;
-  margin-bottom: 10px;
-  margin-bottom: 0.625rem;
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
   font-size: 28px;
   font-size: 1.75rem;
 }
-/* line 32, ../sass/templates/_single-article.scss */
+/* line 57, ../sass/templates/_single-article.scss */
 .article-body > h3 {
   margin-top: 12px;
   margin-top: 0.75rem;
   margin-left: -2px;
   margin-left: -0.125rem;
-  margin-bottom: 4px;
-  margin-bottom: 0.25rem;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
   text-transform: uppercase;
   font-variant: small-caps;
 }
-/* line 42, ../sass/templates/_single-article.scss */
+/* line 67, ../sass/templates/_single-article.scss */
 .article-body > p, .article-body > ul, .article-body > .user-input-type, .article-body > .contact-label {
   margin-bottom: 18px;
   margin-bottom: 1.125rem;
@@ -2938,8 +2961,8 @@ a[href^="mailto"]:hover {
 /* line 28, ../sass/organisms/_contact-form.scss */
 .contact-label {
   display: block;
-  margin-bottom: 10px;
-  margin-bottom: 0.625rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
   color: #023e5f;
 }
 
