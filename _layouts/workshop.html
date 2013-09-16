@@ -6,20 +6,24 @@ layout: workshop
 
 <!-- BODY -->
 
-<section class="first">
-    <div class="wrapper template">
-        <h2 class="column bubble-heading"><!--WORKSHOP NAME-->{{ page.workshop-name }}<div class="bubble-arrow"></div></h2>
+<div class="article-wrapper">
+    <article class="">
+    	<h1 class="bubble-heading">{{ page.workshop-name }}<div class="bubble-arrow"></div></h1>
 
-        <h3 class="column clear">Target Audience</h3>
-        <p class="column ten clear"><!-- TARGET AUDIENCE -->{{ page.target-audience }}</p>
+        <div class="article-body">
 
-        <h3 class="column clear">Sessions</h3>
-        <p class="column ten clear"><!-- SESSION INFO -->{{ page.sessions }}</p>
+        	<h2>Target Audience</h2>
+        	<p><!-- TARGET AUDIENCE -->{{ page.target-audience }}</p>
 
-        {{ content }}
+        	<h2>Sessions</h2>
+        	<p><!-- SESSION INFO -->{{ page.sessions }}</p>
 
-    </div>
-</section>
+        	{{ content }}
+
+        </div>
+
+    </article>
+</div>
 
 
 {% include footer.html %}

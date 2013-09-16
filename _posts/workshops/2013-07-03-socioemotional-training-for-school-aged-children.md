@@ -15,18 +15,18 @@ sessions: 4 sessions, 90 minutes each.
 
 published: true
 ---
-### Objectives:
+## Objectives:
 * Promote individual’s psychological well-being (self-esteem; self worth; self-efficacy)
 * Develop age appropriate social skills and ability to participate in group activities
 
-### About
+## About
 * Get to know yourself and your partner
 
 * Understand different emotional states
 
 * Competitive games:
 	* Cope with stress during the competition
-	- Cheer yourself when you win
+	* Cheer yourself when you win
 	* Encourage yourself when you lose
 
 * Cooperative games:

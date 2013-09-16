@@ -16,7 +16,7 @@ sessions: "One session per week, held mid-day or evenings on weekdays and Saturd
 published: true
 ---
 
-### Objectives
+## Objectives
 * Help group members adopt more positive thinking style, improve self-image, and increase their distress tolerance through group “process” and “dynamic”
 * Learn the art of communication – helps members gain better understanding of themselves and their interpersonal style
 * Identify members’ blind spots in their interaction with other people more effectively through group process.

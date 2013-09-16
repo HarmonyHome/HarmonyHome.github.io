@@ -11,42 +11,35 @@
 
 // STRUCTURE
 
-.single-article {
+.article-wrapper {
 	@include container;
 	@include rem('margin-bottom', 56px);
 }
 
-.template {
+.article-body {
+	@include span-columns(8,12);
+	@include push(2);
 
-	> h3 {
-		@include span-columns($total-columns);
-		@include rem('margin', 20px 0 10px);
-		@extend %gppSemibold;
-		@include rem('font-size', 20px);
-		text-transform: uppercase;
-		font-variant: small-caps;
-		color: $darkNavy;
+	> h2 {
+		@include pull(1);
+		@include rem('margin-top', 28px);
+		@include rem('margin-bottom', 10px);
+
+		@extend %gppSubhead;
+		@include rem('font-size', 28px);
 	}
 
-	> h4 {
-		@include span-columns($total-columns);
-		@include rem('margin-left', 16px);
-		@include rem('margin-bottom', 8px);
+	> h3 {
+		@include rem('margin-top', 12px);
+		@include rem('margin-left', -2px);
+		@include rem('margin-bottom', 4px);
+
 		@extend %gppCaptionMedium;
-		@include rem('font-size', 20px);
+		text-transform: uppercase;
+		font-variant: small-caps;
 	}
 
 	> p {
-		@include span-columns(11,12);
-		@include push(0.5);
-		// @include omega;
-		@include rem('margin-bottom', 20px);
-		// @include rem('font-size', 22px);
-	}
-
-	> ul {
-		> li {
-			@include rem('margin-left', 16px);
-		}
+		@include rem('margin-bottom', 18px);
 	}
 }

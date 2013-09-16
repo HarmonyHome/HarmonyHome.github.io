@@ -16,12 +16,12 @@ sessions: 4 sessions, 90 minutes each. Sessions subdivided for caretakers of pre
 published: true
 ---
 
-### Objectives:
+## Objectives:
 * Understand the characteristics and diagnosis of children with attention deficit and hyperactive disorder
 * Understand ADHD children’s emotional and social development
 * Improve parent-child communication and strengthen parents’ adaptive parenting skills
 * Understand basic principles of behavioral management and ways to manage high-risk situations
 * Help parents communicate with teacher more effectively and prepare for future challenges
 
-### About
+## About
 When children are labeled to be “inattentive”, adults who are helping them should recognize that these inattentive boys and girls often have strengths and outstanding qualities such as especially good memory on things that they likes, sharp sensitivity towards the environment.  How can parents and educators make good use of their strengths?  As they grow older, helping the children to understand themselves could help them set goals for themselves in their lives.

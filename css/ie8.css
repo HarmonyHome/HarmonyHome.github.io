@@ -351,15 +351,8 @@ p, ul, .user-input-type, .contact-label, a, .cv-items > li {
   font-weight: 400;
 }
 
-/* line 54, ../sass/utilities/_fonts-ie.scss */
-.template > h3 {
-  font-family: "garamond-premier-pro-n6","garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
-  font-style: normal;
-  font-weight: 600;
-}
-
 /* line 62, ../sass/utilities/_fonts-ie.scss */
-.sidekick-title, .sku-title > a, .sku-title > a:link, .sku-title > a:visited, .sku-title > a:focus, .sku-title > a:active, .sku-title > a:hover, .lede, .quote {
+.sidekick-title, .sku-title > a, .sku-title > a:link, .sku-title > a:visited, .sku-title > a:focus, .sku-title > a:active, .sku-title > a:hover, .lede, .quote, .article-body > h2 {
   font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
@@ -403,7 +396,7 @@ p, ul, .user-input-type, .contact-label, a, .cv-items > li {
 }
 
 /* line 100, ../sass/utilities/_fonts-ie.scss */
-.template > h4 {
+.article-body > h3 {
   font-family: "garamond-premier-pro-caption-n5","garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 500;
@@ -523,7 +516,7 @@ p, ul, .user-input-type, .contact-label {
     padding:  0 1.25rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 640px) {
   /* line 40, ../sass/atoms/_text.scss */
   .profile-body, .expt-body {
     -webkit-column-count: 1;
@@ -832,7 +825,7 @@ a.bubble-link:hover {
 }
 
 /* line 10, ../sass/organisms/_site-header.scss */
-header {
+.site-header {
   background-color: #feffff;
   border-top: 10px solid #024970;
   border-bottom: 4px solid #a6e0d0;
@@ -843,7 +836,7 @@ header {
 }
 @media (max-width: 768px) {
   /* line 10, ../sass/organisms/_site-header.scss */
-  header {
+  .site-header {
     padding-bottom: 2px;
     padding-bottom: 0.125rem;
   }
@@ -2603,7 +2596,7 @@ html[xmlns] .slides {
 }
 
 /* line 14, ../sass/templates/_single-article.scss */
-.single-article {
+.article-wrapper {
   *zoom: 1;
   max-width: 940px;
   _width: 940px;
@@ -2615,53 +2608,45 @@ html[xmlns] .slides {
   margin-bottom: 3.5rem;
 }
 /* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.single-article:after {
+.article-wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 21, ../sass/templates/_single-article.scss */
-.template > h3 {
-  width: 100%;
+/* line 19, ../sass/templates/_single-article.scss */
+.article-body {
+  width: 65.9574468085%;
   float: left;
   margin-right: 2.1276595745%;
   display: inline;
-  margin: 20px 0 10px;
-  margin:  1.25rem 0 0.625rem;
-  font-size: 20px;
-  font-size: 1.25rem;
+  margin-left: 17.0212765957%;
+}
+/* line 23, ../sass/templates/_single-article.scss */
+.article-body > h2 {
+  margin-left: -8.5106382979%;
+  margin-top: 28px;
+  margin-top: 1.75rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+/* line 32, ../sass/templates/_single-article.scss */
+.article-body > h3 {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-left: -2px;
+  margin-left: -0.125rem;
+  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
   text-transform: uppercase;
   font-variant: small-caps;
-  color: #023e5f;
 }
-/* line 31, ../sass/templates/_single-article.scss */
-.template > h4 {
-  width: 100%;
-  float: left;
-  margin-right: 2.1276595745%;
-  display: inline;
-  margin-left: 16px;
-  margin-left: 1rem;
-  margin-bottom: 8px;
-  margin-bottom: 0.5rem;
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-/* line 39, ../sass/templates/_single-article.scss */
-.template > p, .template > ul, .template > .user-input-type, .template > .contact-label {
-  width: 91.4893617021%;
-  float: left;
-  margin-right: 2.1276595745%;
-  display: inline;
-  margin-left: 3.1914893617%;
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem;
-}
-/* line 48, ../sass/templates/_single-article.scss */
-.template > ul > li {
-  margin-left: 16px;
-  margin-left: 1rem;
+/* line 42, ../sass/templates/_single-article.scss */
+.article-body > p, .article-body > ul, .article-body > .user-input-type, .article-body > .contact-label {
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 /* line 14, ../sass/pages/_advice-page.scss */

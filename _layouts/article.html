@@ -6,19 +6,21 @@ layout: article
 
 <!-- BODY -->
 
-<section class="single-article">
-    <div class="template">
+<div class="article-wrapper">
+    <article class="">
 
-        <h1 class="column bubble-heading"><!--ARTICLE TITLE-->{{ page.title }}<div class="bubble-arrow"></div></h1>
+        <header class="article-header">
+        	<h1 class="bubble-heading">{{ page.title }}<div class="bubble-arrow"></div></h1>
 
-        {% if page.author != null %}
-        <p class="column byline">by&nbsp;</p><p class="column author"><!-- AUTHOR -->{{ page.author }}</p>
-        {% endif %}
+        	{% if page.author != null %}
+        	<p class="byline">by&nbsp;</p><p class="author"><!-- AUTHOR -->{{ page.author }}</p>
+        	{% endif %}
+        </header>
 
-        {{ content }}
+        <div class="article-body">{{ content }}</div>
 
-    </div>
-</section>
+    </article>
+</div>
 
 
 {% include footer.html %}
