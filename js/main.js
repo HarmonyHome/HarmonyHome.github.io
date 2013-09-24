@@ -40,6 +40,7 @@ function Harmony() {
       var curDir = dir.substring(3).replace(/\//g,'');
     } else {
       var curDir = rawDir.replace(/\//g,'');
+      var curDir = curDir.replace('zh','')
     }
 
     console.log(path);
