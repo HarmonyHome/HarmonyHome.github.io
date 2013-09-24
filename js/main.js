@@ -95,7 +95,11 @@ function Harmony() {
         // for local.hh
         // path = "/zh" + path;
         // for github pages
+<<<<<<< HEAD
         path = "{{ site.baseurl }}/zh" + path.substring(12);
+=======
+        path = "/harmonyhome/zh" + path.substring(12);
+>>>>>>> 9a5145ba6bd8570df648964cf330fb0ac9b39919
       }
 
       window.location = "http://" + site + path;
