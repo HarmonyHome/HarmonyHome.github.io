@@ -45,9 +45,9 @@ footer {
 	&:link,
 	&:visited,
 	&:active {
-		@include rem('padding', 6px);
-		@extend %leagueGothic;
-		@include rem('font-size', 21px);
+		@include rem('padding', 6px 6px 9px);
+		@extend %zhSemibold;
+		@include rem('font-size', 18px);
 		line-height: 1;
 		color: $navy;
 	    border-bottom: 3px solid transparent;
@@ -90,8 +90,8 @@ footer {
 
 .footer-name {
 	@include rem('margin', 0 auto 10px);
-	@extend %leagueGothic;
-	@include rem('font-size', 21px);
+	@extend %zhSemibold;
+	@include rem('font-size', 18px);
 	line-height: 1;
 	color: $navy;
 	text-transform: uppercase;

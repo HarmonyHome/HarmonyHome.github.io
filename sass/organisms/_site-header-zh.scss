@@ -43,8 +43,8 @@
 }
 
 .logo-tag {
-	@include rem('margin-top', 14px);
-	@extend %gppItalic;
+	@include rem('margin-top', 10px);
+	@extend %zhMedium;
 	@include rem('font-size', 18px);
 	color: #4db4ae;
 
@@ -177,7 +177,6 @@
 	&.lang.screen {
 		padding-left: 0;
 		padding-right: 0;
-		@include rem('font-size', 23px);
 	}
 }
 
@@ -194,7 +193,7 @@ a.mobile {
 	&.lang {
 		position: absolute;
 		@include rem('top', 40px);
-		@include rem('right', 22px);
+		@include rem('right', 18px);
 	}
 
 	@include at-breakpoint($breakpoint-nav) {

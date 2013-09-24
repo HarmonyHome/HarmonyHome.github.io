@@ -114,11 +114,6 @@ prose:
           element: "text"
           label: "Target Audience"
           value: ""
-    #   - name: "objectives"
-    #     field:
-    #       element:"text"
-    #       label: "Objectives"
-    #       value: ""
       - name: "sessions"
         field:
           element: "text"

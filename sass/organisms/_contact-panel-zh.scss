@@ -1,0 +1,119 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Organism                                   */
+//*    TITLE: Contact Panel                              */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+.contact-item {
+	@extend %zhSemibold;
+	@include rem('font-size', 20px);
+	line-height: 1.375;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	color: $darkNavy;
+	text-rendering: auto;
+}
+
+.contact-info {
+	@include rem('padding-left', 10px);
+	@extend %type-body-copy;
+	line-height: 1.25;
+}
+
+a[href^="mailto"] {
+	&,
+	&:link,
+	&:visited,
+	&:hover,
+	&:focus,
+	&:active {
+		@extend %type-body-copy;
+		color: $blue;
+	}
+
+	&:hover {
+		color: $xLightNavy;
+	}
+}
+
+// Link to GMaps
+
+.google-map {
+	&,
+	&:link,
+	&:visited,
+	&:hover,
+	&:focus,
+	&:active {
+		float: right;
+		@include rem('padding', 2px 4px 0 0);
+		@extend %gppCaption;
+		@include rem('font-size', 16px);
+		color: #c2cac8;
+	}
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+// STRUCTURE
+
+.map-wrapper {
+	@include span-columns(12,12);
+	@include omega;
+	position: relative;
+}
+
+#map-canvas {
+	@include rem('height', 352px);
+}
+
+// hCard
+
+.contact-overlay {
+	// @include span-columns(5,12);
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include rem('height', 296px);
+	@include rem('padding', 24px 32px 0 32px);
+	background-color: #fcfefe;
+	background-color: rgba(255,255,255,0.9);
+
+	@include at-breakpoint($breakpoint-phone) {
+		@include span-columns(12,12);
+		@include omega;
+		@include rem('padding-top', 20px);
+		@include rem('padding-left', 12px);
+		padding-right: 0;
+	}
+}
+
+.adr {
+	@include rem('margin', 6px 0 10px);
+}
+
+.digits {
+	> .contact-item,
+	> .contact-info {
+		display: inline;
+	}
+}
+
+// Hide GMap Attributions
+
+.evanesco {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @include rem('height', 32px);
+    background-color: $white;
+    border-top: 4px solid $teal;
+}

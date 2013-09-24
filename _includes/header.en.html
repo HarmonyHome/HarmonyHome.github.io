@@ -15,16 +15,14 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <!-- <link rel="stylesheet" href="http://basehold.it/32/ff0000"> -->
-    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/manifest.css"> -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
 
-    <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/css/ie8.css"><script src="{{ site.baseurl }}/js/html5shiv.min.js"></script><script src="{{ site.baseurl }}/js/html5shiv-printshiv.min.js"></script><![endif]-->
-    <!--[if gte IE 9]><link rel="stylesheet" href="{{ site.baseurl }}/css/manifest.css"><script src="{{ site.baseurl }}/js/html5shiv.min.js"></script><script src="{{ site.baseurl }}/js/html5shiv-printshiv.min.js"></script><![endif]-->
-    <!--[if !IE]><!--><link rel="stylesheet" href="{{ site.baseurl }}/css/manifest.css"><!--<![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/css/ie8.{{ page.lang }}.css"><script src="{{ site.baseurl }}/js/html5shiv.min.js"></script><script src="{{ site.baseurl }}/js/html5shiv-printshiv.min.js"></script><![endif]-->
+    <!--[if gte IE 9]><link rel="stylesheet" href="{{ site.baseurl }}/css/manifest.{{ page.lang }}.css"><script src="{{ site.baseurl }}/js/html5shiv.min.js"></script><script src="{{ site.baseurl }}/js/html5shiv-printshiv.min.js"></script><![endif]-->
+    <!--[if !IE]><!--><link rel="stylesheet" href="{{ site.baseurl }}/css/manifest.{{ page.lang }}.css"><!--<![endif]-->
 </head>
 
-<body id="page">
+<body id="page" >
 
 <!-- Content Begins -->
 
@@ -43,10 +41,11 @@
                 <li><a id="nav-btn-4" href="{{ site.baseurl }}/writing">Writing</a></li>
                 <li><a id="nav-btn-5" href="{{ site.baseurl }}/press/">Press</a></li>
                 <li><a id="nav-btn-6" href="{{ site.baseurl }}/contact">Contact</a></li>
-                <li><a href="#page" class="nav-hide"><i class="icon-collapse-top"></i></a></li>
-                <!-- <li><a href="#" class="wip">中文</a></li> -->
+                <li><a href="#page" class="mobile"><i class="icon-collapse-top"></i></a></li>
+                <li><a href="/zh" class="wip lang screen" id="lang">中文</a></li>
             </ul>
-            <a href="#nav" class="nav-toggle">Menu&nbsp;&nbsp;<i class="icon-collapse"></i></a>
+            <a href="/zh" class="lang mobile">中文</a>
+            <a href="#nav" class="mobile">Menu&nbsp;&nbsp;<i class="icon-collapse"></i></a>
         </nav>
     </div>
 </header>

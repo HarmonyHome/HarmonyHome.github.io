@@ -9,7 +9,7 @@ excerpt:
 
 "workshop-name": 21st Century Women
 
-"target-audience": Females aged 17 and up
+"target-audience": Females aged 21 and up
 
 sessions: "One session per week, held mid-day or evenings on weekdays and Saturdays. 75 minutes per session."
 

@@ -1,0 +1,20 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "glyphs": [
+    {
+      "uid": "84bb9695b8662fa4783242f84c9e4682",
+      "css": "collapse",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7960517a504e42aea0641f15bc55fbed",
+      "css": "collapse-top",
+      "code": 59393,
+      "src": "fontawesome"
+    }
+  ]
+}

@@ -24,9 +24,6 @@ To people familiar with or trained to recognize the psychological causes of such
 * Delay developmental stage
 * Unfavorable environmental conditions (e.g. marital problem, family under financial stress)
 
-## Cultivate Optimism
-Cultivating optimism has a lot in common with cultivating gratitude. Both strategies involve the habit of striving to make out the positive side of your situation.
-
 ## Assessment on the Condition
 If the frequency, intensity and duration of child’s temper tantrum make parents worry, seeking professional advice could be helpful.
 

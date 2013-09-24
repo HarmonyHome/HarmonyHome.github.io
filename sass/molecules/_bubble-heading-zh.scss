@@ -1,0 +1,56 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Atom                                       */
+//*    TITLE: Bubble Heading                             */
+//*------------------------------------------------------*/
+
+.bubble-heading {
+    display: inline-block;
+    position: relative;
+    @include rem('margin-bottom', 32px);
+    @include rem('margin-left', -$grid-padding);
+    @include rem('padding', 12px 22px 10px 16px);
+    background-color: $lightNavy;
+    @include rem('font-size', 32px);
+    color: #effcfc;
+    line-height: 1.1;
+    text-transform: uppercase;
+    border-bottom: 4px solid $teal;
+    border-radius: 2px;
+
+    @include at-breakpoint($breakpoint-smScreen) {
+        margin-left: 0;
+        @include rem('font-size', 40px);
+    }
+
+    @include at-breakpoint($breakpoint-tablet) {
+        @include rem('padding-left', 20px);
+        @include rem('padding-right', 20px);
+    }
+
+    @include at-breakpoint($breakpoint-phone) {
+        margin-left: 0;
+        @include rem('padding-left', 16px);
+        @include rem('padding-right', 16px);
+        @include rem('font-size', 32px);
+    }
+
+}
+
+.bubble-arrow {
+    position: absolute;
+    @include rem('left', 41px);
+    @include rem('bottom', -20px);
+    width: 0;
+    height: 0;
+    @include rem('border-left', 10px solid transparent);
+    @include rem('border-right', 10px solid transparent);
+    @include rem('border-top', 20px solid $teal);
+
+    @include at-breakpoint($breakpoint-tablet) {
+        left: 18px;
+    }
+}

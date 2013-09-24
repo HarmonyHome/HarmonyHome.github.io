@@ -2,7 +2,11 @@
 layout: workshop
 ---
 
-{% include header.html %}
+{% if page.lang == 'en' %}
+  {% include header.en.html %}
+{% elsif page.lang =='zh' %}
+  {% include header.zh.html %}
+{% endif %}
 
 <!-- BODY -->
 
@@ -26,4 +30,8 @@ layout: workshop
 </div>
 
 
-{% include footer.html %}
+{% if page.lang == 'en' %}
+  {% include footer.en.html %}
+{% elsif page.lang =='zh' %}
+  {% include footer.zh.html %}
+{% endif %}

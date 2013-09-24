@@ -32,7 +32,7 @@
 }
 
 %leagueGothic {
-	font-family: 'League Gothic';
+	font-family: 'League Gothic',"Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
 	font-style: normal;
 	font-weight: 400;
 }
@@ -101,4 +101,24 @@
     font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
     font-style: normal;
     font-weight: 500;
+}
+
+// Chinese
+
+%zhBook {
+    font-family: "Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+%zhMedium {
+    font-family: "Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+%zhSemibold {
+    font-family: "Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
+    font-style: normal;
+    font-weight: 600;
 }

@@ -20,7 +20,6 @@ published: true
 * To help you gain a better understanding of your child’s temperament
 * To improve your ability to attune to your child’s needs
 * To enhance the quality of your relationship with your child
-* To enhance the quality of your relationship with your child
 
 ## About
 Studies of peer interaction and social competence in preschool-aged children have found that children characterized as having secure attachments with their caregivers have more ego resiliency, self-esteem, and independence.  Furthermore, they are more empathic, engaging, and demonstrate more leadership skills and problem-solving abilities in novel situations.  These developmental skills significantly help preschool-aged children succeed in classroom settings and are critical for the development of social competence and personality development.

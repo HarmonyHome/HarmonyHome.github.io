@@ -27,19 +27,23 @@ function Harmony() {
       contact: $('ul.primary-menu #nav-btn-6')
     }
 
+    var path = $.url().attr('path');
+    var site = $.url().attr('host');
     var dir = $.url().attr('directory').substring(1);
-
     var rawDir = dir.substring(0, dir.indexOf('/'));
 
     if (rawDir == 'harmonyhome') {
       var curDir = dir.substring(dir.indexOf('/')).replace(/\//g,'');
-    }
-
-    else {
+    } else if (rawDir == 'zh') {
+      var curDir = dir.substring(3).replace(/\//g,'');
+    } else {
       var curDir = rawDir.replace(/\//g,'');
     }
 
-    //console.log(curDir);
+    console.log(path);
+    console.log(site);
+    console.log(rawDir);
+    console.log(curDir);
 
     switch (curDir)
 
@@ -75,6 +79,26 @@ function Harmony() {
         nav.contact.addClass('active-nav');
         break;
     }
+
+    // Language switching button
+
+    var langBtn = $('.lang');
+
+    langBtn.click(function(e) {
+      e.preventDefault();
+
+      if (rawDir == 'zh') {
+        // strip /zh from domain
+        path = path.substring(3).slice(0,-1);
+      } else {
+        // add /zh after 'dir'
+        path = "/zh" + path;
+      }
+
+      window.location = "http://" + site + path;
+
+    })
+
 
   };
 
@@ -114,7 +138,7 @@ function initializeGmap() {
     var marker = new google.maps.Marker({
           position: harmonyPos,
           map: map,
-          icon: harmonyMarker,
+          // icon: harmonyMarker,
           title:"We’re right next to Tsui Wah Restaurant!"
         });
 
