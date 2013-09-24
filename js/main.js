@@ -30,7 +30,9 @@ function Harmony() {
     var path = $.url().attr('path');
     var site = $.url().attr('host');
     var dir = $.url().attr('directory').substring(1);
-    var rawDir = dir.substring(12).substring(0, dir.indexOf('/'));
+    var rawDir = dir.substring(12);
+
+    rawDir = rawDir.substring(0, dir.indexOf('/'));
 
     if (rawDir == 'harmonyhome') {
       var curDir = dir.substring(dir.indexOf('/')).replace(/\//g,'');
