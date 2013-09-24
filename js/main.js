@@ -30,9 +30,18 @@ function Harmony() {
     var path = $.url().attr('path');
     var site = $.url().attr('host');
     var dir = $.url().attr('directory').substring(1);
-    var rawDir = dir.substring(12);
 
-    rawDir = rawDir.substring(0, dir.indexOf('/'));
+    // console.log(dir);
+
+    if ('{{ site.baseurl }}' == '/harmonyhome') {
+      var rawDir = dir.substring(13, dir.indexOf('/'));
+    } else if ('{{ site.baseurl }}' == '') {
+      var rawDir = dir.substring(0, dir.indexOf('/'));
+    }
+
+    // console.log(rawDir);
+
+    // rawDir = rawDir.substring(0, dir.indexOf('/'));
 
     if (rawDir == 'harmonyhome') {
       var curDir = dir.substring(dir.indexOf('/')).replace(/\//g,'');
@@ -40,13 +49,12 @@ function Harmony() {
       var curDir = dir.substring(3).replace(/\//g,'');
     } else {
       var curDir = rawDir.replace(/\//g,'');
-      var curDir = curDir.replace('zh','')
     }
 
-    console.log(path);
-    console.log(site);
-    console.log(rawDir);
-    console.log(curDir);
+    console.log("path: " + path);
+    console.log("site: " + site);
+    console.log("rawDir: " + rawDir);
+    console.log("curDir: " + curDir);
 
     switch (curDir)
 
@@ -90,10 +98,14 @@ function Harmony() {
     langBtn.click(function(e) {
       e.preventDefault();
 
+
+
       if (rawDir == 'zh') {
+        // ZH to EN
         // strip /zh from domain
         path = path.substring(3).slice(0,-1);
       } else {
+        // EN to ZH
         // ADD /zh AFTER 'dir'
         // for local.hh
           // path = "/zh" + path;
