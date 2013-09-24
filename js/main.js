@@ -91,11 +91,11 @@ function Harmony() {
         // strip /zh from domain
         path = path.substring(3).slice(0,-1);
       } else {
-        // add /zh after 'dir'
+        // ADD /zh AFTER 'dir'
         // for local.hh
-        // path = "/zh" + path;
+          // path = "/zh" + path;
         // for github pages
-        path = "{{ site.baseurl }}/zh" + path.substring(12);
+          path = "{{ site.baseurl }}/zh" + path.substring(12);
       }
 
       window.location = "http://" + site + path;
