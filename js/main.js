@@ -29,46 +29,18 @@ function Harmony() {
 
     var site = $.url().attr('host');
     var path = $.url().attr('path');
-    // var lang = $.url().segment(1);
-    var dir = $.url().attr('directory').substring(1);
 
-<<<<<<< HEAD
     if ($.url().segment(1) == 'zh') {
       var lang = 'zh';
+      var curDir = $.url().segment(2);
     } else {
       var lang = 'en';
+      var curDir = $.url().segment(1);
     }
-
-
-    // dir = dir.substring(0, dir.indexOf('/'));
 
     console.log("site: " + site);
     console.log("path: " + path);
-    // console.log("lang: " + lang);
-    console.log("dir: " + dir);
-
-    if (lang == 'zh') {
-      var curDir = dir.substring(3).replace(/\//g,'');
-    } else {
-      // lang = 'en';
-      var curDir = dir.replace(/\//g,'');
-    }
-
     console.log("lang: " + lang);
-=======
-    dir = dir.substring(0, dir.indexOf('/'));
-
-    console.log("path: " + path);
-    console.log("site: " + site);
-    console.log("dir: " + dir);
-
-    if (dir == 'zh') {
-      var curDir = dir.substring(3).replace(/\//g,'');
-    } else {
-      var curDir = dir.replace(/\//g,'');
-    }
-
->>>>>>> 41954438c8916dd92fa30ea6413f117701e3ca9b
     console.log("curDir: " + curDir);
 
     switch (curDir)
@@ -113,19 +85,11 @@ function Harmony() {
     langBtn.click(function(e) {
       e.preventDefault();
 
-
-
-<<<<<<< HEAD
       if (lang == 'zh') {
-=======
-      if (dir == 'zh') {
->>>>>>> 41954438c8916dd92fa30ea6413f117701e3ca9b
         // ZH to EN
-        // strip /zh from domain
         path = path.substring(3).slice(0,-1);
       } else {
         // EN to ZH
-        // ADD /zh AFTER 'dir'
         path = "/zh" + path;
       }
 
