@@ -27,33 +27,33 @@ function Harmony() {
       contact: $('ul.primary-menu #nav-btn-6')
     }
 
-    var path = $.url().attr('path');
     var site = $.url().attr('host');
+    var path = $.url().attr('path');
+    // var lang = $.url().segment(1);
     var dir = $.url().attr('directory').substring(1);
 
-    // console.log(dir);
-
-    if ('{{ site.baseurl }}' == '/harmonyhome') {
-      var rawDir = dir.substring(13, dir.indexOf('/'));
-    } else if ('{{ site.baseurl }}' == '') {
-      var rawDir = dir.substring(0, dir.indexOf('/'));
+    if ($.url().segment(1) == 'zh') {
+      var lang = 'zh';
+    } else {
+      var lang = 'en';
     }
 
-    // console.log(rawDir);
 
-    // rawDir = rawDir.substring(0, dir.indexOf('/'));
+    // dir = dir.substring(0, dir.indexOf('/'));
 
-    if (rawDir == 'harmonyhome') {
-      var curDir = dir.substring(dir.indexOf('/')).replace(/\//g,'');
-    } else if (rawDir == 'zh') {
+    console.log("site: " + site);
+    console.log("path: " + path);
+    // console.log("lang: " + lang);
+    console.log("dir: " + dir);
+
+    if (lang == 'zh') {
       var curDir = dir.substring(3).replace(/\//g,'');
     } else {
-      var curDir = rawDir.replace(/\//g,'');
+      // lang = 'en';
+      var curDir = dir.replace(/\//g,'');
     }
 
-    console.log("path: " + path);
-    console.log("site: " + site);
-    console.log("rawDir: " + rawDir);
+    console.log("lang: " + lang);
     console.log("curDir: " + curDir);
 
     switch (curDir)
@@ -100,17 +100,14 @@ function Harmony() {
 
 
 
-      if (rawDir == 'zh') {
+      if (lang == 'zh') {
         // ZH to EN
         // strip /zh from domain
         path = path.substring(3).slice(0,-1);
       } else {
         // EN to ZH
         // ADD /zh AFTER 'dir'
-        // for local.hh
-          // path = "/zh" + path;
-        // for github pages
-          path = "{{ site.baseurl }}/zh" + path.substring(12);
+        path = "/zh" + path;
       }
 
       window.location = "http://" + site + path;
@@ -151,12 +148,12 @@ function initializeGmap() {
 
     var harmonyPos = new google.maps.LatLng(22.281723,114.155744);
 
-    var harmonyMarker = new google.maps.MarkerImage('{{ site.baseurl }}/assets/map-marker.png');
+    var harmonyMarker = new google.maps.MarkerImage('/assets/map-marker.png');
 
     var marker = new google.maps.Marker({
           position: harmonyPos,
           map: map,
-          // icon: harmonyMarker,
+          icon: harmonyMarker,
           title:"We’re right next to Tsui Wah Restaurant!"
         });
 
