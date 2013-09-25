@@ -4,7 +4,7 @@
 name: "HOME Psychological Services | Jekyll Prototype"
 description: "harmonyhome.com.hk redesign"
 
-baseurl:
+# baseurl:
 
 url: "local.harmonyhome.com.hk"
 

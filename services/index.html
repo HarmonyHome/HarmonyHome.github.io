@@ -36,22 +36,22 @@ title: Services | HOME Psychological Services
     <h1 class="bubble-heading">Workshops<div class="bubble-arrow"></div></h1>
 
     <div class="workshop-panel">
-        <p class="workshop-descr">In addition to our regular counseling services, we offer a variety of workshops, courses, and training sessions addressing specific issues. All workshops are scheduled on-demand, and can be tailored to meet your individual needs. <a href="{{ site.baseurl }}/contact">Get in touch with us</a> to find out more, or to book a course!</p>
+        <p class="workshop-descr">In addition to our regular counseling services, we offer a variety of workshops, courses, and training sessions addressing specific issues. All workshops are scheduled on-demand, and can be tailored to meet your individual needs. <a href="/contact">Get in touch with us</a> to find out more, or to book a course!</p>
     </div>
 
     {% for post in site.posts limit: 18 %}
         {% if post.categories contains 'workshops' %}
 
             <div class="workshop-unit">
-                <h2 class="sku-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <p class="sku-descr">{{ post.excerpt }}</p>
-                <a class="sku-follow" href="{{ site.baseurl }}{{ post.url }}">Learn More&nbsp;&raquo;</a>
+                <a class="sku-follow" href="{{ post.url }}">Learn More&nbsp;&raquo;</a>
             </div>
 
         {% endif %}
     {% endfor %}
 
-    <a class="bubble-link" href="{{ site.baseurl }}/services/workshops">More Workshops&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
+    <a class="bubble-link" href="/services/workshops">More Workshops&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
 
 </section>
 
@@ -60,19 +60,19 @@ title: Services | HOME Psychological Services
 <section class="outreach">
     <h1 class="bubble-heading">Community Outreach<div class="bubble-arrow"></div></h1>
     <div class="outreach-panel">
-        <p class="outreach-descr">We perform outreach services at community organizations and schools in Hong Kong like these. We provide general consultation services, or seminars and workshops on specialized topics such as stress management or parenting skills. If you represent a similar organization, <a href="{{ site.baseurl }}/contact">get in touch with us</a> to see how we might partner together.</p>
+        <p class="outreach-descr">We perform outreach services at community organizations and schools in Hong Kong like these. We provide general consultation services, or seminars and workshops on specialized topics such as stress management or parenting skills. If you represent a similar organization, <a href="/contact">get in touch with us</a> to see how we might partner together.</p>
     </div>
     <div class="outreach-grid">
-        <a href="http://www.amazelearning.com/en_index.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/amaze-learning-solutions.jpg"></a>
-        <a href="http://www.heat.org.hk/heat_main.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-heat.jpg"></a>
-        <a href="http://www.caritas.org.hk" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-hk.jpg"></a>
-        <a href="http://www.pelletier.edu.hk/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-pelletier-school.jpg"></a>
-        <a href="http://www.children818.com/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/children-818.jpg"></a>
-        <a href="http://www.greenfieldicnc.org/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/greenfield-icnc.jpg"></a>
-        <a href="http://www.hkdpc.com/index.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/hkdpc.jpg"></a>
-        <a href="http://www.linkscdc.com/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/links-cdc.jpg"></a>
-        <a href="http://ujcdc.sjs.org.hk/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/st-james-settlement-uncle-james.jpg"></a>
-        <a href="http://www.stpaul.org.hk/internet/index.php/services/specialist/child_dev" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/st-pauls-hospital.jpg"></a>
+        <a href="http://www.amazelearning.com/en_index.html" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/amaze-learning-solutions.jpg"></a>
+        <a href="http://www.heat.org.hk/heat_main.html" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/caritas-heat.jpg"></a>
+        <a href="http://www.caritas.org.hk" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/caritas-hk.jpg"></a>
+        <a href="http://www.pelletier.edu.hk/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/caritas-pelletier-school.jpg"></a>
+        <a href="http://www.children818.com/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/children-818.jpg"></a>
+        <a href="http://www.greenfieldicnc.org/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/greenfield-icnc.jpg"></a>
+        <a href="http://www.hkdpc.com/index.html" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/hkdpc.jpg"></a>
+        <a href="http://www.linkscdc.com/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/links-cdc.jpg"></a>
+        <a href="http://ujcdc.sjs.org.hk/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/st-james-settlement-uncle-james.jpg"></a>
+        <a href="http://www.stpaul.org.hk/internet/index.php/services/specialist/child_dev" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/st-pauls-hospital.jpg"></a>
     </div>
 </section>
 
