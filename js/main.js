@@ -32,6 +32,7 @@ function Harmony() {
     // var lang = $.url().segment(1);
     var dir = $.url().attr('directory').substring(1);
 
+<<<<<<< HEAD
     if ($.url().segment(1) == 'zh') {
       var lang = 'zh';
     } else {
@@ -54,6 +55,20 @@ function Harmony() {
     }
 
     console.log("lang: " + lang);
+=======
+    dir = dir.substring(0, dir.indexOf('/'));
+
+    console.log("path: " + path);
+    console.log("site: " + site);
+    console.log("dir: " + dir);
+
+    if (dir == 'zh') {
+      var curDir = dir.substring(3).replace(/\//g,'');
+    } else {
+      var curDir = dir.replace(/\//g,'');
+    }
+
+>>>>>>> 41954438c8916dd92fa30ea6413f117701e3ca9b
     console.log("curDir: " + curDir);
 
     switch (curDir)
@@ -100,7 +115,11 @@ function Harmony() {
 
 
 
+<<<<<<< HEAD
       if (lang == 'zh') {
+=======
+      if (dir == 'zh') {
+>>>>>>> 41954438c8916dd92fa30ea6413f117701e3ca9b
         // ZH to EN
         // strip /zh from domain
         path = path.substring(3).slice(0,-1);
