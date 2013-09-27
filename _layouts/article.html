@@ -2,13 +2,7 @@
 layout: article
 ---
 
-{% if page.lang == 'en' %}
-  {% include header.en.html %}
-{% elsif page.lang =='zh' %}
-  {% include header.zh.html %}
-{% endif %}
-
-
+{% include header.html %}
 
 <!-- BODY -->
 
@@ -30,9 +24,4 @@ layout: article
     </article>
 </div>
 
-
-{% if page.lang == 'en' %}
-  {% include footer.en.html %}
-{% elsif page.lang =='zh' %}
-  {% include footer.zh.html %}
-{% endif %}
+{% include footer.html %}

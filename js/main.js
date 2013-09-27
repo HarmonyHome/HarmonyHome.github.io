@@ -41,12 +41,14 @@ function Harmony() {
     console.log("site: " + site);
     console.log("path: " + path);
     console.log("lang: " + lang);
+    console.log("purl segment 1: " + $.url().segment(1));
+    console.log("purl segment 2: " + $.url().segment(2));
     console.log("curDir: " + curDir);
 
     switch (curDir)
 
     {
-      case '':
+      default:
         nav.all.removeClass('active-nav');
         nav.home.addClass('active-nav');
         break;

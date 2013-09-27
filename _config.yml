@@ -180,5 +180,88 @@ prose:
           element: "text"
           label: "Paste the public link to the file here!"
           value: ""
-
-
+# zh Metadata
+    _posts/zh/articles:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "article"
+      - name: "lang"
+        field:
+          element: "hidden"
+          value: "zh"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "zh writing articles"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+      - name: "excerpt"
+        field:
+          element: "text"
+          label: "A short excerpt of the article"
+          value: ""
+    _posts/zh/advice:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "article"
+      - name: "lang"
+        field:
+          element: "hidden"
+          value: "zh"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "zh writing advice"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+    _posts/zh/workshops:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "workshop"
+      - name: "lang"
+        field:
+          element: "hidden"
+          value: "zh"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "zh services workshops"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Short Title for the listing and URL"
+          value: ""
+      - name: "excerpt"
+        field:
+          element: "text"
+          label: "A brief description for the listing"
+          value: ""
+      - name: "workshop-name"
+        field:
+          element: "text"
+          label: "Full Title of the Workshop"
+          value: ""
+      - name: "target-audience"
+        field:
+          element: "text"
+          label: "Target Audience"
+          value: ""
+      - name: "sessions"
+        field:
+          element: "text"
+          label: "Session information"
+          value: ""

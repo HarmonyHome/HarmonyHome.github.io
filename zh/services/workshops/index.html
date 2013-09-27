@@ -1,7 +1,7 @@
 ---
 layout: default
-lang: en
-title: Workshops | HOME Psychological Services
+lang: zh
+title: 課程 | 如家心理服務
 ---
 
 {% include header.html %}
@@ -9,10 +9,10 @@ title: Workshops | HOME Psychological Services
 <!-- COMPLETE LIST OF WORKSHOPS -->
 <section class="archive-list archive-workshops">
     <!-- <div class="wrapper"> -->
-        <h1 class="column bubble-heading">Workshops<div class="bubble-arrow"></div></h1>
+        <h1 class="column bubble-heading">課程<div class="bubble-arrow"></div></h1>
 
         {% for post in site.posts %}
-            {% if post.lang == page.lang and post.categories contains 'workshops' %}
+            {% if post.lang == 'zh' and post.categories contains 'workshops' %}
 
                 <div class="archive-list-unit">
                     <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>

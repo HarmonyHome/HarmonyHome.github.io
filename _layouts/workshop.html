@@ -2,11 +2,7 @@
 layout: workshop
 ---
 
-{% if page.lang == 'en' %}
-  {% include header.en.html %}
-{% elsif page.lang =='zh' %}
-  {% include header.zh.html %}
-{% endif %}
+{% include header.html %}
 
 <!-- BODY -->
 
@@ -16,10 +12,10 @@ layout: workshop
 
         <div class="article-body">
 
-        	<h2>Target Audience</h2>
+        	<h2>{{ t.[page.lang].workshop-single.target-audience }}</h2>
         	<p><!-- TARGET AUDIENCE -->{{ page.target-audience }}</p>
 
-        	<h2>Sessions</h2>
+        	<h2>{{ t.[page.lang].workshop-single.sessions }}</h2>
         	<p><!-- SESSION INFO -->{{ page.sessions }}</p>
 
         	{{ content }}
@@ -29,9 +25,4 @@ layout: workshop
     </article>
 </div>
 
-
-{% if page.lang == 'en' %}
-  {% include footer.en.html %}
-{% elsif page.lang =='zh' %}
-  {% include footer.zh.html %}
-{% endif %}
+{% include footer.html %}

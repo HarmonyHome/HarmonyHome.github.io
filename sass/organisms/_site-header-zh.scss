@@ -45,7 +45,7 @@
 .logo-tag {
 	@include rem('margin-top', 10px);
 	@extend %zhMedium;
-	@include rem('font-size', 18px);
+	@include rem('font-size', 17px);
 	color: #4db4ae;
 
 	@include at-breakpoint($breakpoint-tablet) {

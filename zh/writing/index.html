@@ -1,7 +1,7 @@
 ---
 layout: default
-lang: en
-title: Writing | HOME Psychological Services
+lang: zh
+title: 寫作 | 如家心理服務
 ---
 
 {% include header.html %}
@@ -9,7 +9,7 @@ title: Writing | HOME Psychological Services
 <!-- ARTICLES -->
 <section class="articles archive-list">
     <!-- <div class="wrapper"> -->
-        <h1 class="column bubble-heading">Articles<div class="bubble-arrow"></div></h1>
+        <h1 class="column bubble-heading">文章<div class="bubble-arrow"></div></h1>
 
         {% for post in site.posts %}
             {% if post.categories contains 'articles' limit: 3 %}
@@ -31,7 +31,7 @@ title: Writing | HOME Psychological Services
 
 <!-- ADVICE -->
 <section class="advice archive-list">
-    <h1 class="column bubble-heading">Advice<div class="bubble-arrow"></div></h1>
+    <h1 class="column bubble-heading">提議<div class="bubble-arrow"></div></h1>
 
     {% for post in site.posts %}
         {% if post.categories contains 'advice' limit: 9 %}
