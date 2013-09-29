@@ -104,13 +104,14 @@ footer {
 	> a,
 	> a:link,
 	> a:visited,
-	> a:hover,
-	> a:focus,
+	// > a:hover,
+	// > a:focus,
 	> a:active {
 		@extend %type-footer-base;
 	}
 
-	> a:hover {
+	> a:hover,
+	> a:focus {
 		color: $navy;
 	}
 
@@ -134,7 +135,8 @@ footer {
 #footer-obf > a {
 	@extend %type-footer-base;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		color: $navy;
 	}
 }

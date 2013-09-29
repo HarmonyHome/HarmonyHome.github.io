@@ -18,13 +18,13 @@ function Harmony() {
     // SET ACTIVE NAV
 
     var nav = {
-      all: $('ul.primary-menu a'),
-      home: $('ul.primary-menu #nav-btn-1'),
-      profile: $('ul.primary-menu #nav-btn-2'),
-      services: $('ul.primary-menu #nav-btn-3'),
-      writing: $('ul.primary-menu #nav-btn-4'),
-      press: $('ul.primary-menu #nav-btn-5'),
-      contact: $('ul.primary-menu #nav-btn-6')
+      all: $('#nav a'),
+      home: $('#nav a').eq(0),
+      profile: $('#nav a').eq(1),
+      services: $('#nav a').eq(2),
+      writing: $('#nav a').eq(3),
+      press: $('#nav a').eq(4),
+      contact: $('#nav a').eq(5)
     }
 
     var site = $.url().attr('host');

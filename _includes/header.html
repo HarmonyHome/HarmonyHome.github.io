@@ -41,17 +41,27 @@
         </span>
         <nav class="primary-nav">
             <ul class="primary-menu" id="nav">
-                <li><a id="nav-btn-1" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a></li>
-                <li><a id="nav-btn-2" href="{{ basedir }}/profile">{{ t.[page.lang].header.menu-profile }}</a></li>
-                <li><a id="nav-btn-3" href="{{ basedir }}/services">{{ t.[page.lang].header.menu-services }}</a></li>
-                <li><a id="nav-btn-4" href="{{ basedir }}/writing">{{ t.[page.lang].header.menu-writing }}</a></li>
-                <li><a id="nav-btn-5" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a></li>
-                <li><a id="nav-btn-6" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a></li>
-                <li><a href="#page" class="mobile"><i class="icon-collapse-top"></i></a></li>
-                <li><a href="{{ basedir }}/" class="wip lang screen" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>
+                <li><a class="dir" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a></li>
+                <li><a class="dir" href="{{ basedir }}/profile">{{ t.[page.lang].header.menu-profile }}</a></li>
+                <li><a class="dir" href="{{ basedir }}/services">{{ t.[page.lang].header.menu-services }}</a></li>
+                <li><a class="dir" href="{{ basedir }}/writing">{{ t.[page.lang].header.menu-writing }}</a></li>
+                <li><a class="dir" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a></li>
+                <li><a class="dir" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a></li>
+                <li><a class="menu-close mobile" href="#page"><i class="icon-collapse-top"></i></a></li>
+                <li><a class="lang screen" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>
             </ul>
+<!--             <ul class="primary-menu" id="nav">
+                <a class="dir" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a>
+                <a class="dir" href="{{ basedir }}/profile">{{ t.[page.lang].header.menu-profile }}</a>
+                <a class="dir" href="{{ basedir }}/services">{{ t.[page.lang].header.menu-services }}</a>
+                <a class="dir" href="{{ basedir }}/writing">{{ t.[page.lang].header.menu-writing }}</a>
+                <a class="dir" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a>
+                <a class="dir" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a>
+                <a class="menu-close mobile" href="#page"><i class="icon-collapse-top"></i></a>
+                <a class="lang screen" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a>
+            </ul> -->
             <a href="/zh" class="lang mobile">{{ t.[page.lang].header.menu-lang }}</a>
-            <a href="#nav" class="mobile">{{ t.[page.lang].header.menu-mobile-nav }}&nbsp;&nbsp;<i class="icon-collapse"></i></a>
+            <a href="#nav" class="menu-open mobile">{{ t.[page.lang].header.menu-mobile-nav }}&nbsp;&nbsp;<i class="icon-collapse"></i></a>
         </nav>
     </div>
 </header>

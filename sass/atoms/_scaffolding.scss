@@ -11,9 +11,9 @@ html, body {
     background-color: $white;
     overflow-x: hidden;
 
-    @include at-breakpoint($breakpoint-lrgScreen) {
-    	font-size: 110%;
-    }
+    // @include at-breakpoint($breakpoint-lrgScreen) {
+    // 	font-size: 110%;
+    // }
 
     @include at-breakpoint($breakpoint-phone) {
     	// width: 100%;
