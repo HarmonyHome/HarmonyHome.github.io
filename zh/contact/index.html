@@ -3,12 +3,12 @@ layout: default
 lang: zh
 title: 聯繫 | 如家心理服務
 ---
-
+{% assign bilingual = true %}
 {% include header.html %}
 
 <!-- Business Info -->
 <section class="business-info">
-    <h1 class="bubble-heading">如何找如家<div class="bubble-arrow"></div></h1>
+    <div class="bubble-wrap"><h1 class="bubble-heading">如何找如家<div class="bubble-arrow"></div></h1></div>
 
     <div class="map-wrapper">
         <div id="map-canvas"><script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script></div>
@@ -37,7 +37,7 @@ title: 聯繫 | 如家心理服務
 
 <!-- Email Form -->
 <section class="enquiries">
-    <h2 class="bubble-heading">電郵聯繫<div class="bubble-arrow"></div></h2>
+    <div class="bubble-wrap"><h1 class="bubble-heading">電郵聯繫<div class="bubble-arrow"></div></h1></div>
 
     <form class="" data-validate="parsley">
         <div class="form-contact">

@@ -3,43 +3,37 @@ layout: default
 lang: zh
 title: 寫作 | 如家心理服務
 ---
-
+{% assign bilingual = true %}
 {% include header.html %}
 
 <!-- ARTICLES -->
 <section class="articles archive-list">
-        <h1 class="column bubble-heading">文章<div class="bubble-arrow"></div></h1>
-
-        {% for post in site.posts %}
-            {% if post.lang == page.lang and post.categories contains 'articles' limit: 3 %}
-                <div class="archive-list-unit">
-                    <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                    <p class="sku-descr">{{ post.excerpt }}</p>
-                    <a class="sku-follow" href="{{ post.url }}">Read More&nbsp;&raquo;</a>
-                </div>
-            {% endif %}
-        {% endfor %}
-
-        <a class="column clear bubble-link" href="articles">More Articles&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
-
+    <div class="bubble-wrap"><h1 class="bubble-heading">文章<div class="bubble-arrow"></div></h1></div>
+    {% for post in site.categories.articles %}
+        {% if post.lang == page.lang %}
+            <div class="archive-list-unit">
+                <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p class="sku-descr">{{ post.excerpt }}</p>
+                <a class="sku-follow" href="{{ post.url }}">Read More&nbsp;&raquo;</a>
+            </div>
+        {% endif %}
+    {% endfor %}
+    <a class="bubble-link" href="articles">More Articles&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
 </section>
 
 
 <!-- ADVICE -->
 <section class="advice archive-list">
-    <h1 class="column bubble-heading">提議<div class="bubble-arrow"></div></h1>
-
-    {% for post in site.posts %}
-        {% if post.lang == page.lang and post.categories contains 'advice' limit: 9 %}
+    <div class="bubble-wrap"><h1 class="bubble-heading">提議<div class="bubble-arrow"></div></h1></div>
+    {% for post in site.categories.advice %}
+        {% if post.lang == page.lang %}
             <div class="archive-list-unit advice-unit two-up">
                 <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <a class="sku-follow" href="{{ post.url }}">Read&nbsp;&raquo;</a>
             </div>
         {% endif %}
     {% endfor %}
-
-    <a class="column clear bubble-link" href="advice">More Advice&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
-
+    <a class="bubble-link" href="advice">More Advice&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
 </section>
 
 {% include footer.html %}

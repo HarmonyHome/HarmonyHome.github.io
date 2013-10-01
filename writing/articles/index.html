@@ -3,25 +3,21 @@ layout: default
 lang: en
 title: Articles | HOME Psychological Services
 ---
-
+{% assign bilingual = true %}
 {% include header.html %}
 
 <!-- ARTICLES -->
 <section class="archive-list archive-articles">
-    <h1 class="column bubble-heading">Articles<div class="bubble-arrow"></div></h1>
-
-    {% for post in site.posts %}
-        {% if post.categories contains 'articles' %}
-
+    <div class="bubble-wrap"><h1 class="column bubble-heading">Articles<div class="bubble-arrow"></div></h1></div>
+    {% for post in site.categories.articles %}
+        {% if post.lang == page.lang %}
             <div class="archive-list-unit">
                 <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <p class="sku-descr">{{ post.excerpt }}</p>
                 <a class="sku-follow" href="{{ post.url }}">Read More&nbsp;&raquo;</a>
             </div>
-
         {% endif %}
     {% endfor %}
-
 </section>
 
 {% include footer.html %}

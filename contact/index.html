@@ -3,13 +3,12 @@ layout: default
 lang: en
 title: Contact | HOME Psychological Services
 ---
-
+{% assign bilingual = true %}
 {% include header.html %}
 
 <!-- Business Info -->
 <section class="business-info">
-    <h1 class="bubble-heading">Find Us<div class="bubble-arrow"></div></h1>
-
+    <div class="bubble-wrap"><h1 class="bubble-heading">Find Us<div class="bubble-arrow"></div></h1></div>
     <div class="map-wrapper">
         <div id="map-canvas"><script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script></div>
 
@@ -38,7 +37,7 @@ title: Contact | HOME Psychological Services
 
 <!-- Email Form -->
 <section class="enquiries">
-    <h2 class="bubble-heading">Email Us<div class="bubble-arrow"></div></h2>
+    <div class="bubble-wrap"><h1 class="bubble-heading">Email Us<div class="bubble-arrow"></div></h1></div>
 
     <form class="" data-validate="parsley">
         <div class="form-contact">

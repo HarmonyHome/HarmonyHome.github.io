@@ -4,26 +4,21 @@ lang: zh
 title: 課程 | 如家心理服務
 ---
 
+{% assign bilingual = true %}
 {% include header.html %}
 
 <!-- COMPLETE LIST OF WORKSHOPS -->
 <section class="archive-list archive-workshops">
-    <!-- <div class="wrapper"> -->
-        <h1 class="column bubble-heading">課程<div class="bubble-arrow"></div></h1>
-
-        {% for post in site.posts %}
-            {% if post.lang == page.lang and post.categories contains 'workshops' %}
-
-                <div class="archive-list-unit">
-                    <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                    <p class="sku-descr">{{ post.excerpt }}</p>
-                    <a class="sku-follow" href="{{ post.url }}">Learn More&nbsp;&raquo;</a>
-                </div>
-
-            {% endif %}
-        {% endfor %}
-
-    <!-- </div> -->
+    <div class="bubble-wrap"><h1 class="column bubble-heading">課程<div class="bubble-arrow"></div></h1></div>
+    {% for post in site.categories.workshops %}
+        {% if post.lang == page.lang %}
+            <div class="archive-list-unit">
+                <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p class="sku-descr">{{ post.excerpt }}</p>
+                <a class="sku-follow" href="{{ post.url }}">Learn More&nbsp;&raquo;</a>
+            </div>
+        {% endif %}
+    {% endfor %}
 </section>
 
 {% include footer.html %}

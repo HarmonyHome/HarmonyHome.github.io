@@ -9,15 +9,24 @@
 //                                                                             /
 //=============================================================================/
 
-ul {
-	// display: inline;
+ul,
+ol {
 	@extend p;
 }
 
-li {
+ul {
 	list-style-type: square;
 }
 
-li > ul > li {
+ol {
+	list-style-type: decimal;
+}
+
+li > ul,
+li > ol {
+	@include rem('padding-left', 20px);
+}
+
+li > ul, {
 	list-style-type: circle;
 }

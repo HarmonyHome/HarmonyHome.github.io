@@ -7,7 +7,13 @@
 //*    TITLE: Bubble Heading                             */
 //*------------------------------------------------------*/
 
+.bubble-wrap {
+    @extend .cf;
+    @include rem('margin-bottom', 32px);
+}
+
 .bubble-heading {
+    float: left;
     display: inline-block;
     position: relative;
     @include rem('margin-bottom', 32px);

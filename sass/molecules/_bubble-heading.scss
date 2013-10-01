@@ -7,10 +7,15 @@
 //*    TITLE: Bubble Heading                             */
 //*------------------------------------------------------*/
 
+.bubble-wrap {
+    @extend .cf;
+    @include rem('margin-bottom', 32px);
+}
+
 .bubble-heading {
+    float: left;
     display: inline-block;
     position: relative;
-    @include rem('margin-bottom', 32px);
     @include rem('margin-left', -$grid-padding);
     @include rem('padding', 8px 28px 4px 28px);
     background-color: $lightNavy;

@@ -48,7 +48,7 @@
                 <li><a class="dir" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a></li>
                 <li><a class="dir" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a></li>
                 <li><a class="menu-close mobile" href="#page"><i class="icon-collapse-top"></i></a></li>
-                <li><a class="lang screen" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>
+                {% if bilingual %}<li><a class="lang screen" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>{% endif %}
             </ul>
 <!--             <ul class="primary-menu" id="nav">
                 <a class="dir" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a>

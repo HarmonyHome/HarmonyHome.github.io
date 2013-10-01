@@ -59,7 +59,10 @@
 .archive-list-unit {
 	&.two-up {
 		@include span-columns(6,12);
-		@include nth-omega(2n-1);
+
+		&:nth-of-type(2n) {
+			@include omega;
+		}
 
 		> .sku-title {
 			// display: inline-block;
@@ -78,6 +81,11 @@
 		}
 
 		@include at-breakpoint($breakpoint-tablet) {
+
+			&:nth-of-type(2n) {
+				@include remove-omega;
+			}
+
 			@include span-columns(12,12);
 			@include omega;
 
@@ -94,25 +102,45 @@
 	}
 
 	&.three-up {
+
 		@include span-columns(4,12);
-		@include nth-omega(3n+1);
 
-		// > .sku-title {
+		&:nth-of-type(3n+1) {
+			@include omega;
+		}
 
-		// }
-
-		// > .sku-follow {
-
-		// }
+		&:nth-of-type(3n+2) {
+			clear: both;
+		}
 
 		@include at-breakpoint($breakpoint-tablet) {
 			@include span-columns(6,12);
-			@include nth-omega(2n+1);
+
+			&:nth-of-type(3n+1) {
+				@include remove-omega;
+			}
+
+			&:nth-of-type(3n+2) {
+				clear: none;
+			}
+
+			&:nth-of-type(2n+1) {
+				@include omega
+			}
+
+			&:nth-of-type(2n+2) {
+				clear: both;
+			}
 		}
 
 		@include at-breakpoint($breakpoint-phone) {
+
+			&:nth-of-type(2n+1) {
+				@include remove-omega;
+			}
+
 			@include span-columns(12,12);
-			@include omega;
+			@include omega();
 		}
 	}
 

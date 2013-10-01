@@ -22,7 +22,7 @@
 	@include rem('margin-left', -4px);
 	@include rem('margin-bottom', 16px);
 	@include rem('padding-bottom', 10px);
-	@extend %leagueGothic;
+	@extend %zhSemibold;
 	@include rem('font-size', 56px);
 	border-bottom: 2px solid $darkMint;
 }
@@ -45,13 +45,14 @@ article {
 	@include rem('padding-top', 24px);
 
 	> h2 {
-		@include rem('margin-left', -1px);
-		@include rem('margin-bottom', 6px);
+		@include rem('margin', 28px auto 8px -2px);
+		// @include rem('margin-left', -1px);
+		// @include rem('margin-bottom', 6px);
 
-		@extend %gppSubhead;
+		@extend %gppSemibold;
 		@include rem('font-size', 26px);
-		// text-transform: lowercase;
-		// font-variant: small-caps;
+		text-transform: lowercase;
+		font-variant: small-caps;
 	}
 
 	> h3 {

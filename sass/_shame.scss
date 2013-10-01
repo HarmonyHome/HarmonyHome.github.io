@@ -15,22 +15,22 @@
 // Using the post() function to insert empty columns after the heading to force
 // the actual grid items back into alignment.
 
-.book-promo > .bubble-heading {
-	@include post(3);
+// .book-promo > .bubble-heading {
+// 	@include post(3);
 
-	@include at-breakpoint($breakpoint-iphone) {
-		@include post(0);
-	}
-}
+// 	@include at-breakpoint($breakpoint-iphone) {
+// 		@include post(0);
+// 	}
+// }
 
-.cogmed-promo > .bubble-heading {
-	@include post(4);
-}
+// .cogmed-promo > .bubble-heading {
+// 	@include post(4);
+// }
 
-.advice > .bubble-heading {
-	@include post(8);
-}
+// .advice > .bubble-heading {
+// 	@include post(8);
+// }
 
-.newscolumns > .bubble-heading {
-	@include post(5);
-}
+// .newscolumns > .bubble-heading {
+// 	@include post(5);
+// }

@@ -3,25 +3,11 @@ layout: article
 ---
 
 {% include header.html %}
-
-<!-- BODY -->
-
-<div class="article-wrapper">
-    <article class="">
-
-        <header class="article-header">
-        	<h1 class="bubble-heading">{{ page.title }}<div class="bubble-arrow"></div></h1>
-
-        	{% if page.author != null %}
-        	<div class="byline">
-        		<span class="by">by&nbsp;</span><span class="author"><!-- AUTHOR -->{{ page.author }}</span>
-        	</div>
-        	{% endif %}
-        </header>
-
-        <div class="article-body">{{ content }}</div>
-
-    </article>
-</div>
-
+<article class="article">
+	<h1 class="article-heading">{{ page.title }}</h1>
+	{% if page.author != null %}
+    	<div><span class="byline">by&nbsp;{{ page.author }}</span></div>
+	{% endif %}
+    <div class="article-body">{{ content }}</div>
+</article>
 {% include footer.html %}
