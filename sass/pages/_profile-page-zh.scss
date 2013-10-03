@@ -1,0 +1,51 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Page                                       */
+//*    TITLE: Profile Page                               */
+//*------------------------------------------------------*/
+
+@import "organisms/profile-panel-zh";
+
+// TYPOGRAPHY
+
+.profile-lede {
+	// @include span-columns(12,12);
+	@include omega;
+	@extend %type-lede-copy;
+	@include rem('margin', 24px 0 28px);
+}
+
+.profile-body {
+	// @include span-columns(12,12);
+	@include omega;
+	@extend %type-body-copy;
+	@extend %type-two-column;
+}
+
+// STRUCTURE
+
+.partner {
+	// @include susy-grid-background;
+	@include container;
+	@include rem('margin-bottom', 56px);
+
+	@include at-breakpoint($breakpoint-phone) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// PROFILE PHOTOS
+
+#profile-eliza {
+    background: url(../assets/profile-eliza.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+
+#profile-winnie {
+    background: url(../assets/profile-winnie.jpg) no-repeat top center;
+    background-size: cover;
+}

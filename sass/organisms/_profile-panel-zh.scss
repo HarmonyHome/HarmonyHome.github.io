@@ -1,0 +1,75 @@
+//*------------------------------------------------------*/
+//*                  Thinking Elephants                  */
+//*------------------------------------------------------*/
+//*  PROJECT: 130202                                     */
+//*   CLIENT: HOME Psychological Services                */
+//*    CLASS: Organism                                   */
+//*    TITLE: Profile Panel                              */
+//*------------------------------------------------------*/
+
+// TYPOGRAPHY
+
+%cv-title-type {
+	@extend %gppSemibold;
+	@include rem('font-size', 18px);
+	color: $lightNavy;
+}
+
+%cv-item-type {
+	@extend %gpp;
+	@include rem('font-size', 22px);
+	line-height: 1.75;
+	color: $xDarkNavy;
+}
+
+// STRUCTURE
+
+.profile-panel {
+	@include rem('height', 320px);
+	// @include rem('margin', 10px 0);
+	border-bottom: 4px solid $teal;
+
+	@include at-breakpoint($breakpoint-iphone) {
+		@include rem('height', 400px);
+	}
+}
+
+.cv-overlay {
+	position: relative;
+	// width: 45.7446808511%;
+	height: 87.5%;
+	@include rem('padding', 20px);
+	background-color: #fcfefe;
+	background-color: rgba(255,255,255,0.75);
+
+	@include at-breakpoint($breakpoint-phone) {
+		height: 91%;
+		@include rem('padding-top', 10px);
+		@include rem('padding-left', 10px);
+		@include rem('padding-right', 10px);
+	}
+
+	@include at-breakpoint($breakpoint-iphone) {
+		height: 93.3%;
+		@include rem('padding-top', 8px);
+		@include rem('padding-left', 8px);
+		@include rem('padding-right', 8px);
+	}
+}
+
+// h2
+.cv-title {
+	@include rem('margin', 6px 0 10px);
+	@include rem('padding-left', 4px);
+	@extend %cv-title-type;
+}
+
+// ul
+.cv-items {
+	@include rem('padding-left', 12px);
+
+	> li {
+		list-style-type: none;
+		@extend %cv-item-type;
+	}
+}

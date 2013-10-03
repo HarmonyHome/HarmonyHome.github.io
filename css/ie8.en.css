@@ -2299,9 +2299,9 @@ html[xmlns] .slides {
   font-size: 48px;
   font-size: 3rem;
   line-height: 1.1875;
-  color: #fafefe;
+  color: #036aa2;
   letter-spacing: -1px;
-  text-shadow: 1px 1px 0px #74ceb6;
+  text-shadow: 1px 1px 0px #e9f7ff;
 }
 @media (max-width: 768px) {
   /* line 12, ../sass/organisms/_expertise-hero.scss */
@@ -2316,11 +2316,24 @@ html[xmlns] .slides {
     font-size: 32px;
     font-size: 2rem;
     letter-spacing: 0;
-    text-shadow: 1px 1px 0px #236453;
+    text-shadow: none;
   }
 }
 
-/* line 33, ../sass/organisms/_expertise-hero.scss */
+/* line 31, ../sass/organisms/_expertise-hero.scss */
+.expt-item-highlight {
+  color: #fafefe;
+  text-shadow: 1px 1px 0px #74ceb6;
+}
+@media (max-width: 400px) {
+  /* line 31, ../sass/organisms/_expertise-hero.scss */
+  .expt-item-highlight {
+    color: inherit;
+    text-shadow: none;
+  }
+}
+
+/* line 43, ../sass/organisms/_expertise-hero.scss */
 .expertise-hero {
   width: 100%;
   float: left;
@@ -2331,30 +2344,25 @@ html[xmlns] .slides {
   *margin-left: -20px;
   display: inline;
   position: relative;
+  padding: 8px 0;
+  padding:  0.5rem 0;
   background: url(../assets/services-counseling.jpg) no-repeat center center;
   background-size: cover;
   border-bottom: 4px solid #f2faf8;
   box-shadow: 0px 4px #024970;
 }
 
-/* line 43, ../sass/organisms/_expertise-hero.scss */
+/* line 54, ../sass/organisms/_expertise-hero.scss */
 .expt-item {
   float: right;
   padding: 2px 12px;
   padding:  0.125rem 0.75rem;
-  background-color: #ccede4;
-  background-color: rgba(204, 237, 237, 0.85);
 }
 @media (max-width: 400px) {
-  /* line 43, ../sass/organisms/_expertise-hero.scss */
+  /* line 54, ../sass/organisms/_expertise-hero.scss */
   .expt-item {
     float: none;
   }
-}
-/* line 54, ../sass/organisms/_expertise-hero.scss */
-.expt-item > .expt-item-highlight {
-  color: #036aa2;
-  text-shadow: 1px 1px 0px #e9f7ff;
 }
 
 /* line 10, ../sass/organisms/_outreach-grid.scss */
@@ -2551,7 +2559,7 @@ html[xmlns] .slides {
   transition: all 300ms ease-out;
 }
 /* line 75, ../sass/pages/_services-page.scss */
-.workshop-unit:nth-of-type(2n+1) {
+.workshop-unit:nth-of-type(2n) {
   float: right;
   margin-right: 0;
   *margin-left: -20px;
@@ -2600,7 +2608,7 @@ html[xmlns] .slides {
 }
 
 /* line 112, ../sass/pages/_services-page.scss */
-.workshop-unit:nth-of-type(n+7) {
+.workshop-unit:nth-of-type(n+8) {
   display: none;
 }
 
@@ -2616,6 +2624,11 @@ html[xmlns] .slides {
   margin-bottom: 3.5rem;
 }
 
+/* line 10, ../sass/pages/_writing-page.scss */
+.article-unit:nth-of-type(n+5) {
+  display: none;
+}
+
 /* line 14, ../sass/pages/_writing-page.scss */
 .advice {
   margin-bottom: 56px;
@@ -2623,6 +2636,11 @@ html[xmlns] .slides {
 }
 
 /* line 18, ../sass/pages/_writing-page.scss */
+.advice-unit:nth-of-type(n+6) {
+  display: none;
+}
+
+/* line 22, ../sass/pages/_writing-page.scss */
 .advice-unit > .sku-title {
   display: inline-block;
 }

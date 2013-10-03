@@ -9,7 +9,7 @@ title: 新聞 | 如家心理服務
 
 <!-- PERIODICALS -->
 <section class="periodicals">
-    <div class="bubble-wrap"><h1 class="bubble-heading">Periodicals<div class="bubble-arrow"></div></h1></div>
+    <div class="bubble-wrap"><h1 class="bubble-heading">期刊<div class="bubble-arrow"></div></h1></div>
     <div class="press-splash"></div>
     <p class="press-splash-caption">An interview with Winnie about parenting, following the launch of her book. Published in Pop Club magazine.</p>
     {% for post in site.categories.periodicals limit: 24 %}
@@ -22,7 +22,7 @@ title: 新聞 | 如家心理服務
 
 <!-- NEWS COLUMNS -->
 <section class="newscolumns">
-    <div class="bubble-wrap"><h1 class="bubble-heading">News Columns<div class="bubble-arrow"></div></h1></div>
+    <div class="bubble-wrap"><h1 class="bubble-heading">專欄<div class="bubble-arrow"></div></h1></div>
     {% for post in site.categories.newscolumns limit: 24 %}
         <div class="archive-list-unit three-up newscolumns-unit">
             <a class="sku-title" href="{{ post.external-url }}" target="_blank">{{ post.clipping-title }}</a>

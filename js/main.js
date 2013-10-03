@@ -131,7 +131,7 @@ function initializeGmap() {
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
 
-    var harmonyPos = new google.maps.LatLng(22.281723,114.155744);
+    var harmonyPos = new google.maps.LatLng(22.281817,114.155744);
 
     var harmonyMarker = new google.maps.MarkerImage('/assets/map-marker.png');
 

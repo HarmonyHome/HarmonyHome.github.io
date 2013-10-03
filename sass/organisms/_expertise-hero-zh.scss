@@ -10,7 +10,7 @@
 // TYPOGRAPHY
 
 %expt-item-type {
-	@extend %leagueGothic;
+	@extend %zhSemibold;
 	@include rem('font-size', 48px);
 	line-height: 1.1875;
     color: $darkBlue;
