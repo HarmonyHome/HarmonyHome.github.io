@@ -12,7 +12,7 @@ host:
 
 port: 4000
 
-siteurl: "http://mj12albert.github.io/harmonyhome/"
+siteurl: "http://harmonyhome.github.io/"
 
 # paginate: 10
 
@@ -31,8 +31,8 @@ pygments: false
 
 prose:
   rooturl: "_posts"
-  siteurl: "http://mj12albert.github.io/harmonyhome/"
-  relativeLinks: "http://mj12albert.github.io/harmonyhome/links.jsonp"
+  siteurl: "http://harmonyhome.github.io"
+  relativeLinks: "http://harmonyhome.github.io/links.jsonp"
   media: "media"
   metadata:
     _posts/articles:
