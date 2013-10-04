@@ -17,7 +17,7 @@
     display: inline-block;
     position: relative;
     @include rem('margin-left', -$grid-padding);
-    @include rem('padding', 8px 28px 4px 28px);
+    @include rem('padding', 8px 30px 4px 24px);
     background-color: $lightNavy;
     @include rem('font-size', 48px);
     color: #effcfc;

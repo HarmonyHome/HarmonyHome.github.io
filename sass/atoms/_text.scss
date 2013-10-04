@@ -68,15 +68,15 @@ small {
         @extend %gppCaption;
         @include rem('font-size', 14px);
         color: #bac9c9;
+
+        @include at-breakpoint($breakpoint-smScreen) {
+            @include rem('font-size', 12px);
+        }
     }
 
     > a:hover,
     > a:focus {
         color: #036aa2;
-    }
-
-    @include at-breakpoint($breakpoint-smScreen) {
-        @include rem('font-size', 12px);
     }
 }
 

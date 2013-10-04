@@ -25,6 +25,7 @@
 		@include rem('font-size', 32px);
 		letter-spacing: 0;
 		text-shadow: none;
+    text-shadow: 1px 1px 0px $xLightBlue;
 	}
 }
 
@@ -35,6 +36,7 @@
 	@include at-breakpoint($breakpoint-phone) {
 		color: inherit;
 		text-shadow: none;
+	    text-shadow: 1px 1px 0px $xLightBlue;
 	}
 }
 

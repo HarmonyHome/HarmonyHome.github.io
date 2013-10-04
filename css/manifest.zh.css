@@ -2541,8 +2541,8 @@ html[xmlns] .slides {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-/* line 38, ../sass/organisms/_outreach-grid.scss */
-.outreach-thumbnail:hover {
+/* line 39, ../sass/organisms/_outreach-grid.scss */
+.outreach-thumbnail:focus, .outreach-thumbnail:hover {
   border-bottom: 4px solid #8dd7c3;
   -webkit-backface-visibility: hidden;
   -webkit-filter: grayscale(0);

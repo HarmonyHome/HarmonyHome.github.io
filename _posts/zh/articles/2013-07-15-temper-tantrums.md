@@ -7,7 +7,7 @@ title: 甚麼是發脾氣？
 
 author: Eliza
 
-excerpt: An explanation of temper tantrums, its’ causes, and a few intervention methods for parents.
+excerpt: An explanation of temper tantrums, its causes, and a few intervention methods for parents.
 ---
 
 大聲哭泣、大叫及其他違反他人合理要求的表現。無論用任何方法，發脾氣的人都不能平伏情緒，這就是常見的所謂『發脾氣』。 『發脾氣』通常會在兩歲至六歲的孩子身上見到，但亦會有七至九歲的孩子依然有發脾氣。有些發展障礙如自閉症或智力障礙的孩子亦常常發大脾氣。有不少人也有過發脾氣的經驗，但大多數都在兒童身上發生。所以當孩子常常發脾氣，照顧者都需要正視孩子的問題，找出他/她發脾氣的原因，以方便對症下藥，解決孩子常發脾氣的問題。

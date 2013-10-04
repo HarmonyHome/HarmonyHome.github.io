@@ -7,7 +7,7 @@ title: What Are Temper Tantrums?
 
 author: Eliza
 
-excerpt: An explanation of temper tantrums, its’ causes, and a few intervention methods for parents.
+excerpt: An explanation of temper tantrums, its causes, and a few intervention methods for parents.
 ---
 
 A tantrum can be categorized by an irrational fit of crying, screaming, defiance, and a resistance to every attempt at pacification in which even physical control is lost. The person may not stand or sit on his own. Even when the "goal" of the person is met, he or she is not calmed.
