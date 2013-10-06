@@ -34,6 +34,10 @@ en:
     info-fax: 'F'
     info-email: 'E'
 
+  link-anchors:
+    learn-more: 'Learn More'
+    read-more: 'Read More'
+    read: 'Read'
 
   workshop-single:
     target-audience: 'Target Audience'
@@ -70,6 +74,11 @@ zh:
     info-tel: '電話'
     info-fax: '傳真'
     info-email: '電郵'
+
+  link-anchors:
+    learn-more: '詳細了解'
+    read-more: '詳細閱讀'
+    read: '閱讀請按'
 
   workshop-single:
     target-audience: '服務對象'

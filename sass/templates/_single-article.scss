@@ -46,9 +46,10 @@ article {
 	@include rem('padding-top', 24px);
 
 	> h2 {
-		@include rem('margin-top', 10px);
-		@include rem('margin-left', -2px);
-		@include rem('margin-bottom', 4px);
+		// @include rem('margin-top', 32px);
+		// @include rem('margin-left', -2px);
+		// @include rem('margin-bottom', 4px);
+		@include rem('margin', 32px 0 8px -2px);
 
 		@extend %gppSubheadMedium;
 		@include rem('font-size', 26px);

@@ -35,7 +35,7 @@ title: Services | HOME Psychological Services
     {% for post in site.categories.workshops %}
         {% if post.lang == page.lang %}
             <div class="workshop-unit">
-                <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <a href="{{ post.url }}"><h2 class="sku-title">{{ post.title }}</h2></a>
                 <p class="sku-descr">{{ post.excerpt }}</p>
                 <a class="sku-follow" href="{{ post.url }}">Learn More&nbsp;&raquo;</a>
             </div>

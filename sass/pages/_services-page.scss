@@ -65,7 +65,7 @@
 .workshop-unit {
 	@include span-columns(6,12);
 	@include rem('margin-bottom', 20px);
-	@include rem('padding-top', 10px);
+	@include rem('padding-top', 12px);
 	background-color: #fcfefe;
 	background-color: rgba(255,255,255,0.8);
 	// border-top: 2px solid transparent;
@@ -87,9 +87,9 @@
 		@include transition(all 300ms ease-out);
 	}
 
-	> .sku-title {
-		@include rem('padding-left', 16px);
-		@include rem('font-size', 20px);
+	.sku-title {
+		@include rem('padding-left', 19px);
+		@include rem('font-size', 21px);
 	}
 
 	> .sku-descr {

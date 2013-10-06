@@ -7,18 +7,9 @@
 //*    TITLE: Single Article                             */
 //*------------------------------------------------------*/
 
-// TYPOGRAPHY
-
-// STRUCTURE
-
-.article-wrapper {
-	@include container;
-	@include rem('margin-top', 64px);
-	@include rem('margin-bottom', 56px);
-}
-
 .article-heading,
 .workshop-heading {
+	display: inline-block;
 	@include rem('margin-left', -4px);
 	@include rem('margin-bottom', 16px);
 	@include rem('padding-bottom', 10px);
@@ -45,24 +36,19 @@ article {
 	@include rem('padding-top', 24px);
 
 	> h2 {
-		@include rem('margin', 28px auto 8px -2px);
-		// @include rem('margin-left', -1px);
-		// @include rem('margin-bottom', 6px);
+		display: inline-block;
+		@include rem('margin', 28px auto 12px -2px);
+		@include rem('padding-bottom', 2px);
 
-		@extend %gppSemibold;
+		@extend %zhSemibold;
 		@include rem('font-size', 26px);
-		text-transform: lowercase;
-		font-variant: small-caps;
 	}
 
 	> h3 {
-		@include rem('margin-top', 12px);
-		@include rem('margin-left', -2px);
-		@include rem('margin-bottom', 6px);
+		@include rem('margin', 12px 0 6px);
 
-		@extend %gppCaptionMedium;
-		text-transform: uppercase;
-		font-variant: small-caps;
+		@extend %zhSemibold;
+		@include rem('font-size', 18px);
 	}
 
 	> p {

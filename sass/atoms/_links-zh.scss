@@ -15,11 +15,11 @@ a {
 	&,
 	&:link,
 	&:visited,
-	&:focus,
 	&:active {
 		color: $xLightNavy;
 	}
 
+	&:focus,
 	&:hover {
 		color: $blue;
 	}
@@ -28,9 +28,9 @@ a {
 // TEMPLATED CONTENT SKU TITLE LINK
 
 .sku-title {
-	@extend %gppSubhead;
+	@extend %zhBook;
 	@include rem('font-size', 24px);
-	line-height: 1.125
+	line-height: 1.125;
 }
 
 // TEMPLATED CONTENT SKU FOLLOW LINK

@@ -348,7 +348,7 @@ ol, .user-input-type, .contact-label, a, .cv-items > li {
 }
 
 /* line 51, ../sass/utilities/_fonts.scss */
-.sidekick-title, .sku-title > a, .sku-title > a:link, .sku-title > a:visited, .sku-title > a:focus, .sku-title > a:active, .sku-title > a:hover, .lede, .quote {
+.sidekick-title, .sku-title, .lede, .quote {
   font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
@@ -634,7 +634,7 @@ a:hover {
   line-height: 1.125;
 }
 
-/* line 48, ../sass/atoms/_links.scss */
+/* line 38, ../sass/atoms/_links.scss */
 .sku-follow {
   float: right;
   font-size: 20px;
@@ -1433,7 +1433,7 @@ footer {
   border-bottom: 4px solid #8dd7c3;
 }
 /* line 27, ../sass/templates/_archive-list.scss */
-.archive-list-unit > .sku-title {
+.archive-list-unit .sku-title {
   padding: 20px 0 4px 24px;
   padding:  1.25rem 0 0.25rem 1.5rem;
   font-size: 24px;
@@ -1441,23 +1441,23 @@ footer {
 }
 @media (max-width: 400px) {
   /* line 27, ../sass/templates/_archive-list.scss */
-  .archive-list-unit > .sku-title {
+  .archive-list-unit .sku-title {
     padding-left: 16px;
     padding-left: 1rem;
   }
 }
 /* line 36, ../sass/templates/_archive-list.scss */
 .archive-list-unit > .sku-descr {
-  padding: 16px 0 0 24px;
-  padding:  1rem 0 0 1.5rem;
+  padding: 16px 160px 0 24px;
+  padding:  1rem 10rem 0 1.5rem;
   font-size: 20px;
   font-size: 1.25rem;
 }
 @media (max-width: 768px) {
   /* line 36, ../sass/templates/_archive-list.scss */
   .archive-list-unit > .sku-descr {
-    padding-right: 20px;
-    padding-right: 1.25rem;
+    padding-right: 24px;
+    padding-right: 1.5rem;
   }
 }
 @media (max-width: 400px) {
@@ -2368,26 +2368,24 @@ html[xmlns] .slides {
     font-size: 32px;
     font-size: 2rem;
     letter-spacing: 0;
-    text-shadow: none;
     text-shadow: 1px 1px 0px #e9f7ff;
   }
 }
 
-/* line 32, ../sass/organisms/_expertise-hero.scss */
+/* line 31, ../sass/organisms/_expertise-hero.scss */
 .expt-item-highlight {
   color: #fafefe;
   text-shadow: 1px 1px 0px #74ceb6;
 }
 @media (max-width: 400px) {
-  /* line 32, ../sass/organisms/_expertise-hero.scss */
+  /* line 31, ../sass/organisms/_expertise-hero.scss */
   .expt-item-highlight {
     color: inherit;
-    text-shadow: none;
     text-shadow: 1px 1px 0px #e9f7ff;
   }
 }
 
-/* line 45, ../sass/organisms/_expertise-hero.scss */
+/* line 43, ../sass/organisms/_expertise-hero.scss */
 .expertise-hero {
   width: 100%;
   float: left;
@@ -2406,14 +2404,14 @@ html[xmlns] .slides {
   box-shadow: 0px 4px #024970;
 }
 
-/* line 56, ../sass/organisms/_expertise-hero.scss */
+/* line 54, ../sass/organisms/_expertise-hero.scss */
 .expt-item {
   float: right;
   padding: 2px 12px;
   padding:  0.125rem 0.75rem;
 }
 @media (max-width: 400px) {
-  /* line 56, ../sass/organisms/_expertise-hero.scss */
+  /* line 54, ../sass/organisms/_expertise-hero.scss */
   .expt-item {
     float: none;
   }
@@ -2602,8 +2600,8 @@ html[xmlns] .slides {
   display: inline;
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
-  padding-top: 10px;
-  padding-top: 0.625rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
   background-color: #fcfefe;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 2px solid #ccede4;
@@ -2629,11 +2627,11 @@ html[xmlns] .slides {
   transition: all 300ms ease-out;
 }
 /* line 90, ../sass/pages/_services-page.scss */
-.workshop-unit > .sku-title {
-  padding-left: 16px;
-  padding-left: 1rem;
-  font-size: 20px;
-  font-size: 1.25rem;
+.workshop-unit .sku-title {
+  padding-left: 19px;
+  padding-left: 1.1875rem;
+  font-size: 21px;
+  font-size: 1.3125rem;
 }
 /* line 95, ../sass/pages/_services-page.scss */
 .workshop-unit > .sku-descr {
@@ -2775,16 +2773,12 @@ article:after {
 }
 /* line 48, ../sass/templates/_single-article.scss */
 .article-body > h2 {
-  margin-top: 10px;
-  margin-top: 0.625rem;
-  margin-left: -2px;
-  margin-left: -0.125rem;
-  margin-bottom: 4px;
-  margin-bottom: 0.25rem;
+  margin: 32px 0 8px -2px;
+  margin:  2rem 0 0.5rem -0.125rem;
   font-size: 26px;
   font-size: 1.625rem;
 }
-/* line 59, ../sass/templates/_single-article.scss */
+/* line 60, ../sass/templates/_single-article.scss */
 .article-body > h3 {
   margin-top: 12px;
   margin-top: 0.75rem;
@@ -2795,7 +2789,7 @@ article:after {
   text-transform: uppercase;
   font-variant: small-caps;
 }
-/* line 69, ../sass/templates/_single-article.scss */
+/* line 70, ../sass/templates/_single-article.scss */
 .article-body > p, .article-body > ul,
 .article-body > ol, .article-body > .user-input-type, .article-body > .contact-label {
   margin-bottom: 20px;

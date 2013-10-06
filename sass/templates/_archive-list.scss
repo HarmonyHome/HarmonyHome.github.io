@@ -24,7 +24,7 @@
     border-top: 2px solid $xLightBlue;
     border-bottom: 4px solid $teal;
 
-	> .sku-title {
+	.sku-title {
 		@include rem('padding', 20px 0 4px 24px);
 		@include rem('font-size', 24px);
 
@@ -34,11 +34,11 @@
 	}
 
 	> .sku-descr {
-		@include rem('padding', 16px 0 0 24px);
+		@include rem('padding', 16px 160px 0 24px);
 		@include rem('font-size', 20px);
 
 		@include at-breakpoint($breakpoint-tablet) {
-			@include rem('padding-right', 20px);
+			@include rem('padding-right', 24px);
 		}
 
 		@include at-breakpoint($breakpoint-phone) {

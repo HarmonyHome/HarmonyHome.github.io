@@ -1,0 +1,13 @@
+---
+layout: advice
+---
+
+{% include header.html %}
+<article class="advice">
+	<h1 class="advice-heading">{{ page.title }}</h1>
+	{% if page.author != null %}
+    	<div><span class="byline">by&nbsp;{{ page.author }}</span></div>
+	{% endif %}
+    <div class="advice-body">{{ content }}</div>
+</article>
+{% include footer.html %}

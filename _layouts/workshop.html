@@ -5,24 +5,15 @@ layout: workshop
 {% include header.html %}
 
 <!-- BODY -->
-
-<!-- <div class="article-wrapper"> -->
-    <article class="workshop">
-    	<h1 class="workshop-heading">{{ page.workshop-name }}</h1>
-
-        <div class="article-body">
-
-        	<h2>{{ t.[page.lang].workshop-single.target-audience }}</h2>
-        	<p><!-- TARGET AUDIENCE -->{{ page.target-audience }}</p>
-
-        	<h2>{{ t.[page.lang].workshop-single.sessions }}</h2>
-        	<p><!-- SESSION INFO -->{{ page.sessions }}</p>
-
-        	{{ content }}
-
-        </div>
-
-    </article>
-<!-- </div> -->
+<article class="workshop">
+	<h1 class="workshop-heading">{{ page.workshop-name }}</h1>
+    <div class="article-body">
+    	<h2>{{ t.[page.lang].workshop-single.target-audience }}</h2>
+    	<p><!-- TARGET AUDIENCE -->{{ page.target-audience }}</p>
+    	<h2>{{ t.[page.lang].workshop-single.sessions }}</h2>
+    	<p><!-- SESSION INFO -->{{ page.sessions }}</p>
+    	{{ content }}
+    </div>
+</article>
 
 {% include footer.html %}
