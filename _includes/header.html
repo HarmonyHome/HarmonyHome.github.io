@@ -21,7 +21,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <meta name="description" content="">
+    <meta name="description" content="We are a partnership of clinical psychologists in Hong Kong specializing in services for children, adolescents, and families.">
+    <meta name="keywords" content="clinical psychology, child psychology, child development, hong kong">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
 
     <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.{{ page.lang }}.css"><script src="/js/html5shiv.min.js"></script><script src="/js/html5shiv-printshiv.min.js"></script><![endif]-->
@@ -36,32 +37,21 @@
 <header class="site-header">
     <div class="wrapper">
         <span class="logo-nav">
-            <a href="{{ basedir }}/"><img src="/assets/home-logo-teal.png"></a>
+            <a href="{{ basedir }}/"><img src="/assets/home-logo-teal.png" alt="HOME Psychological Services Logo"></a>
             <h1 class="logo-tag">{{ t.[page.lang].header.logo-tag }}</h1>
         </span>
-        <nav class="primary-nav">
-            <ul class="primary-menu" id="nav">
-                <li><a class="dir" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a></li>
-                <li><a class="dir" href="{{ basedir }}/profile">{{ t.[page.lang].header.menu-profile }}</a></li>
-                <li><a class="dir" href="{{ basedir }}/services">{{ t.[page.lang].header.menu-services }}</a></li>
-                <li><a class="dir" href="{{ basedir }}/writing">{{ t.[page.lang].header.menu-writing }}</a></li>
-                <li><a class="dir" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a></li>
-                <li><a class="dir" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a></li>
-                <li><a class="menu-close mobile" href="#page"><i class="icon-collapse-top"></i></a></li>
-                {% if bilingual %}<li><a class="lang screen" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>{% endif %}
+        <nav class="nav-top">
+            <ul class="menu-top" id="nav">
+                <li><a class="menu-link dir" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a></li>
+                <li><a class="menu-link dir" href="{{ basedir }}/profile">{{ t.[page.lang].header.menu-profile }}</a></li>
+                <li><a class="menu-link dir" href="{{ basedir }}/services">{{ t.[page.lang].header.menu-services }}</a></li>
+                <li><a class="menu-link dir" href="{{ basedir }}/writing">{{ t.[page.lang].header.menu-writing }}</a></li>
+                <li><a class="menu-link dir" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a></li>
+                <li><a class="menu-link dir" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a></li>
+                {% if bilingual %}<li><a class="menu-link lang" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>{% endif %}
+                <li><a class="menu-link mclose mobile" href="#page"><i class="icon-collapse-top"></i></a></li>
             </ul>
-<!--             <ul class="primary-menu" id="nav">
-                <a class="dir" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a>
-                <a class="dir" href="{{ basedir }}/profile">{{ t.[page.lang].header.menu-profile }}</a>
-                <a class="dir" href="{{ basedir }}/services">{{ t.[page.lang].header.menu-services }}</a>
-                <a class="dir" href="{{ basedir }}/writing">{{ t.[page.lang].header.menu-writing }}</a>
-                <a class="dir" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a>
-                <a class="dir" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a>
-                <a class="menu-close mobile" href="#page"><i class="icon-collapse-top"></i></a>
-                <a class="lang screen" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a>
-            </ul> -->
-            <a href="/zh" class="lang mobile">{{ t.[page.lang].header.menu-lang }}</a>
-            <a href="#nav" class="menu-open mobile">{{ t.[page.lang].header.menu-mobile-nav }}&nbsp;&nbsp;<i class="icon-collapse"></i></a>
+            <a href="#nav" class="mopen mobile"><i class="icon-collapse"></i></a>
         </nav>
     </div>
 </header>

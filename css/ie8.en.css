@@ -333,7 +333,7 @@ textarea {
 }
 
 /* line 34, ../sass/utilities/_fonts-ie.scss */
-h1, h2, h3, h4, h5, h6, a.bubble-link, a.bubble-link:link, a.bubble-link:visited, a.bubble-link:hover, a.bubble-link:focus, a.bubble-link:active, .primary-nav > .mobile, .dir, .dir:link, .dir:visited, .dir:active, .secondary-menu > li > a, .secondary-menu > li > a:link, .secondary-menu > li > a:visited, .secondary-menu > li > a:active, .footer-name, .expt-item, .article-heading,
+h1, h2, h3, h4, h5, h6, a.bubble-link, a.bubble-link:link, a.bubble-link:visited, a.bubble-link:hover, a.bubble-link:focus, a.bubble-link:active, .nav-top > .mobile, .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active, .secondary-menu > li > a, .secondary-menu > li > a:link, .secondary-menu > li > a:visited, .secondary-menu > li > a:active, .footer-name, .expt-item, .article-heading,
 .workshop-heading {
   font-family: 'League Gothic';
   font-style: normal;
@@ -389,24 +389,20 @@ small > a,
 small > a:link,
 small > a:visited,
 small > a:active, .footer-address,
-.footer-address > a, .footer-contact, #footer-obf > a, .press-splash-caption, .archive-list-unit.periodicals-unit > .sku-publ-name, .newscolumns-unit > .sku-publ-date, .google-map, .google-map:link, .google-map:visited, .google-map:hover, .google-map:focus, .google-map:active {
+.footer-address > a,
+.footer-address > a:link,
+.footer-address > a:visited,
+.footer-address > a:active, .footer-contact, #footer-obf > a, .press-splash-caption, .archive-list-unit.periodicals-unit > .sku-publ-name, .newscolumns-unit > .sku-publ-date, .google-map, .google-map:link, .google-map:visited, .google-map:hover, .google-map:focus, .google-map:active {
   font-family: "garamond-premier-pro-caption-n4","garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
 }
 
 /* line 94, ../sass/utilities/_fonts-ie.scss */
-.archive-list-unit.two-up > .sku-follow {
+.archive-list-unit.two-up > .sku-follow, .article-body > h3 {
   font-family: "garamond-premier-pro-caption-i4","garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
-}
-
-/* line 100, ../sass/utilities/_fonts-ie.scss */
-.article-body > h3 {
-  font-family: "garamond-premier-pro-caption-n5","garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
-  font-style: normal;
-  font-weight: 500;
 }
 
 /* line 10, ../sass/atoms/_scaffolding.scss */
@@ -431,7 +427,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .wrapper:after {
   content: "";
   display: table;
@@ -838,7 +834,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   border-top: 2px solid #024970;
   border-bottom: 2px solid #bfe9dd;
 }
-/* line 184, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_grid.scss */
+/* line 184, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_grid.scss */
 .sidekick:nth-child(3n) {
   float: right;
   margin-right: 0;
@@ -884,10 +880,11 @@ a.bubble-link:focus, a.bubble-link:hover {
 
 /* line 10, ../sass/organisms/_site-header.scss */
 .mobile {
+  display: none;
   visibility: hidden;
 }
 
-/* line 14, ../sass/organisms/_site-header.scss */
+/* line 15, ../sass/organisms/_site-header.scss */
 .site-header {
   background-color: #feffff;
   border-top: 10px solid #024970;
@@ -898,14 +895,14 @@ a.bubble-link:focus, a.bubble-link:hover {
   margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
-  /* line 14, ../sass/organisms/_site-header.scss */
+  /* line 15, ../sass/organisms/_site-header.scss */
   .site-header {
     padding-bottom: 2px;
     padding-bottom: 0.125rem;
   }
 }
 
-/* line 27, ../sass/organisms/_site-header.scss */
+/* line 28, ../sass/organisms/_site-header.scss */
 .logo-nav {
   width: 23.4042553191%;
   float: left;
@@ -914,7 +911,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   margin: 20px auto 10px;
   margin:  1.25rem auto 0.625rem;
 }
-/* line 31, ../sass/organisms/_site-header.scss */
+/* line 32, ../sass/organisms/_site-header.scss */
 .logo-nav > img {
   width: 100px;
   width: 6.25rem;
@@ -922,7 +919,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   padding-top: 0.5rem;
 }
 @media (max-width: 768px) {
-  /* line 27, ../sass/organisms/_site-header.scss */
+  /* line 28, ../sass/organisms/_site-header.scss */
   .logo-nav {
     width: 14.8936170213%;
     float: left;
@@ -930,7 +927,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   }
 }
 
-/* line 54, ../sass/organisms/_site-header.scss */
+/* line 55, ../sass/organisms/_site-header.scss */
 .logo-tag {
   margin-top: 14px;
   margin-top: 0.875rem;
@@ -939,22 +936,22 @@ a.bubble-link:focus, a.bubble-link:hover {
   color: #4db4ae;
 }
 @media (max-width: 768px) {
-  /* line 54, ../sass/organisms/_site-header.scss */
+  /* line 55, ../sass/organisms/_site-header.scss */
   .logo-tag {
     display: none;
     visibility: hidden;
   }
 }
 
-/* line 66, ../sass/organisms/_site-header.scss */
-.primary-nav {
+/* line 67, ../sass/organisms/_site-header.scss */
+.nav-top {
   float: right;
   margin: 0;
   padding: 71px 8px 4px 0px;
   padding:  4.4375rem 0.5rem 0.25rem 0px;
 }
-/* line 74, ../sass/organisms/_site-header.scss */
-.primary-nav > .mobile {
+/* line 75, ../sass/organisms/_site-header.scss */
+.nav-top > .mobile {
   display: none;
   float: right;
   font-size: 26px;
@@ -962,38 +959,37 @@ a.bubble-link:focus, a.bubble-link:hover {
   text-transform: uppercase;
 }
 @media (max-width: 720px) {
-  /* line 74, ../sass/organisms/_site-header.scss */
-  .primary-nav > .mobile {
+  /* line 75, ../sass/organisms/_site-header.scss */
+  .nav-top > .mobile {
     display: inline-block;
   }
 }
 
-/* line 88, ../sass/organisms/_site-header.scss */
-.primary-menu {
+/* line 89, ../sass/organisms/_site-header.scss */
+.menu-top {
   line-height: 1;
 }
 @media (max-width: 768px) {
-  /* line 88, ../sass/organisms/_site-header.scss */
-  .primary-menu {
+  /* line 89, ../sass/organisms/_site-header.scss */
+  .menu-top {
     text-align: center;
   }
 }
-
-/* line 97, ../sass/organisms/_site-header.scss */
-.primary-menu > li {
+/* line 96, ../sass/organisms/_site-header.scss */
+.menu-top > li {
   display: inline-block;
   position: relative;
   list-style-type: none;
   margin-right: 12px;
   margin-right: 0.75rem;
 }
-/* line 103, ../sass/organisms/_site-header.scss */
-.primary-menu > li:last-of-type {
+/* line 102, ../sass/organisms/_site-header.scss */
+.menu-top > li:last-of-type {
   margin-right: 0;
 }
 
-/* line 115, ../sass/organisms/_site-header.scss */
-.dir, .dir:link, .dir:visited, .dir:active {
+/* line 113, ../sass/organisms/_site-header.scss */
+.menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
   position: relative;
   z-index: 8;
   padding: 69px 8px 6px;
@@ -1009,7 +1005,8 @@ a.bubble-link:focus, a.bubble-link:hover {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-/* line 131, ../sass/organisms/_site-header.scss */
+
+/* line 145, ../sass/organisms/_site-header.scss */
 .dir:hover, .dir:focus, .dir.active-nav {
   color: #037fc3;
   background-color: #e5f6f1;
@@ -1020,29 +1017,27 @@ a.bubble-link:focus, a.bubble-link:hover {
   transition: all 300ms ease-out;
 }
 @media (max-width: 768px) {
-  /* line 131, ../sass/organisms/_site-header.scss */
+  /* line 145, ../sass/organisms/_site-header.scss */
   .dir:hover, .dir:focus, .dir.active-nav {
     border-bottom: 2px solid #4ec1a2;
   }
 }
 
-/* line 145, ../sass/organisms/_site-header.scss */
-.lang.screen {
-  margin-left: -36px;
-  margin-left: -2.25rem;
+/* line 157, ../sass/organisms/_site-header.scss */
+.lang {
   padding-left: 0;
   padding-right: 0;
   font-size: 22px;
   font-size: 1.375rem;
 }
-/* line 152, ../sass/organisms/_site-header.scss */
-.lang.screen:hover, .lang.screen:focus {
+/* line 164, ../sass/organisms/_site-header.scss */
+.lang:hover, .lang:focus {
   color: #0496e5;
 }
 
 @media (max-width: 720px) {
-  /* line 159, ../sass/organisms/_site-header.scss */
-  .primary-menu {
+  /* line 171, ../sass/organisms/_site-header.scss */
+  .menu-top {
     margin: 0;
     position: absolute;
     top: 10px;
@@ -1051,19 +1046,15 @@ a.bubble-link:focus, a.bubble-link:hover {
     left: 0;
     z-index: 1000;
   }
-  /* line 167, ../sass/organisms/_site-header.scss */
-  .primary-menu > li {
+  /* line 179, ../sass/organisms/_site-header.scss */
+  .menu-top > li {
     display: block;
     width: 100%;
     border-bottom: 1px solid #8dd7c3;
   }
 
-  /* line 179, ../sass/organisms/_site-header.scss */
-  .dir, .dir:link, .dir:visited, .dir:active,
-  .menu-close,
-  .menu-close:link,
-  .menu-close:visited,
-  .menu-close:active {
+  /* line 190, ../sass/organisms/_site-header.scss */
+  .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
     display: block;
     border-bottom-width: 0;
     overflow: hidden;
@@ -1076,33 +1067,17 @@ a.bubble-link:focus, a.bubble-link:hover {
     background-color: #e5f6f1;
     border: none;
   }
-  /* line 194, ../sass/organisms/_site-header.scss */
-  .dir:focus, .dir:hover, .dir:active-nav,
-  .menu-close:focus,
-  .menu-close:hover,
-  .menu-close:active-nav {
+  /* line 205, ../sass/organisms/_site-header.scss */
+  .menu-link:focus, .menu-link:hover, .menu-link:active-nav {
     background-color: #bfe9dd;
     color: #0375b3;
     border: none;
   }
 
-  /* line 201, ../sass/organisms/_site-header.scss */
-  .screen {
-    display: none;
-    visibility: hidden;
-  }
-
-  /* line 206, ../sass/organisms/_site-header.scss */
+  /* line 212, ../sass/organisms/_site-header.scss */
   .mobile {
+    display: auto;
     visibility: visible;
-  }
-  /* line 210, ../sass/organisms/_site-header.scss */
-  .mobile.lang {
-    position: absolute;
-    top: 40px;
-    top: 2.5rem;
-    right: 17px;
-    right: 1.0625rem;
   }
 }
 /* line 219, ../sass/organisms/_site-header.scss */
@@ -1140,7 +1115,7 @@ footer {
   padding-bottom: 0.625rem;
   line-height: 1;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .secondary-menu:after {
   content: "";
   display: table;
@@ -1360,7 +1335,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .archive-list:after {
   content: "";
   display: table;
@@ -1565,7 +1540,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .archive-list-alt:after {
   content: "";
   display: table;
@@ -2003,7 +1978,7 @@ html[xmlns] .slides {
   margin-bottom: 56px;
   margin-bottom: 3.5rem;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .about-us:after,
 .book-promo:after,
 .cogmed-promo:after {
@@ -2272,7 +2247,7 @@ html[xmlns] .slides {
   margin-bottom: 56px;
   margin-bottom: 3.5rem;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .partner:after {
   content: "";
   display: table;
@@ -2381,27 +2356,27 @@ html[xmlns] .slides {
   font-size: 0;
   line-height: 0;
 }
-/* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+/* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 1) {
   margin-left: 0%;
   clear: left;
 }
-/* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+/* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 2) {
   margin-left: 20.3389830508%;
   clear: none;
 }
-/* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+/* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 3) {
   margin-left: 40.6779661017%;
   clear: none;
 }
-/* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+/* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 4) {
   margin-left: 61.0169491525%;
   clear: none;
 }
-/* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+/* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
 .outreach-grid > a:nth-child(5n + 5) {
   margin-left: 81.3559322034%;
   clear: none;
@@ -2414,22 +2389,22 @@ html[xmlns] .slides {
     margin-right: 2.1276595745%;
     margin-right: -100%;
   }
-  /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(4n + 1) {
     margin-left: 0%;
     clear: left;
   }
-  /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(4n + 2) {
     margin-left: 25.5319148936%;
     clear: none;
   }
-  /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(4n + 3) {
     margin-left: 51.0638297872%;
     clear: none;
   }
-  /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(4n + 4) {
     margin-left: 76.5957446809%;
     clear: none;
@@ -2443,12 +2418,12 @@ html[xmlns] .slides {
     margin-right: 4.347826087%;
     margin-right: -100%;
   }
-  /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(2n + 1) {
     margin-left: 0%;
     clear: left;
   }
-  /* line 42, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .outreach-grid > a:nth-child(2n + 2) {
     margin-left: 52.1739130435%;
     clear: none;
@@ -2514,7 +2489,7 @@ html[xmlns] .slides {
   margin-bottom: 56px;
   margin-bottom: 3.5rem;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .counseling:after,
 .workshops:after,
 .outreach:after {
@@ -2669,7 +2644,7 @@ html[xmlns] .slides {
   margin-bottom: 56px;
   margin-bottom: 3.5rem;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .article-wrapper:after {
   content: "";
   display: table;
@@ -2679,6 +2654,7 @@ html[xmlns] .slides {
 /* line 21, ../sass/templates/_single-article.scss */
 .article-heading,
 .workshop-heading {
+  display: inline-block;
   margin-left: -4px;
   margin-left: -0.25rem;
   margin-bottom: 16px;
@@ -2690,7 +2666,7 @@ html[xmlns] .slides {
   border-bottom: 2px solid #bfe9dd;
 }
 
-/* line 30, ../sass/templates/_single-article.scss */
+/* line 31, ../sass/templates/_single-article.scss */
 .byline {
   float: right;
   font-size: 24px;
@@ -2698,7 +2674,7 @@ html[xmlns] .slides {
   color: #024970;
 }
 
-/* line 37, ../sass/templates/_single-article.scss */
+/* line 38, ../sass/templates/_single-article.scss */
 article {
   *zoom: 1;
   max-width: 940px;
@@ -2710,38 +2686,37 @@ article {
   width: 57.4468085106%;
   margin: 48px auto 56px;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 article:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 43, ../sass/templates/_single-article.scss */
+/* line 44, ../sass/templates/_single-article.scss */
 .article-body {
   clear: both;
   padding-top: 24px;
   padding-top: 1.5rem;
 }
-/* line 48, ../sass/templates/_single-article.scss */
+/* line 49, ../sass/templates/_single-article.scss */
 .article-body > h2 {
   margin: 32px 0 8px -2px;
   margin:  2rem 0 0.5rem -0.125rem;
   font-size: 26px;
   font-size: 1.625rem;
 }
-/* line 60, ../sass/templates/_single-article.scss */
+/* line 61, ../sass/templates/_single-article.scss */
 .article-body > h3 {
-  margin-top: 12px;
-  margin-top: 0.75rem;
-  margin-left: -2px;
-  margin-left: -0.125rem;
-  margin-bottom: 6px;
-  margin-bottom: 0.375rem;
-  text-transform: uppercase;
-  font-variant: small-caps;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  text-transform: capitalize;
 }
-/* line 70, ../sass/templates/_single-article.scss */
+/* line 71, ../sass/templates/_single-article.scss */
 .article-body > p, .article-body > ul,
 .article-body > ol, .article-body > .user-input-type, .article-body > .contact-label {
   margin-bottom: 20px;
@@ -2767,7 +2742,7 @@ article:after {
   margin-bottom: 56px;
   margin-bottom: 3.5rem;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .periodicals:after,
 .newscolumns:after {
   content: "";
@@ -3242,7 +3217,7 @@ a[href^="mailto"]:hover {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .business-info:after {
   content: "";
   display: table;
@@ -3266,7 +3241,7 @@ a[href^="mailto"]:hover {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .enquiries:after {
   content: "";
   display: table;

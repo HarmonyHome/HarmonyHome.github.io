@@ -8,6 +8,7 @@
 //*------------------------------------------------------*/
 
 .mobile {
+	display: none;
 	visibility: hidden;
 }
 
@@ -63,7 +64,7 @@
 	}
 }
 
-.primary-nav {
+.nav-top {
 	// @include span-columns(8,12);
 	// @include omega;
 	// width: columns(8);
@@ -85,30 +86,27 @@
 }
 
 // ul #nav
-.primary-menu {
+.menu-top {
 	line-height: 1;
 
 	@include at-breakpoint($breakpoint-tablet) {
-		// display: inline-block;
 		text-align: center;
 	}
-}
 
-.primary-menu > li {
-	display: inline-block;
-	position: relative;
-	list-style-type: none;
-	@include rem('margin-right', 12px);
+	> li {
+		display: inline-block;
+		position: relative;
+		list-style-type: none;
+		@include rem('margin-right', 12px);
 
-	&:last-of-type {
-		margin-right: 0;
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
-
 }
 
 
-// .primary-menu > li > a
-.dir {
+.menu-link {
 	&,
 	&:link,
 	&:visited,
@@ -123,9 +121,25 @@
 		text-transform: uppercase;
 		border-bottom: 2px solid transparent;
 		@include transition(all 300ms ease-out);
-
 	}
 
+	// &:hover,
+	// &:focus,
+	// &.active-nav {
+	// 	color: $lightBlue;
+	// 	background-color: #e5f6f1;
+	// 	border-bottom: 2px solid $darkTeal;
+	// 	@include transition(all 300ms ease-out);
+
+	// 	@include at-breakpoint($breakpoint-tablet) {
+	// 		border-bottom: 2px solid $xLightGreen;
+	// 	}
+
+	// }
+
+}
+
+.dir {
 	&:hover,
 	&:focus,
 	&.active-nav {
@@ -137,13 +151,11 @@
 		@include at-breakpoint($breakpoint-tablet) {
 			border-bottom: 2px solid $xLightGreen;
 		}
-
 	}
-
 }
 
-.lang.screen {
-	@include rem('margin-left', -36px);
+.lang {
+	// @include rem('margin-left', -12px);
 	padding-left: 0;
 	padding-right: 0;
 	@include rem('font-size', 22px);
@@ -156,7 +168,7 @@
 
 @include at-breakpoint($breakpoint-nav) {
 
-	.primary-menu {
+	.menu-top {
 		margin: 0;
 		position: absolute;
 		@include rem('top', 10px);
@@ -171,8 +183,7 @@
 		}
 	}
 
-	.dir,
-	.menu-close {
+	.menu-link {
 		&,
 		&:link,
 		&:visited,
@@ -198,20 +209,9 @@
 		}
 	}
 
-	.screen {
-		display: none;
-		visibility: hidden;
-	}
-
 	.mobile {
-		// display: block;
+		display: auto;
 		visibility: visible;
-
-		&.lang {
-			position: absolute;
-			@include rem('top', 40px);
-			@include rem('right', 17px);
-		}
 	}
 
 }

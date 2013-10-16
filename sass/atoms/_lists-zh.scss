@@ -1,0 +1,32 @@
+//=============================================================================/
+//                 THINKING ELEPHANTS, A DESIGN COOPERATIVE                    /
+//=============================================================================/
+//                                                                             /
+//  PROJECT: 130202                                                            /
+//   CLIENT: HOME Psychological Services                                       /
+//    CLASS: Atom                                                              /
+//    TITLE: Lists                                                             /
+//                                                                             /
+//=============================================================================/
+
+ul,
+ol {
+	@extend p;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+li > ul,
+li > ol {
+	@include rem('padding-left', 20px);
+}
+
+li > ul, {
+	list-style-type: circle;
+}

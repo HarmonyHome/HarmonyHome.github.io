@@ -24,16 +24,16 @@ title: 寫作 | 如家心理服務
 
 <!-- ADVICE -->
 <section class="advice archive-list">
-    <div class="bubble-wrap"><h1 class="bubble-heading">提議<div class="bubble-arrow"></div></h1></div>
+    <div class="bubble-wrap"><h1 class="bubble-heading">小提議<div class="bubble-arrow"></div></h1></div>
     {% for post in site.categories.advice %}
         {% if post.lang == page.lang %}
             <div class="archive-list-unit advice-unit two-up">
                 <h2 class="sku-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <a class="sku-follow" href="{{ post.url }}">閱讀請按&nbsp;&raquo;</a>
+                <a class="sku-follow" href="{{ post.url }}">閱讀&nbsp;&raquo;</a>
             </div>
         {% endif %}
     {% endfor %}
-    <a class="bubble-link" href="advice">更多提議&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
+    <a class="bubble-link" href="advice">更多小提議&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
 </section>
 
 {% include footer.html %}

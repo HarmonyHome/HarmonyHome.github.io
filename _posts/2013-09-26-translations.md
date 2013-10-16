@@ -64,7 +64,7 @@ zh:
     menu-workshops: '課程'
     menu-writing: '寫作'
     menu-articles: '文章'
-    menu-advice: '提議'
+    menu-advice: '小提議'
     menu-press: '新聞'
     menu-contact: '聯繫'
     info-name: '如家臨床心理學家'

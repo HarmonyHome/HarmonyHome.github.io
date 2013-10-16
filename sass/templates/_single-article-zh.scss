@@ -41,17 +41,24 @@ article {
 		@include rem('padding-bottom', 2px);
 
 		@extend %zhSemibold;
-		@include rem('font-size', 26px);
+		@include rem('font-size', 30px);
 	}
 
 	> h3 {
-		@include rem('margin', 12px 0 6px);
+		@include rem('margin', 26px 0 10px);
 
 		@extend %zhSemibold;
-		@include rem('font-size', 18px);
+		@include rem('font-size', 21px);
 	}
 
 	> p {
 		@include rem('margin-bottom', 20px);
+		@include rem('margin-left', 18px);
+		line-height: 1.4;
 	}
+
+	li {
+		@include rem('margin-bottom', 10px);
+	}
+
 }
