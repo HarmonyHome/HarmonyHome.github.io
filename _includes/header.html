@@ -36,10 +36,10 @@
 <!-- HEADER -->
 <header class="site-header">
     <div class="wrapper">
-        <span class="logo-nav">
-            <a href="{{ basedir }}/"><img src="/assets/home-logo-teal.png" alt="HOME Psychological Services Logo"></a>
+        <div class="logo-nav">
+            <a href="{{ basedir }}/"><img class="logo-img" src="/assets/home-logo-teal.png" alt="HOME Psychological Services Logo" /></a>
             <h1 class="logo-tag">{{ t.[page.lang].header.logo-tag }}</h1>
-        </span>
+        </div>
         <nav class="nav-top">
             <ul class="menu-top" id="nav">
                 <li><a class="menu-link dir" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a></li>
@@ -49,9 +49,9 @@
                 <li><a class="menu-link dir" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a></li>
                 <li><a class="menu-link dir" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a></li>
                 {% if bilingual %}<li><a class="menu-link lang" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>{% endif %}
-                <li><a class="menu-link mclose mobile" href="#page"><i class="icon-collapse-top"></i></a></li>
+                <li><a class="menu-link mclose mobile" href="#page">Close</a></li>
             </ul>
-            <a href="#nav" class="mopen mobile"><i class="icon-collapse"></i></a>
+            <a href="#nav" class="mopen mobile"><img class="mopen-img" src="/assets/mopen.svg" alt="Site Menu" /></a>
         </nav>
     </div>
 </header>

@@ -47,7 +47,7 @@ p {
         @include rem('padding', 0 20px);
     }
 
-    @include at-breakpoint($breakpoint-nav) {
+    @include at-breakpoint($nav) {
         @include column-count(1);
         @include rem('font-size', 20px);
     }
