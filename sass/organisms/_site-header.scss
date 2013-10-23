@@ -30,53 +30,38 @@
 }
 
 .logo-nav {
-	// @extend .cf;
 	display: inline-block;
-	// @include span-columns(3,12);
 	@include rem('margin', 28px auto 0);
 
 	@include at-breakpoint($breakpoint-tablet) {
-		// @include span-columns(2,12);
-		// @include rem('margin', 24px 0 6px 6px);
 		@include rem('margin-left', 6px);
 	}
 }
 
 .logo-tag {
+	display: none;
+	visibility: hidden;
 	@include rem('margin-top', 14px);
 	@extend %gppItalic;
 	@include rem('font-size', 18px);
 	color: #4db4ae;
 
-	@include at-breakpoint(0 810px) {
-		display: none;
-		visibility: hidden;
+	@include at-breakpoint(810px) {
+		display: block;
+		visibility: visible;
 	}
 }
 
 .logo-img {
 	@include rem('width', 100px);
-	// @include rem('padding-top', 8px);
-
-	// @include at-breakpoint($breakpoint-tablet) {
-	// 	@include rem('margin-left', 4px);
-	// }
 }
 
 .nav-top {
-	// @include span-columns(8,12);
-	// @include omega;
-	// width: columns(8);
-	float: right;
+	position: absolute;
+	@include rem('top', 10px);
+	right: 0;
 	margin: 0;
 	@include rem('padding', 71px 8px 4px 0px);
-
-	@include at-breakpoint($nav) {
-		@include rem('margin-right', -2px);
-		@include rem('padding-top', 40px);
-		padding-right: 0;
-		padding-bottom: 0;
-	}
 }
 
 // ul#nav
@@ -128,14 +113,13 @@
 		border-bottom: 2px solid $darkTeal;
 		@include transition(all 300ms ease-out);
 
-		@include at-breakpoint($breakpoint-tablet) {
+		@include at-breakpoint($tablet) {
 			border-bottom: 2px solid $xLightGreen;
 		}
 	}
 }
 
 .lang {
-	// @include rem('margin-left', -12px);
 	padding-left: 0;
 	padding-right: 0;
 	@include rem('font-size', 22px);
@@ -157,17 +141,23 @@
 
 	// Button to open collapsed navigation
 	.mopen {
+		display: inline-block;
 		float: right;
 		font-size: 0;
 		line-height: 0;
-
-		@include at-breakpoint($nav) {
-			display: inline-block;
-		}
 	}
 
 	.mopen-img {
 		@include rem('width', 64px);
+	}
+
+	.nav-top {
+		@include rem('top', 10px);
+		left: 0;
+		right: 0;
+		margin: 0;
+		@include rem('margin-right', -2px);
+		@include rem('padding-top', 40px);
 	}
 
 	// Menu
@@ -175,9 +165,11 @@
 	.menu-top {
 		margin: 0;
 		position: absolute;
-		@include rem('top', 10px);
+		top: 0;
 		right: 0;
 		left: 0;
+		padding: 0;
+		width: 100%;
 		z-index: 1000;
 
 		> li {
@@ -187,7 +179,7 @@
 		}
 
 		&:target {
-			box-shadow: 0 5px 50px 20px rgba(50, 50, 50, 0.5);
+			box-shadow: 0 5px 50px 20px rgba(50, 50, 50, 0.57);
 
 			> li > a {
 				border-bottom-width: 1px;
@@ -235,31 +227,4 @@
 			color: $darkGreen;
 		}
 	}
-}
-
-// #nav:target {
-// 	box-shadow: 0 5px 50px 20px rgba(50, 50, 50, 0.7);
-
-// 	> li > a {
-// 		border-bottom-width: 1px;
-// 		@include rem('line-height', 52px);
-// 		@include rem('height', 48px);
-// 	}
-// }
-
-// #nav:target > li > a {
-// 	border-bottom-width: 1px;
-// 	@include rem('line-height', 52px);
-// 	@include rem('height', 48px);
-// }
-
-
-
-// Button to close collapsed navigation
-// .mclose {
-// 	background-color: red;
-// }
-
-i {
-	font-size: 120%;
 }

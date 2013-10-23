@@ -397,62 +397,6 @@ small > a:active, .footer-address,
   font-weight: 400;
 }
 
-@font-face {
-  font-family: 'fontello';
-  src: url("../type/fontello.eot?37646560");
-  src: url("../type/fontello.eot?37646560#iefix") format("embedded-opentype"), url("../type/fontello.woff?37646560") format("woff"), url("../type/fontello.ttf?37646560") format("truetype"), url("../type/fontello.svg?37646560#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?37646560#fontello') format('svg');
-  }
-}
-*/
-/* line 22, ../sass/utilities/_fonts-icon.scss */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-/* line 53, ../sass/utilities/_fonts-icon.scss */
-.icon-collapse:before {
-  content: '\e800';
-}
-
-/* '' */
-/* line 54, ../sass/utilities/_fonts-icon.scss */
-.icon-collapse-top:before {
-  content: '\e801';
-}
-
-/* '' */
 /* line 10, ../sass/atoms/_scaffolding.scss */
 html, body {
   background-color: #f2faf8;
@@ -965,52 +909,46 @@ a.bubble-link:focus, a.bubble-link:hover {
   }
 }
 
-/* line 45, ../sass/organisms/_site-header.scss */
+/* line 41, ../sass/organisms/_site-header.scss */
 .logo-tag {
+  display: none;
+  visibility: hidden;
   margin-top: 14px;
   margin-top: 0.875rem;
   font-size: 18px;
   font-size: 1.125rem;
   color: #4db4ae;
 }
-@media (max-width: 810px) {
-  /* line 45, ../sass/organisms/_site-header.scss */
+@media (min-width: 810px) {
+  /* line 41, ../sass/organisms/_site-header.scss */
   .logo-tag {
-    display: none;
-    visibility: hidden;
+    display: block;
+    visibility: visible;
   }
 }
 
-/* line 57, ../sass/organisms/_site-header.scss */
+/* line 55, ../sass/organisms/_site-header.scss */
 .logo-img {
   width: 100px;
   width: 6.25rem;
 }
 
-/* line 66, ../sass/organisms/_site-header.scss */
+/* line 59, ../sass/organisms/_site-header.scss */
 .nav-top {
-  float: right;
+  position: absolute;
+  top: 10px;
+  top: 0.625rem;
+  right: 0;
   margin: 0;
   padding: 71px 8px 4px 0px;
   padding:  4.4375rem 0.5rem 0.25rem 0px;
 }
-@media (max-width: 720px) {
-  /* line 66, ../sass/organisms/_site-header.scss */
-  .nav-top {
-    margin-right: -2px;
-    margin-right: -0.125rem;
-    padding-top: 40px;
-    padding-top: 2.5rem;
-    padding-right: 0;
-    padding-bottom: 0;
-  }
-}
 
-/* line 83, ../sass/organisms/_site-header.scss */
+/* line 68, ../sass/organisms/_site-header.scss */
 .menu-top {
   line-height: 1;
 }
-/* line 86, ../sass/organisms/_site-header.scss */
+/* line 71, ../sass/organisms/_site-header.scss */
 .menu-top > li {
   display: inline-block;
   position: relative;
@@ -1018,18 +956,18 @@ a.bubble-link:focus, a.bubble-link:hover {
   margin-right: 12px;
   margin-right: 0.75rem;
 }
-/* line 92, ../sass/organisms/_site-header.scss */
+/* line 77, ../sass/organisms/_site-header.scss */
 .menu-top > li:last-of-type {
   margin-right: 0;
 }
 @media (max-width: 768px) {
-  /* line 83, ../sass/organisms/_site-header.scss */
+  /* line 68, ../sass/organisms/_site-header.scss */
   .menu-top {
     text-align: center;
   }
 }
 
-/* line 107, ../sass/organisms/_site-header.scss */
+/* line 92, ../sass/organisms/_site-header.scss */
 .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
   position: relative;
   z-index: 8;
@@ -1047,7 +985,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   transition: all 300ms ease-out;
 }
 
-/* line 125, ../sass/organisms/_site-header.scss */
+/* line 110, ../sass/organisms/_site-header.scss */
 .dir:hover, .dir:focus, .dir.active-nav {
   color: #037fc3;
   background-color: #e5f6f1;
@@ -1058,64 +996,80 @@ a.bubble-link:focus, a.bubble-link:hover {
   transition: all 300ms ease-out;
 }
 @media (max-width: 768px) {
-  /* line 125, ../sass/organisms/_site-header.scss */
+  /* line 110, ../sass/organisms/_site-header.scss */
   .dir:hover, .dir:focus, .dir.active-nav {
     border-bottom: 2px solid #4ec1a2;
   }
 }
 
-/* line 137, ../sass/organisms/_site-header.scss */
+/* line 122, ../sass/organisms/_site-header.scss */
 .lang {
   padding-left: 0;
   padding-right: 0;
   font-size: 22px;
   font-size: 1.375rem;
 }
-/* line 144, ../sass/organisms/_site-header.scss */
+/* line 128, ../sass/organisms/_site-header.scss */
 .lang:hover, .lang:focus {
   color: #0496e5;
 }
 
 @media (max-width: 720px) {
-  /* line 153, ../sass/organisms/_site-header.scss */
+  /* line 137, ../sass/organisms/_site-header.scss */
   .mobile {
     display: auto;
     visibility: visible;
   }
 
-  /* line 159, ../sass/organisms/_site-header.scss */
+  /* line 143, ../sass/organisms/_site-header.scss */
   .mopen {
+    display: inline-block;
     float: right;
     font-size: 0;
     line-height: 0;
   }
-  /* line 169, ../sass/organisms/_site-header.scss */
+
+  /* line 150, ../sass/organisms/_site-header.scss */
   .mopen-img {
     width: 64px;
     width: 4rem;
   }
 
-  /* line 175, ../sass/organisms/_site-header.scss */
+  /* line 154, ../sass/organisms/_site-header.scss */
+  .nav-top {
+    top: 10px;
+    top: 0.625rem;
+    left: 0;
+    right: 0;
+    margin: 0;
+    margin-right: -2px;
+    margin-right: -0.125rem;
+    padding-top: 40px;
+    padding-top: 2.5rem;
+  }
+
+  /* line 165, ../sass/organisms/_site-header.scss */
   .menu-top {
     margin: 0;
     position: absolute;
-    top: 10px;
-    top: 0.625rem;
+    top: 0;
     right: 0;
     left: 0;
+    padding: 0;
+    width: 100%;
     z-index: 1000;
   }
-  /* line 183, ../sass/organisms/_site-header.scss */
+  /* line 175, ../sass/organisms/_site-header.scss */
   .menu-top > li {
     display: block;
     width: 100%;
     border-bottom: 1px solid #8dd7c3;
   }
-  /* line 189, ../sass/organisms/_site-header.scss */
+  /* line 181, ../sass/organisms/_site-header.scss */
   .menu-top:target {
-    box-shadow: 0 5px 50px 20px rgba(50, 50, 50, 0.5);
+    box-shadow: 0 5px 50px 20px rgba(50, 50, 50, 0.57);
   }
-  /* line 192, ../sass/organisms/_site-header.scss */
+  /* line 184, ../sass/organisms/_site-header.scss */
   .menu-top:target > li > a {
     border-bottom-width: 1px;
     line-height: 52px;
@@ -1124,7 +1078,7 @@ a.bubble-link:focus, a.bubble-link:hover {
     height: 3rem;
   }
 
-  /* line 204, ../sass/organisms/_site-header.scss */
+  /* line 196, ../sass/organisms/_site-header.scss */
   .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
     display: block;
     border-bottom-width: 0;
@@ -1138,35 +1092,23 @@ a.bubble-link:focus, a.bubble-link:hover {
     background-color: #e5f6f1;
     border: none;
   }
-  /* line 219, ../sass/organisms/_site-header.scss */
+  /* line 211, ../sass/organisms/_site-header.scss */
   .menu-link:focus, .menu-link:hover, .menu-link.active-nav {
     background-color: #ddf3ed;
     color: #037cbd;
     border: none;
   }
-  /* line 227, ../sass/organisms/_site-header.scss */
+  /* line 219, ../sass/organisms/_site-header.scss */
   .menu-link.mclose {
     background-color: #bfe9dd;
     color: #236453;
   }
-  /* line 233, ../sass/organisms/_site-header.scss */
+  /* line 225, ../sass/organisms/_site-header.scss */
   .menu-link.mclose:focus, .menu-link.mclose:hover {
     background-color: #ace2d3;
     color: #1a4b3e;
   }
 }
-@media (max-width: 720px) and (max-width: 720px) {
-  /* line 159, ../sass/organisms/_site-header.scss */
-  .mopen {
-    display: inline-block;
-  }
-}
-
-/* line 263, ../sass/organisms/_site-header.scss */
-i {
-  font-size: 120%;
-}
-
 /* line 10, ../sass/organisms/_site-footer.scss */
 footer {
   background-color: white;
