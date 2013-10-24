@@ -66,8 +66,8 @@
     @include rem('padding-right', 56px);
 
     @include at-breakpoint($phone) {
-        @include rem('padding-left', 20px);
-        @include rem('padding-right', 20px);
+        @include rem('padding-left', 16px);
+        @include rem('padding-right', 16px);
     }
 }
 

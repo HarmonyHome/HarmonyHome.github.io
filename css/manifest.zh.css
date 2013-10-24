@@ -324,57 +324,65 @@ textarea {
   font-style: normal;
 }
 
-/* line 23, ../sass/utilities/_fonts.scss */
+@font-face {
+  font-family: 'League Gothic Italic';
+  src: url("../type/leaguegothic-italic-webfont.eot");
+  src: url("../type/leaguegothic-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../type/leaguegothic-italic-webfont.woff") format("woff"), url("../type/leaguegothic-italic-webfont.ttf") format("truetype"), url("../type/leaguegothic-italic-webfont.svg#league_gothic_italicregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 34, ../sass/utilities/_fonts.scss */
 h1, h2, h3, h4, h5, h6, .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
-  font-family: "League Gothic", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: 'League Gothic',STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 31, ../sass/utilities/_fonts.scss */
+/* line 48, ../sass/utilities/_fonts.scss */
 p, ul,
 ol, .user-input-type, .contact-label, a, .cv-items > li {
-  font-family: "garamond-premier-pro", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 37, ../sass/utilities/_fonts.scss */
+/* line 54, ../sass/utilities/_fonts.scss */
 .sku-follow, .logo-tag, .slide-bottom {
-  font-family: "garamond-premier-pro", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 43, ../sass/utilities/_fonts.scss */
+/* line 60, ../sass/utilities/_fonts.scss */
 .cv-title {
-  font-family: "garamond-premier-pro", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 600;
 }
 
-/* line 51, ../sass/utilities/_fonts.scss */
+/* line 68, ../sass/utilities/_fonts.scss */
 .sidekick-title, .slide-top {
-  font-family: "garamond-premier-pro-subhead", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 57, ../sass/utilities/_fonts.scss */
+/* line 74, ../sass/utilities/_fonts.scss */
 .byline {
-  font-family: "garamond-premier-pro-subhead", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 63, ../sass/utilities/_fonts.scss */
+/* line 80, ../sass/utilities/_fonts.scss */
 .submit-button {
-  font-family: "garamond-premier-pro-subhead", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: "garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 500;
 }
 
-/* line 77, ../sass/utilities/_fonts.scss */
+/* line 94, ../sass/utilities/_fonts.scss */
 small,
 small > a,
 small > a:link,
@@ -386,29 +394,29 @@ small > a:active, .footer-address,
 .footer-address > a:hover,
 .footer-address > a:focus,
 .footer-address > a:active, .footer-contact, #footer-obf > a, .press-splash-caption, .archive-list-unit.periodicals-unit > .sku-publ-name, .newscolumns-unit > .sku-publ-date, .google-map, .google-map:link, .google-map:visited, .google-map:hover, .google-map:focus, .google-map:active {
-  font-family: "garamond-premier-pro-caption", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 83, ../sass/utilities/_fonts.scss */
+/* line 100, ../sass/utilities/_fonts.scss */
 .archive-list-unit.two-up > .sku-follow {
-  font-family: "garamond-premier-pro-caption", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: "garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 109, ../sass/utilities/_fonts.scss */
+/* line 126, ../sass/utilities/_fonts.scss */
 .sku-title, .bubble-link, .bubble-link:link, .bubble-link:visited, .bubble-link:hover, .bubble-link:focus, .bubble-link:active {
-  font-family: STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 121, ../sass/utilities/_fonts.scss */
+/* line 138, ../sass/utilities/_fonts.scss */
 .secondary-menu > li > a, .secondary-menu > li > a:link, .secondary-menu > li > a:visited, .secondary-menu > li > a:active, .footer-name, .expt-item, .article-heading,
 .workshop-heading, .article-body > h2, .article-body > h3, .contact-item {
-  font-family: STHeiti, STXihei, "华文细黑" "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, serif;
+  font-family: STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 600;
 }
@@ -1809,10 +1817,10 @@ html[xmlns] .slides {
 @media (max-width: 400px) {
   /* line 64, ../sass/organisms/_slider.scss */
   .slide-inner {
-    padding-left: 20px;
-    padding-left: 1.25rem;
-    padding-right: 20px;
-    padding-right: 1.25rem;
+    padding-left: 16px;
+    padding-left: 1rem;
+    padding-right: 16px;
+    padding-right: 1rem;
   }
 }
 
@@ -2003,15 +2011,6 @@ html[xmlns] .slides {
   .cogmed-promo {
     margin-bottom: 20px;
     margin-bottom: 1.25rem;
-  }
-}
-@media (max-width: 400px) {
-  /* line 20, ../sass/pages/_home-page.scss */
-  .about-us,
-  .book-promo,
-  .cogmed-promo {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 

@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: 'League Gothic';
+    font-family: 'League Gothic Italic';
     src: url('../type/leaguegothic-italic-webfont.eot');
     src: url('../type/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/leaguegothic-italic-webfont.woff') format('woff'),
@@ -33,6 +33,12 @@
 
 %leagueGothic {
     font-family: 'League Gothic';
+    font-style: normal;
+    font-weight: 400;
+}
+
+%leagueGothicItalic {
+    font-family: 'League Gothic Italic',STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
     font-style: normal;
     font-weight: 400;
 }

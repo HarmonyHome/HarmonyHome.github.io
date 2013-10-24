@@ -325,7 +325,7 @@ textarea {
 }
 
 @font-face {
-  font-family: 'League Gothic';
+  font-family: 'League Gothic Italic';
   src: url("../type/leaguegothic-italic-webfont.eot");
   src: url("../type/leaguegothic-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../type/leaguegothic-italic-webfont.woff") format("woff"), url("../type/leaguegothic-italic-webfont.ttf") format("truetype"), url("../type/leaguegothic-italic-webfont.svg#league_gothic_italicregular") format("svg");
   font-weight: normal;
@@ -340,7 +340,14 @@ h1, h2, h3, h4, h5, h6, a.bubble-link, a.bubble-link:link, a.bubble-link:visited
   font-weight: 400;
 }
 
-/* line 42, ../sass/utilities/_fonts-ie.scss */
+/* line 40, ../sass/utilities/_fonts-ie.scss */
+.byline {
+  font-family: 'League Gothic Italic',STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 48, ../sass/utilities/_fonts-ie.scss */
 p, ul,
 ol, .user-input-type, .contact-label, a, .cv-items > li {
   font-family: "garamond-premier-pro-n4","garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
@@ -348,42 +355,42 @@ ol, .user-input-type, .contact-label, a, .cv-items > li {
   font-weight: 400;
 }
 
-/* line 48, ../sass/utilities/_fonts-ie.scss */
+/* line 54, ../sass/utilities/_fonts-ie.scss */
 .sku-follow, .logo-tag, .slide-bottom {
   font-family: "garamond-premier-pro-i4","garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 62, ../sass/utilities/_fonts-ie.scss */
+/* line 68, ../sass/utilities/_fonts-ie.scss */
 .sidekick-title, .sku-title, .slide-top {
   font-family: "garamond-premier-pro-subhead-n4","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 68, ../sass/utilities/_fonts-ie.scss */
-.cv-title, .byline {
+/* line 74, ../sass/utilities/_fonts-ie.scss */
+.cv-title {
   font-family: "garamond-premier-pro-subhead-i4","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 74, ../sass/utilities/_fonts-ie.scss */
+/* line 80, ../sass/utilities/_fonts-ie.scss */
 .article-body > h2, .submit-button {
   font-family: "garamond-premier-pro-subhead-n5","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 500;
 }
 
-/* line 80, ../sass/utilities/_fonts-ie.scss */
+/* line 86, ../sass/utilities/_fonts-ie.scss */
 .contact-item {
   font-family: "garamond-premier-pro-subhead-n6","garamond-premier-pro-subhead",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: normal;
   font-weight: 600;
 }
 
-/* line 88, ../sass/utilities/_fonts-ie.scss */
+/* line 94, ../sass/utilities/_fonts-ie.scss */
 small,
 small > a,
 small > a:link,
@@ -398,7 +405,7 @@ small > a:active, .footer-address,
   font-weight: 400;
 }
 
-/* line 94, ../sass/utilities/_fonts-ie.scss */
+/* line 100, ../sass/utilities/_fonts-ie.scss */
 .archive-list-unit.two-up > .sku-follow, .article-body > h3 {
   font-family: "garamond-premier-pro-caption-i4","garamond-premier-pro-caption",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",serif;
   font-style: italic;
@@ -888,6 +895,10 @@ a.bubble-link:focus, a.bubble-link:hover {
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
+/* line 22, ../sass/organisms/_site-header.scss */
+.site-header > .wrapper {
+  position: relative;
+}
 @media (max-width: 810px) {
   /* line 15, ../sass/organisms/_site-header.scss */
   .site-header {
@@ -903,21 +914,27 @@ a.bubble-link:focus, a.bubble-link:hover {
   }
 }
 
-/* line 32, ../sass/organisms/_site-header.scss */
+/* line 36, ../sass/organisms/_site-header.scss */
 .logo-nav {
   display: inline-block;
   margin: 28px auto 0;
   margin:  1.75rem auto 0;
 }
+/* line 40, ../sass/organisms/_site-header.scss */
+.logo-nav > a {
+  position: relative;
+  display: block;
+  z-index: 999;
+}
 @media (max-width: 768px) {
-  /* line 32, ../sass/organisms/_site-header.scss */
+  /* line 36, ../sass/organisms/_site-header.scss */
   .logo-nav {
     margin-left: 6px;
     margin-left: 0.375rem;
   }
 }
 
-/* line 41, ../sass/organisms/_site-header.scss */
+/* line 51, ../sass/organisms/_site-header.scss */
 .logo-tag {
   display: none;
   visibility: hidden;
@@ -928,35 +945,34 @@ a.bubble-link:focus, a.bubble-link:hover {
   color: #4db4ae;
 }
 @media (min-width: 810px) {
-  /* line 41, ../sass/organisms/_site-header.scss */
+  /* line 51, ../sass/organisms/_site-header.scss */
   .logo-tag {
     display: block;
     visibility: visible;
   }
 }
 
-/* line 55, ../sass/organisms/_site-header.scss */
+/* line 65, ../sass/organisms/_site-header.scss */
 .logo-img {
   width: 100px;
   width: 6.25rem;
 }
 
-/* line 59, ../sass/organisms/_site-header.scss */
+/* line 69, ../sass/organisms/_site-header.scss */
 .nav-top {
   position: absolute;
-  top: 10px;
-  top: 0.625rem;
+  top: 0;
   right: 0;
   margin: 0;
   padding: 71px 8px 4px 0px;
   padding:  4.4375rem 0.5rem 0.25rem 0px;
 }
 
-/* line 68, ../sass/organisms/_site-header.scss */
+/* line 80, ../sass/organisms/_site-header.scss */
 .menu-top {
   line-height: 1;
 }
-/* line 71, ../sass/organisms/_site-header.scss */
+/* line 83, ../sass/organisms/_site-header.scss */
 .menu-top > li {
   display: inline-block;
   position: relative;
@@ -964,18 +980,18 @@ a.bubble-link:focus, a.bubble-link:hover {
   margin-right: 12px;
   margin-right: 0.75rem;
 }
-/* line 77, ../sass/organisms/_site-header.scss */
+/* line 89, ../sass/organisms/_site-header.scss */
 .menu-top > li:last-of-type {
   margin-right: 0;
 }
 @media (max-width: 768px) {
-  /* line 68, ../sass/organisms/_site-header.scss */
+  /* line 80, ../sass/organisms/_site-header.scss */
   .menu-top {
     text-align: center;
   }
 }
 
-/* line 92, ../sass/organisms/_site-header.scss */
+/* line 104, ../sass/organisms/_site-header.scss */
 .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
   position: relative;
   z-index: 8;
@@ -983,7 +999,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   padding:  4.3125rem 0.5rem 0.375rem;
   font-size: 24px;
   font-size: 1.5rem;
-  color: #0375b3;
+  color: #024970;
   text-align: center;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
@@ -993,7 +1009,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   transition: all 300ms ease-out;
 }
 
-/* line 110, ../sass/organisms/_site-header.scss */
+/* line 122, ../sass/organisms/_site-header.scss */
 .dir:hover, .dir:focus, .dir.active-nav {
   color: #037fc3;
   background-color: #e5f6f1;
@@ -1004,32 +1020,32 @@ a.bubble-link:focus, a.bubble-link:hover {
   transition: all 300ms ease-out;
 }
 @media (max-width: 768px) {
-  /* line 110, ../sass/organisms/_site-header.scss */
+  /* line 122, ../sass/organisms/_site-header.scss */
   .dir:hover, .dir:focus, .dir.active-nav {
     border-bottom: 2px solid #4ec1a2;
   }
 }
 
-/* line 122, ../sass/organisms/_site-header.scss */
+/* line 134, ../sass/organisms/_site-header.scss */
 .lang {
   padding-left: 0;
   padding-right: 0;
   font-size: 22px;
   font-size: 1.375rem;
 }
-/* line 128, ../sass/organisms/_site-header.scss */
+/* line 140, ../sass/organisms/_site-header.scss */
 .lang:hover, .lang:focus {
   color: #0496e5;
 }
 
 @media (max-width: 720px) {
-  /* line 137, ../sass/organisms/_site-header.scss */
+  /* line 149, ../sass/organisms/_site-header.scss */
   .mobile {
     display: auto;
     visibility: visible;
   }
 
-  /* line 143, ../sass/organisms/_site-header.scss */
+  /* line 155, ../sass/organisms/_site-header.scss */
   .mopen {
     display: inline-block;
     float: right;
@@ -1037,26 +1053,25 @@ a.bubble-link:focus, a.bubble-link:hover {
     line-height: 0;
   }
 
-  /* line 150, ../sass/organisms/_site-header.scss */
+  /* line 163, ../sass/organisms/_site-header.scss */
   .mopen-img {
-    width: 64px;
-    width: 4rem;
+    width: 48px;
+    width: 3rem;
   }
 
-  /* line 154, ../sass/organisms/_site-header.scss */
+  /* line 167, ../sass/organisms/_site-header.scss */
   .nav-top {
-    top: 10px;
-    top: 0.625rem;
+    position: absolute;
+    float: none;
+    top: 0;
     left: 0;
     right: 0;
     margin: 0;
-    margin-right: -2px;
-    margin-right: -0.125rem;
-    padding-top: 40px;
-    padding-top: 2.5rem;
+    padding: 53px 15px 0 0;
+    padding:  3.3125rem 0.9375rem 0 0;
   }
 
-  /* line 165, ../sass/organisms/_site-header.scss */
+  /* line 180, ../sass/organisms/_site-header.scss */
   .menu-top {
     margin: 0;
     position: absolute;
@@ -1067,17 +1082,17 @@ a.bubble-link:focus, a.bubble-link:hover {
     width: 100%;
     z-index: 1000;
   }
-  /* line 175, ../sass/organisms/_site-header.scss */
+  /* line 190, ../sass/organisms/_site-header.scss */
   .menu-top > li {
     display: block;
     width: 100%;
     border-bottom: 1px solid #8dd7c3;
   }
-  /* line 181, ../sass/organisms/_site-header.scss */
+  /* line 196, ../sass/organisms/_site-header.scss */
   .menu-top:target {
     box-shadow: 0 5px 50px 20px rgba(50, 50, 50, 0.57);
   }
-  /* line 184, ../sass/organisms/_site-header.scss */
+  /* line 199, ../sass/organisms/_site-header.scss */
   .menu-top:target > li > a {
     border-bottom-width: 1px;
     line-height: 52px;
@@ -1086,7 +1101,7 @@ a.bubble-link:focus, a.bubble-link:hover {
     height: 3rem;
   }
 
-  /* line 196, ../sass/organisms/_site-header.scss */
+  /* line 211, ../sass/organisms/_site-header.scss */
   .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
     display: block;
     border-bottom-width: 0;
@@ -1100,18 +1115,18 @@ a.bubble-link:focus, a.bubble-link:hover {
     background-color: #e5f6f1;
     border: none;
   }
-  /* line 211, ../sass/organisms/_site-header.scss */
+  /* line 226, ../sass/organisms/_site-header.scss */
   .menu-link:focus, .menu-link:hover, .menu-link.active-nav {
     background-color: #ddf3ed;
     color: #037cbd;
     border: none;
   }
-  /* line 219, ../sass/organisms/_site-header.scss */
+  /* line 234, ../sass/organisms/_site-header.scss */
   .menu-link.mclose {
     background-color: #bfe9dd;
     color: #236453;
   }
-  /* line 225, ../sass/organisms/_site-header.scss */
+  /* line 240, ../sass/organisms/_site-header.scss */
   .menu-link.mclose:focus, .menu-link.mclose:hover {
     background-color: #ace2d3;
     color: #1a4b3e;
@@ -1804,10 +1819,10 @@ html[xmlns] .slides {
 @media (max-width: 400px) {
   /* line 64, ../sass/organisms/_slider.scss */
   .slide-inner {
-    padding-left: 20px;
-    padding-left: 1.25rem;
-    padding-right: 20px;
-    padding-right: 1.25rem;
+    padding-left: 16px;
+    padding-left: 1rem;
+    padding-right: 16px;
+    padding-right: 1rem;
   }
 }
 
@@ -1998,15 +2013,6 @@ html[xmlns] .slides {
   .cogmed-promo {
     margin-bottom: 20px;
     margin-bottom: 1.25rem;
-  }
-}
-@media (max-width: 400px) {
-  /* line 20, ../sass/pages/_home-page.scss */
-  .about-us,
-  .book-promo,
-  .cogmed-promo {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -2673,13 +2679,14 @@ html[xmlns] .slides {
 
 /* line 31, ../sass/templates/_single-article.scss */
 .byline {
-  float: right;
-  font-size: 24px;
-  font-size: 1.5rem;
-  color: #024970;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #025989;
 }
 
-/* line 38, ../sass/templates/_single-article.scss */
+/* line 40, ../sass/templates/_single-article.scss */
 article {
   *zoom: 1;
   max-width: 940px;
@@ -2698,20 +2705,20 @@ article:after {
   clear: both;
 }
 
-/* line 44, ../sass/templates/_single-article.scss */
+/* line 46, ../sass/templates/_single-article.scss */
 .article-body {
   clear: both;
   padding-top: 24px;
   padding-top: 1.5rem;
 }
-/* line 49, ../sass/templates/_single-article.scss */
+/* line 51, ../sass/templates/_single-article.scss */
 .article-body > h2 {
   margin: 32px 0 8px -2px;
   margin:  2rem 0 0.5rem -0.125rem;
   font-size: 26px;
   font-size: 1.625rem;
 }
-/* line 61, ../sass/templates/_single-article.scss */
+/* line 63, ../sass/templates/_single-article.scss */
 .article-body > h3 {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -2721,7 +2728,7 @@ article:after {
   font-size: 1.1875rem;
   text-transform: capitalize;
 }
-/* line 71, ../sass/templates/_single-article.scss */
+/* line 73, ../sass/templates/_single-article.scss */
 .article-body > p, .article-body > ul,
 .article-body > ol, .article-body > .user-input-type, .article-body > .contact-label {
   margin-bottom: 20px;

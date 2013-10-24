@@ -29,10 +29,12 @@
 }
 
 .byline {
-	float: right;
-	@extend %gppSubheadItalic;
-	@include rem('font-size', 24px);
-	color: $navy;
+	// float: right;
+	@extend %leagueGothicItalic;
+	@include rem('font-size', 25px);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: lighten($navy,5);
 }
 
 article {

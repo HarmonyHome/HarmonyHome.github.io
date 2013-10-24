@@ -19,6 +19,10 @@
 	@include rem('padding-bottom', 6px);
     @include rem('margin-bottom', 32px);
 
+    > .wrapper {
+    	position: relative;
+    }
+
     @include at-breakpoint(0 810px) {
 		@include rem('padding-bottom', 24px);
 	}
@@ -32,6 +36,12 @@
 .logo-nav {
 	display: inline-block;
 	@include rem('margin', 28px auto 0);
+
+	> a {
+		position: relative;
+		display: block;
+		z-index: 999;
+	}
 
 	@include at-breakpoint($breakpoint-tablet) {
 		@include rem('margin-left', 6px);
@@ -58,8 +68,10 @@
 
 .nav-top {
 	position: absolute;
-	@include rem('top', 10px);
+	// @include rem('top', 10px);
+	top: 0;
 	right: 0;
+	// float: right;
 	margin: 0;
 	@include rem('padding', 71px 8px 4px 0px);
 }
@@ -95,7 +107,7 @@
 		@include rem('padding', 69px 8px 6px);
 		@extend %leagueGothic;
 		@include rem('font-size', 24px);
-		color: $blue;
+		color: $navy;
 		text-align: center;
 		text-transform: uppercase;
 		border-bottom: 2px solid transparent;
@@ -145,19 +157,22 @@
 		float: right;
 		font-size: 0;
 		line-height: 0;
+		// @include rem('margin-top', 1px);
 	}
 
 	.mopen-img {
-		@include rem('width', 64px);
+		@include rem('width', 48px);
 	}
 
 	.nav-top {
-		@include rem('top', 10px);
+		position: absolute;
+		float: none;
+		// @include rem('top', 10px);
+		top: 0;
 		left: 0;
 		right: 0;
 		margin: 0;
-		@include rem('margin-right', -2px);
-		@include rem('padding-top', 40px);
+		@include rem('padding', 53px 15px 0 0);
 	}
 
 	// Menu
