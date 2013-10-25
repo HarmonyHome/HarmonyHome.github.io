@@ -73,6 +73,11 @@
 	&:not(:last-of-type) {
 		padding-bottom: 1px;
 	}
+
+	@include at-breakpoint($phone) {
+		@include rem('padding-left', 12px);
+		@include rem('padding-right', 12px);
+	}
 }
 
 .book-cover {

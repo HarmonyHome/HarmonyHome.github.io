@@ -297,9 +297,10 @@ textarea {
 }
 
 /* line 26, ../sass/utilities/_clearfix.scss */
-.cf:before, .bubble-wrap:before,
+.cf:before, .bubble-wrap:before, .contact-form:before,
 .cf:after,
-.bubble-wrap:after {
+.bubble-wrap:after,
+.contact-form:after {
   content: " ";
   /* 1 */
   display: table;
@@ -307,12 +308,12 @@ textarea {
 }
 
 /* line 31, ../sass/utilities/_clearfix.scss */
-.cf:after, .bubble-wrap:after {
+.cf:after, .bubble-wrap:after, .contact-form:after {
   clear: both;
 }
 
 /* line 40, ../sass/utilities/_clearfix.scss */
-.cf, .bubble-wrap {
+.cf, .bubble-wrap, .contact-form {
   *zoom: 1;
 }
 
@@ -474,18 +475,20 @@ ol, .user-input-type, .contact-label {
 @media (max-width: 400px) {
   /* line 22, ../sass/atoms/_text.scss */
   .profile-lede, .expt-lede {
+    padding: 0 10px;
+    padding:  0 0.625rem;
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
 
-/* line 36, ../sass/atoms/_text.scss */
+/* line 37, ../sass/atoms/_text.scss */
 .sku-descr, .profile-body, .expt-body, .contact-info, a[href^="mailto"], a[href^="mailto"]:link, a[href^="mailto"]:visited, a[href^="mailto"]:hover, a[href^="mailto"]:focus, a[href^="mailto"]:active {
   font-size: 18px;
   font-size: 1.125rem;
 }
 
-/* line 40, ../sass/atoms/_text.scss */
+/* line 41, ../sass/atoms/_text.scss */
 .profile-body, .expt-body {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -509,14 +512,14 @@ ol, .user-input-type, .contact-label {
   column-rule: 1px solid #9adbca;
 }
 @media (max-width: 768px) {
-  /* line 40, ../sass/atoms/_text.scss */
+  /* line 41, ../sass/atoms/_text.scss */
   .profile-body, .expt-body {
     padding: 0 20px;
     padding:  0 1.25rem;
   }
 }
 @media (max-width: 720px) {
-  /* line 40, ../sass/atoms/_text.scss */
+  /* line 41, ../sass/atoms/_text.scss */
   .profile-body, .expt-body {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -527,8 +530,15 @@ ol, .user-input-type, .contact-label {
     font-size: 1.25rem;
   }
 }
+@media (max-width: 400px) {
+  /* line 41, ../sass/atoms/_text.scss */
+  .profile-body, .expt-body {
+    padding: 0 10px;
+    padding:  0 0.625rem;
+  }
+}
 
-/* line 69, ../sass/atoms/_text.scss */
+/* line 74, ../sass/atoms/_text.scss */
 small,
 small > a,
 small > a:link,
@@ -539,7 +549,7 @@ small > a:active {
   color: #bac9c9;
 }
 @media (max-width: 800px) {
-  /* line 69, ../sass/atoms/_text.scss */
+  /* line 74, ../sass/atoms/_text.scss */
   small,
   small > a,
   small > a:link,
@@ -549,13 +559,13 @@ small > a:active {
     font-size: 0.75rem;
   }
 }
-/* line 80, ../sass/atoms/_text.scss */
+/* line 85, ../sass/atoms/_text.scss */
 small > a:hover,
 small > a:focus {
   color: #036aa2;
 }
 
-/* line 85, ../sass/atoms/_text.scss */
+/* line 90, ../sass/atoms/_text.scss */
 .footer-address,
 .footer-address > a,
 .footer-address > a:link,
@@ -855,10 +865,6 @@ a.bubble-link:focus, a.bubble-link:hover {
     border-top: none;
     border-bottom: 2px solid #ccede4;
   }
-  /* line 54, ../sass/molecules/_sidekick-pane.scss */
-  .sidekick:last-of-type {
-    border-bottom: 2px solid #024970;
-  }
 }
 
 /* line 10, ../sass/molecules/_descr-panel.scss */
@@ -878,6 +884,16 @@ a.bubble-link:focus, a.bubble-link:hover {
   padding: 20px;
   padding: 1.25rem;
 }
+@media (max-width: 400px) {
+  /* line 16, ../sass/molecules/_descr-panel.scss */
+  .workshop-descr,
+  .outreach-descr {
+    padding-left: 10px;
+    padding-left: 0.625rem;
+    padding-right: 10px;
+    padding-right: 0.625rem;
+  }
+}
 
 /* line 10, ../sass/organisms/_site-header.scss */
 .mobile {
@@ -890,10 +906,10 @@ a.bubble-link:focus, a.bubble-link:hover {
   background-color: #feffff;
   border-top: 10px solid #024970;
   border-bottom: 4px solid #a6e0d0;
-  padding-bottom: 6px;
-  padding-bottom: 0.375rem;
   margin-bottom: 32px;
   margin-bottom: 2rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 }
 /* line 22, ../sass/organisms/_site-header.scss */
 .site-header > .wrapper {
@@ -902,15 +918,15 @@ a.bubble-link:focus, a.bubble-link:hover {
 @media (max-width: 810px) {
   /* line 15, ../sass/organisms/_site-header.scss */
   .site-header {
-    padding-bottom: 24px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 18px;
+    padding-bottom: 1.125rem;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 560px) {
   /* line 15, ../sass/organisms/_site-header.scss */
   .site-header {
-    padding-bottom: 4px;
-    padding-bottom: 0.25rem;
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -995,8 +1011,8 @@ a.bubble-link:focus, a.bubble-link:hover {
 .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
   position: relative;
   z-index: 8;
-  padding: 69px 8px 6px;
-  padding:  4.3125rem 0.5rem 0.375rem;
+  padding: 68px 8px 6px;
+  padding:  4.25rem 0.5rem 0.375rem;
   font-size: 24px;
   font-size: 1.5rem;
   color: #024970;
@@ -1055,8 +1071,8 @@ a.bubble-link:focus, a.bubble-link:hover {
 
   /* line 163, ../sass/organisms/_site-header.scss */
   .mopen-img {
-    width: 48px;
-    width: 3rem;
+    width: 40px;
+    width: 2.5rem;
   }
 
   /* line 167, ../sass/organisms/_site-header.scss */
@@ -1067,8 +1083,8 @@ a.bubble-link:focus, a.bubble-link:hover {
     left: 0;
     right: 0;
     margin: 0;
-    padding: 53px 15px 0 0;
-    padding:  3.3125rem 0.9375rem 0 0;
+    padding: 59px 17px 0 0;
+    padding:  3.6875rem 1.0625rem 0 0;
   }
 
   /* line 180, ../sass/organisms/_site-header.scss */
@@ -2076,8 +2092,17 @@ html[xmlns] .slides {
 .promo-descr:not(:last-of-type) {
   padding-bottom: 1px;
 }
+@media (max-width: 400px) {
+  /* line 70, ../sass/pages/_home-page.scss */
+  .promo-descr {
+    padding-left: 12px;
+    padding-left: 0.75rem;
+    padding-right: 12px;
+    padding-right: 0.75rem;
+  }
+}
 
-/* line 78, ../sass/pages/_home-page.scss */
+/* line 83, ../sass/pages/_home-page.scss */
 .book-cover {
   width: 23.4042553191%;
   float: left;
@@ -2088,19 +2113,19 @@ html[xmlns] .slides {
   *margin-left: -20px;
   display: inline;
 }
-/* line 82, ../sass/pages/_home-page.scss */
+/* line 87, ../sass/pages/_home-page.scss */
 .book-cover > img {
   max-width: 100%;
   border: 1px solid #eaeded;
 }
 @media (max-width: 768px) {
-  /* line 78, ../sass/pages/_home-page.scss */
+  /* line 83, ../sass/pages/_home-page.scss */
   .book-cover {
     display: none;
   }
 }
 
-/* line 94, ../sass/pages/_home-page.scss */
+/* line 99, ../sass/pages/_home-page.scss */
 .cogmed-logo {
   width: 31.914893617%;
   float: left;
@@ -2109,19 +2134,19 @@ html[xmlns] .slides {
   margin-top: 20px;
   margin-top: 1.25rem;
 }
-/* line 98, ../sass/pages/_home-page.scss */
+/* line 103, ../sass/pages/_home-page.scss */
 .cogmed-logo > img {
   position: relative;
   max-width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 94, ../sass/pages/_home-page.scss */
+  /* line 99, ../sass/pages/_home-page.scss */
   .cogmed-logo {
     display: none;
   }
 }
 
-/* line 111, ../sass/pages/_home-page.scss */
+/* line 116, ../sass/pages/_home-page.scss */
 .cogmed-promo-panel {
   width: 65.9574468085%;
   float: left;
@@ -2135,7 +2160,7 @@ html[xmlns] .slides {
   background-size: cover;
 }
 @media (max-width: 768px) {
-  /* line 111, ../sass/pages/_home-page.scss */
+  /* line 116, ../sass/pages/_home-page.scss */
   .cogmed-promo-panel {
     width: 100%;
     float: left;
@@ -2161,22 +2186,29 @@ html[xmlns] .slides {
   line-height: 1.75;
   color: #01334f;
 }
+@media (max-width: 320px) {
+  /* line 18, ../sass/organisms/_profile-panel.scss */
+  .cv-items > li {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
 
-/* line 27, ../sass/organisms/_profile-panel.scss */
+/* line 31, ../sass/organisms/_profile-panel.scss */
 .profile-panel {
   height: 320px;
   height: 20rem;
   border-bottom: 4px solid #8dd7c3;
 }
 @media (max-width: 320px) {
-  /* line 27, ../sass/organisms/_profile-panel.scss */
+  /* line 31, ../sass/organisms/_profile-panel.scss */
   .profile-panel {
     height: 400px;
     height: 25rem;
   }
 }
 
-/* line 37, ../sass/organisms/_profile-panel.scss */
+/* line 41, ../sass/organisms/_profile-panel.scss */
 .cv-overlay {
   position: relative;
   height: 87.5%;
@@ -2186,7 +2218,7 @@ html[xmlns] .slides {
   background-color: rgba(255, 255, 255, 0.75);
 }
 @media (max-width: 400px) {
-  /* line 37, ../sass/organisms/_profile-panel.scss */
+  /* line 41, ../sass/organisms/_profile-panel.scss */
   .cv-overlay {
     height: 91%;
     padding-top: 10px;
@@ -2198,19 +2230,19 @@ html[xmlns] .slides {
   }
 }
 @media (max-width: 320px) {
-  /* line 37, ../sass/organisms/_profile-panel.scss */
+  /* line 41, ../sass/organisms/_profile-panel.scss */
   .cv-overlay {
     height: 93.3%;
     padding-top: 8px;
     padding-top: 0.5rem;
-    padding-left: 8px;
-    padding-left: 0.5rem;
-    padding-right: 8px;
-    padding-right: 0.5rem;
+    padding-left: 6px;
+    padding-left: 0.375rem;
+    padding-right: 6px;
+    padding-right: 0.375rem;
   }
 }
 
-/* line 61, ../sass/organisms/_profile-panel.scss */
+/* line 65, ../sass/organisms/_profile-panel.scss */
 .cv-title {
   margin: 12px 0 12px 0;
   margin:  0.75rem 0 0.75rem 0;
@@ -2218,12 +2250,12 @@ html[xmlns] .slides {
   padding-left: 0.25rem;
 }
 
-/* line 68, ../sass/organisms/_profile-panel.scss */
+/* line 72, ../sass/organisms/_profile-panel.scss */
 .cv-items {
   padding-left: 12px;
   padding-left: 0.75rem;
 }
-/* line 71, ../sass/organisms/_profile-panel.scss */
+/* line 75, ../sass/organisms/_profile-panel.scss */
 .cv-items > li {
   list-style-type: none;
 }
@@ -2263,13 +2295,6 @@ html[xmlns] .slides {
   content: "";
   display: table;
   clear: both;
-}
-@media (max-width: 400px) {
-  /* line 30, ../sass/pages/_profile-page.scss */
-  .partner {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 /* line 43, ../sass/pages/_profile-page.scss */
@@ -2508,15 +2533,6 @@ html[xmlns] .slides {
   display: table;
   clear: both;
 }
-@media (max-width: 400px) {
-  /* line 37, ../sass/pages/_services-page.scss */
-  .counseling,
-  .workshops,
-  .outreach {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 /* line 50, ../sass/pages/_services-page.scss */
 .workshop-panel {
@@ -2704,21 +2720,33 @@ article:after {
   display: table;
   clear: both;
 }
+@media (max-width: 768px) {
+  /* line 40, ../sass/templates/_single-article.scss */
+  article {
+    width: 82.9787234043%;
+  }
+}
+@media (max-width: 400px) {
+  /* line 40, ../sass/templates/_single-article.scss */
+  article {
+    width: 85%;
+  }
+}
 
-/* line 46, ../sass/templates/_single-article.scss */
+/* line 54, ../sass/templates/_single-article.scss */
 .article-body {
   clear: both;
   padding-top: 24px;
   padding-top: 1.5rem;
 }
-/* line 51, ../sass/templates/_single-article.scss */
+/* line 59, ../sass/templates/_single-article.scss */
 .article-body > h2 {
   margin: 32px 0 8px -2px;
   margin:  2rem 0 0.5rem -0.125rem;
   font-size: 26px;
   font-size: 1.625rem;
 }
-/* line 63, ../sass/templates/_single-article.scss */
+/* line 71, ../sass/templates/_single-article.scss */
 .article-body > h3 {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -2728,11 +2756,18 @@ article:after {
   font-size: 1.1875rem;
   text-transform: capitalize;
 }
-/* line 73, ../sass/templates/_single-article.scss */
+/* line 81, ../sass/templates/_single-article.scss */
 .article-body > p, .article-body > ul,
 .article-body > ol, .article-body > .user-input-type, .article-body > .contact-label {
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
+}
+@media (max-width: 320px) {
+  /* line 86, ../sass/templates/_single-article.scss */
+  .article-body ul {
+    margin-left: 8px;
+    margin-left: 0.5rem;
+  }
 }
 
 /* line 14, ../sass/pages/_advice-page.scss */
@@ -2760,14 +2795,6 @@ article:after {
   content: "";
   display: table;
   clear: both;
-}
-@media (max-width: 400px) {
-  /* line 15, ../sass/pages/_press-page.scss */
-  .periodicals,
-  .newscolumns {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 /* line 28, ../sass/pages/_press-page.scss */
@@ -3003,7 +3030,15 @@ a[href^="mailto"]:hover {
   border-top: 4px solid #8dd7c3;
 }
 
-/* line 18, ../sass/organisms/_contact-form.scss */
+@media (max-width: 400px) {
+  /* line 18, ../sass/organisms/_contact-form.scss */
+  .contact-form {
+    padding: 0 8px;
+    padding:  0 0.5rem;
+  }
+}
+
+/* line 29, ../sass/organisms/_contact-form.scss */
 .form-contact {
   width: 31.914893617%;
   float: left;
@@ -3011,7 +3046,7 @@ a[href^="mailto"]:hover {
   display: inline;
 }
 @media (max-width: 768px) {
-  /* line 18, ../sass/organisms/_contact-form.scss */
+  /* line 29, ../sass/organisms/_contact-form.scss */
   .form-contact {
     width: 100%;
     float: left;
@@ -3021,7 +3056,7 @@ a[href^="mailto"]:hover {
   }
 }
 
-/* line 28, ../sass/organisms/_contact-form.scss */
+/* line 39, ../sass/organisms/_contact-form.scss */
 .contact-label {
   display: block;
   margin-top: 10px;
@@ -3029,13 +3064,13 @@ a[href^="mailto"]:hover {
   color: #023e5f;
 }
 
-/* line 35, ../sass/organisms/_contact-form.scss */
+/* line 46, ../sass/organisms/_contact-form.scss */
 .contact-input {
   padding: 12px 16px;
   padding:  0.75rem 1rem;
 }
 @media (max-width: 768px) {
-  /* line 35, ../sass/organisms/_contact-form.scss */
+  /* line 46, ../sass/organisms/_contact-form.scss */
   .contact-input {
     width: 50%;
     margin-left: 10px;
@@ -3047,7 +3082,7 @@ a[href^="mailto"]:hover {
   }
 }
 @media (max-width: 400px) {
-  /* line 35, ../sass/organisms/_contact-form.scss */
+  /* line 46, ../sass/organisms/_contact-form.scss */
   .contact-input {
     width: 62.5%;
     margin-left: 4px;
@@ -3059,14 +3094,14 @@ a[href^="mailto"]:hover {
   }
 }
 @media (max-width: 320px) {
-  /* line 35, ../sass/organisms/_contact-form.scss */
+  /* line 46, ../sass/organisms/_contact-form.scss */
   .contact-input {
     margin-left: 2px;
     margin-left: 0.125rem;
   }
 }
 
-/* line 59, ../sass/organisms/_contact-form.scss */
+/* line 70, ../sass/organisms/_contact-form.scss */
 .form-message {
   width: 57.4468085106%;
   float: left;
@@ -3079,7 +3114,7 @@ a[href^="mailto"]:hover {
   margin-left: 8.5106382979%;
 }
 @media (max-width: 768px) {
-  /* line 59, ../sass/organisms/_contact-form.scss */
+  /* line 70, ../sass/organisms/_contact-form.scss */
   .form-message {
     width: 100%;
     float: left;
@@ -3090,7 +3125,7 @@ a[href^="mailto"]:hover {
   }
 }
 
-/* line 72, ../sass/organisms/_contact-form.scss */
+/* line 83, ../sass/organisms/_contact-form.scss */
 .message-input {
   width: 94.0740740741%;
   height: 236px;
@@ -3100,7 +3135,7 @@ a[href^="mailto"]:hover {
   resize: vertical;
 }
 @media (max-width: 768px) {
-  /* line 72, ../sass/organisms/_contact-form.scss */
+  /* line 83, ../sass/organisms/_contact-form.scss */
   .message-input {
     width: 90%;
     margin-left: 10px;
@@ -3112,7 +3147,7 @@ a[href^="mailto"]:hover {
   }
 }
 @media (max-width: 400px) {
-  /* line 72, ../sass/organisms/_contact-form.scss */
+  /* line 83, ../sass/organisms/_contact-form.scss */
   .message-input {
     margin-left: 4px;
     margin-left: 0.25rem;
@@ -3123,19 +3158,19 @@ a[href^="mailto"]:hover {
   }
 }
 @media (max-width: 320px) {
-  /* line 72, ../sass/organisms/_contact-form.scss */
+  /* line 83, ../sass/organisms/_contact-form.scss */
   .message-input {
     margin-left: 2px;
     margin-left: 0.125rem;
   }
 }
 
-/* line 98, ../sass/organisms/_contact-form.scss */
+/* line 109, ../sass/organisms/_contact-form.scss */
 .litmus {
   display: none;
 }
 
-/* line 104, ../sass/organisms/_contact-form.scss */
+/* line 115, ../sass/organisms/_contact-form.scss */
 .submit-button {
   width: 14.8936170213%;
   float: left;
@@ -3165,50 +3200,39 @@ a[href^="mailto"]:hover {
   border-bottom: 2px solid #8dd7c3;
 }
 @media (max-width: 768px) {
-  /* line 104, ../sass/organisms/_contact-form.scss */
+  /* line 115, ../sass/organisms/_contact-form.scss */
   .submit-button {
     width: 31.914893617%;
     float: left;
     margin-right: 2.1276595745%;
     float: right;
-    margin-right: 20px;
-    margin-right: 1.25rem;
     padding: 20px 0 15px;
     padding:  1.25rem 0 0.9375rem;
   }
 }
 @media (max-width: 400px) {
-  /* line 104, ../sass/organisms/_contact-form.scss */
+  /* line 115, ../sass/organisms/_contact-form.scss */
   .submit-button {
     width: 48.9361702128%;
     float: left;
     margin-right: 2.1276595745%;
     float: right;
-    margin-right: 16px;
-    margin-right: 1rem;
-  }
-}
-@media (max-width: 320px) {
-  /* line 104, ../sass/organisms/_contact-form.scss */
-  .submit-button {
-    margin-right: 12px;
-    margin-right: 0.75rem;
   }
 }
 
-/* line 144, ../sass/organisms/_contact-form.scss */
+/* line 155, ../sass/organisms/_contact-form.scss */
 .submit-button:hover {
   background-color: #025481;
   color: white;
 }
 
-/* line 151, ../sass/organisms/_contact-form.scss */
+/* line 162, ../sass/organisms/_contact-form.scss */
 .parsley-error-list {
   padding: 6px 0 12px 4px;
   padding:  0.375rem 0 0.75rem 0.25rem;
 }
 
-/* line 155, ../sass/organisms/_contact-form.scss */
+/* line 166, ../sass/organisms/_contact-form.scss */
 .parsley-error-list > li {
   list-style-type: none;
   font-family: sans-serif;
@@ -3241,9 +3265,14 @@ a[href^="mailto"]:hover {
     padding-left: 0;
     padding-right: 0;
   }
+  /* line 25, ../sass/pages/_contact-page.scss */
+  .business-info > .bubble-wrap {
+    padding-left: 10px;
+    padding-left: 0.625rem;
+  }
 }
 
-/* line 27, ../sass/pages/_contact-page.scss */
+/* line 31, ../sass/pages/_contact-page.scss */
 .enquiries {
   *zoom: 1;
   max-width: 940px;
@@ -3258,30 +3287,4 @@ a[href^="mailto"]:hover {
   content: "";
   display: table;
   clear: both;
-}
-@media (max-width: 768px) {
-  /* line 27, ../sass/pages/_contact-page.scss */
-  .enquiries {
-    padding-left: 32px;
-    padding-left: 2rem;
-    padding-right: 0;
-  }
-  /* line 34, ../sass/pages/_contact-page.scss */
-  .enquiries > .bubble-heading {
-    margin-left: -32px;
-    margin-left: -2rem;
-  }
-}
-@media (max-width: 400px) {
-  /* line 27, ../sass/pages/_contact-page.scss */
-  .enquiries {
-    padding-left: 10px;
-    padding-left: 0.625rem;
-    padding-right: 0;
-  }
-  /* line 43, ../sass/pages/_contact-page.scss */
-  .enquiries > .bubble-heading {
-    margin-left: -10px;
-    margin-left: -0.625rem;
-  }
 }

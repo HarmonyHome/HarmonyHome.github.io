@@ -15,4 +15,9 @@
 
 %descr-copy {
     @include rem('padding', 20px);
+
+    @include at-breakpoint($phone) {
+    	@include rem('padding-left', 10px);
+    	@include rem('padding-right', 10px);
+    }
 }

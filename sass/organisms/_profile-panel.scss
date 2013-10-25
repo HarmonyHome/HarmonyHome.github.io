@@ -20,6 +20,10 @@
 	@include rem('font-size', 18px);
 	line-height: 1.75;
 	color: $xDarkNavy;
+
+	@include at-breakpoint($iphone) {
+		@include rem('font-size', 16px);
+	}
 }
 
 // STRUCTURE
@@ -29,7 +33,7 @@
 	// @include rem('margin', 10px 0);
 	border-bottom: 4px solid $teal;
 
-	@include at-breakpoint($breakpoint-iphone) {
+	@include at-breakpoint($iphone) {
 		@include rem('height', 400px);
 	}
 }
@@ -42,18 +46,18 @@
 	background-color: #fcfefe;
 	background-color: rgba(255,255,255,0.75);
 
-	@include at-breakpoint($breakpoint-phone) {
+	@include at-breakpoint($phone) {
 		height: 91%;
 		@include rem('padding-top', 10px);
 		@include rem('padding-left', 10px);
 		@include rem('padding-right', 10px);
 	}
 
-	@include at-breakpoint($breakpoint-iphone) {
+	@include at-breakpoint($iphone) {
 		height: 93.3%;
 		@include rem('padding-top', 8px);
-		@include rem('padding-left', 8px);
-		@include rem('padding-right', 8px);
+		@include rem('padding-left', 6px);
+		@include rem('padding-right', 6px);
 	}
 }
 
@@ -71,5 +75,9 @@
 	> li {
 		list-style-type: none;
 		@extend %cv-item-type;
+
+		@include at-breakpoint($iphone) {
+			// list-style-type: square;
+		}
 	}
 }
