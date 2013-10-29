@@ -68,6 +68,7 @@ a[href^="mailto"] {
 	@include span-columns(12,12);
 	@include omega;
 	position: relative;
+	@include rem('margin-bottom', 48px);
 }
 
 #map-canvas {

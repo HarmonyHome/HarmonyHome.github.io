@@ -2974,15 +2974,17 @@ a[href^="mailto"]:hover {
   *margin-left: -20px;
   display: inline;
   position: relative;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
-/* line 73, ../sass/organisms/_contact-panel.scss */
+/* line 74, ../sass/organisms/_contact-panel.scss */
 #map-canvas {
   height: 352px;
   height: 22rem;
 }
 
-/* line 79, ../sass/organisms/_contact-panel.scss */
+/* line 80, ../sass/organisms/_contact-panel.scss */
 .contact-overlay {
   width: auto;
   position: absolute;
@@ -2996,7 +2998,7 @@ a[href^="mailto"]:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 @media (max-width: 400px) {
-  /* line 79, ../sass/organisms/_contact-panel.scss */
+  /* line 80, ../sass/organisms/_contact-panel.scss */
   .contact-overlay {
     width: 100%;
     float: left;
@@ -3011,19 +3013,19 @@ a[href^="mailto"]:hover {
   }
 }
 
-/* line 99, ../sass/organisms/_contact-panel.scss */
+/* line 100, ../sass/organisms/_contact-panel.scss */
 .adr {
   margin: 4px 0 6px;
   margin:  0.25rem 0 0.375rem;
 }
 
-/* line 105, ../sass/organisms/_contact-panel.scss */
+/* line 106, ../sass/organisms/_contact-panel.scss */
 .digits > .contact-item,
 .digits > .contact-info {
   display: inline;
 }
 
-/* line 112, ../sass/organisms/_contact-panel.scss */
+/* line 113, ../sass/organisms/_contact-panel.scss */
 .evanesco {
   position: absolute;
   bottom: 0;
