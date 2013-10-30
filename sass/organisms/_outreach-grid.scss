@@ -8,13 +8,13 @@
 //*------------------------------------------------------*/
 
 .outreach-grid > a {
-	@include isolate-grid(3,15);
+	@include isolate-grid(3,12);
 	@include rem('margin-bottom', 14px);
 	font-size: 0;
 	line-height: 0;
 
-    @include at-breakpoint($breakpoint-smScreen) {
-        @include isolate-grid (3,12);
+    @include at-breakpoint($breakpoint-tablet) {
+        @include isolate-grid (3,9);
     }
 
     @include at-breakpoint($breakpoint-phone) {

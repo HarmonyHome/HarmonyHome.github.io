@@ -5,7 +5,7 @@ categories: services workshops
 
 title: Chinese Word Learning Can Be Fun!
 
-excerpt: "A different way to engage your children in learning chinese vocabulary!"
+excerpt: "A different way to engage your children in learning Chinese vocabulary!"
 
 "workshop-name": Chinese Word Learning Can Be Fun!
 
