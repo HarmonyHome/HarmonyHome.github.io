@@ -90,10 +90,10 @@ function Harmony() {
 
       if (lang == 'zh') {
         // ZH to EN
-        path = "/harmonyhome" + path.substring(15).slice(0,-1);
+        path = "/HarmonyHome" + path.substring(15).slice(0,-1);
       } else {
         // EN to ZH
-        path = "/harmonyhome/zh" + path.substring(12);
+        path = "/HarmonyHome/zh" + path.substring(12);
       }
 
       window.location = "http://" + site + path;
