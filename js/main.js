@@ -30,12 +30,12 @@ function Harmony() {
     var site = $.url().attr('host');
     var path = $.url().attr('path');
 
-    if ($.url().segment(1) == 'zh') {
+    if ($.url().segment(2) == 'zh') {
       var lang = 'zh';
-      var curDir = $.url().segment(2);
+      var curDir = $.url().segment(3);
     } else {
       var lang = 'en';
-      var curDir = $.url().segment(1);
+      var curDir = $.url().segment(2);
     }
 
     console.log("site: " + site);
@@ -43,6 +43,7 @@ function Harmony() {
     console.log("lang: " + lang);
     console.log("purl segment 1: " + $.url().segment(1));
     console.log("purl segment 2: " + $.url().segment(2));
+    console.log("purl segment 3: " + $.url().segment(3));
     console.log("curDir: " + curDir);
 
     switch (curDir)
@@ -89,10 +90,10 @@ function Harmony() {
 
       if (lang == 'zh') {
         // ZH to EN
-        path = path.substring(3).slice(0,-1);
+        path = "/harmonyhome" + path.substring(15).slice(0,-1);
       } else {
         // EN to ZH
-        path = "/zh" + path;
+        path = "/harmonyhome/zh" + path.substring(12);
       }
 
       window.location = "http://" + site + path;
@@ -133,7 +134,7 @@ function initializeGmap() {
 
     var harmonyPos = new google.maps.LatLng(22.281817,114.155744);
 
-    var harmonyMarker = new google.maps.MarkerImage('/assets/map-marker.png');
+    var harmonyMarker = new google.maps.MarkerImage('{{ site.baseurl }}/assets/map-marker.png');
 
     var marker = new google.maps.Marker({
           position: harmonyPos,
