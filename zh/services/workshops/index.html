@@ -13,9 +13,9 @@ title: 課程 | 如家心理服務
     {% for post in site.categories.workshops %}
         {% if post.lang == page.lang %}
             <div class="archive-list-unit">
-                <a href="{{ post.url }}"><h2 class="sku-title">{{ post.title }}</h2></a>
+                <a href="{{ site.baseurl }}{{ post.url }}"><h2 class="sku-title">{{ post.title }}</h2></a>
                 <p class="sku-descr">{{ post.excerpt }}</p>
-                <a class="sku-follow" href="{{ post.url }}">詳細了解&nbsp;&raquo;</a>
+                <a class="sku-follow" href="{{ site.baseurl }}{{ post.url }}">詳細了解&nbsp;&raquo;</a>
             </div>
         {% endif %}
     {% endfor %}

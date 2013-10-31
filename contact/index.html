@@ -34,4 +34,34 @@ title: Contact | HOME Psychological Services
     </div>
 </section>
 
+<!-- Email Form -->
+<section class="enquiries">
+    <div class="bubble-wrap"><h1 class="bubble-heading">Email Us<div class="bubble-arrow"></div></h1></div>
+
+    <form class="contact-form" data-validate="parsley">
+        <div class="form-contact">
+            <label class="contact-label">Tell us your name:</label>
+            <input class="contact-input user-input-type" name="name" type="text" data-required="true" data-error-message="Please tell us your name.">
+
+            <label class="contact-label">What’s your email?</label>
+            <input class="contact-input user-input-type" name="email" type="email" data-required="true" data-trigger="change" data-type="email" data-error-message="Please tell us your email address.">
+
+            <label class="contact-label">And your contact number?</label>
+            <input class="contact-input user-input-type" name="tel" type="text" placeholder="">
+
+            <label class="contact-label litmus">Address?</label>
+            <input class="contact-input user-input-type litmus" name="address" type="text" placeholder="">
+        </div>
+
+        <div class="form-message">
+            <label class="contact-label">How Can We Help?</label>
+            <textarea class="message-input user-input-type" name="message" data-required="true" data-minlength="6"  data-error-message="Please tell us a little bit more!" type="text"></textarea>
+        </div>
+
+        <input id="" class="submit-button" name="submit" type="submit" value="Send">
+
+    </form>
+
+</section>
+
 {% include footer.html %}
