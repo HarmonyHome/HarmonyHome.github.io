@@ -297,9 +297,10 @@ textarea {
 }
 
 /* line 26, ../sass/utilities/_clearfix.scss */
-.cf:before, .bubble-wrap:before, .contact-form:before,
+.cf:before, .bubble-wrap:before, .menu-top:before, .contact-form:before,
 .cf:after,
 .bubble-wrap:after,
+.menu-top:after,
 .contact-form:after {
   content: " ";
   /* 1 */
@@ -308,12 +309,12 @@ textarea {
 }
 
 /* line 31, ../sass/utilities/_clearfix.scss */
-.cf:after, .bubble-wrap:after, .contact-form:after {
+.cf:after, .bubble-wrap:after, .menu-top:after, .contact-form:after {
   clear: both;
 }
 
 /* line 40, ../sass/utilities/_clearfix.scss */
-.cf, .bubble-wrap, .contact-form {
+.cf, .bubble-wrap, .menu-top, .contact-form {
   *zoom: 1;
 }
 
@@ -349,7 +350,7 @@ ol, .user-input-type, .contact-label, a, .cv-items > li {
 }
 
 /* line 54, ../sass/utilities/_fonts.scss */
-.sku-follow, .logo-tag, .slide-bottom {
+.sku-follow, .slide-bottom {
   font-family: "garamond-premier-pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: italic;
   font-weight: 400;
@@ -412,6 +413,13 @@ small > a:active, .footer-address,
   font-family: STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
   font-style: normal;
   font-weight: 400;
+}
+
+/* line 132, ../sass/utilities/_fonts.scss */
+.logo-tag {
+  font-family: STHeiti,STXihei,"华文细黑","Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 /* line 138, ../sass/utilities/_fonts.scss */
@@ -901,7 +909,6 @@ textarea {
 /* line 10, ../sass/organisms/_site-header-zh.scss */
 .mobile {
   display: none;
-  visibility: hidden;
 }
 
 /* line 15, ../sass/organisms/_site-header-zh.scss */
@@ -909,113 +916,114 @@ textarea {
   background-color: #feffff;
   border-top: 10px solid #024970;
   border-bottom: 4px solid #a6e0d0;
-  padding-bottom: 6px;
-  padding-bottom: 0.375rem;
   margin-bottom: 32px;
   margin-bottom: 2rem;
+  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
+}
+/* line 22, ../sass/organisms/_site-header-zh.scss */
+.site-header > .wrapper {
+  position: relative;
 }
 @media (max-width: 810px) {
   /* line 15, ../sass/organisms/_site-header-zh.scss */
   .site-header {
-    padding-bottom: 24px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 18px;
+    padding-bottom: 1.125rem;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 560px) {
   /* line 15, ../sass/organisms/_site-header-zh.scss */
   .site-header {
-    padding-bottom: 4px;
-    padding-bottom: 0.25rem;
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
   }
 }
 
-/* line 32, ../sass/organisms/_site-header-zh.scss */
+/* line 36, ../sass/organisms/_site-header-zh.scss */
 .logo-nav {
   display: inline-block;
   margin: 28px auto 0;
   margin:  1.75rem auto 0;
 }
+/* line 40, ../sass/organisms/_site-header-zh.scss */
+.logo-nav > a {
+  position: relative;
+  display: block;
+  z-index: 999;
+}
 @media (max-width: 768px) {
-  /* line 32, ../sass/organisms/_site-header-zh.scss */
+  /* line 36, ../sass/organisms/_site-header-zh.scss */
   .logo-nav {
     margin-left: 6px;
     margin-left: 0.375rem;
   }
 }
 
-/* line 45, ../sass/organisms/_site-header-zh.scss */
-.logo-tag {
-  margin-top: 14px;
-  margin-top: 0.875rem;
-  font-size: 18px;
-  font-size: 1.125rem;
-  color: #4db4ae;
-}
-@media (max-width: 810px) {
-  /* line 45, ../sass/organisms/_site-header-zh.scss */
-  .logo-tag {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-/* line 57, ../sass/organisms/_site-header-zh.scss */
+/* line 51, ../sass/organisms/_site-header-zh.scss */
 .logo-img {
   width: 100px;
   width: 6.25rem;
 }
 
-/* line 66, ../sass/organisms/_site-header-zh.scss */
-.nav-top {
-  float: right;
-  margin: 0;
-  padding: 71px 8px 4px 0px;
-  padding:  4.4375rem 0.5rem 0.25rem 0px;
+/* line 55, ../sass/organisms/_site-header-zh.scss */
+.logo-tag {
+  display: none;
+  visibility: hidden;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #4db4ae;
 }
-@media (max-width: 720px) {
-  /* line 66, ../sass/organisms/_site-header-zh.scss */
-  .nav-top {
-    margin-right: -2px;
-    margin-right: -0.125rem;
-    padding-top: 40px;
-    padding-top: 2.5rem;
-    padding-right: 0;
-    padding-bottom: 0;
+@media (min-width: 810px) {
+  /* line 55, ../sass/organisms/_site-header-zh.scss */
+  .logo-tag {
+    display: block;
+    visibility: visible;
   }
 }
 
-/* line 83, ../sass/organisms/_site-header-zh.scss */
-.menu-top {
-  line-height: 1;
+/* line 69, ../sass/organisms/_site-header-zh.scss */
+.nav-top {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-/* line 86, ../sass/organisms/_site-header-zh.scss */
+
+/* line 81, ../sass/organisms/_site-header-zh.scss */
 .menu-top > li {
   display: inline-block;
   position: relative;
   list-style-type: none;
+  height: 100px;
+  height: 6.25rem;
   margin-right: 12px;
   margin-right: 0.75rem;
 }
-/* line 92, ../sass/organisms/_site-header-zh.scss */
+/* line 89, ../sass/organisms/_site-header-zh.scss */
 .menu-top > li:last-of-type {
   margin-right: 0;
 }
 @media (max-width: 768px) {
-  /* line 83, ../sass/organisms/_site-header-zh.scss */
+  /* line 77, ../sass/organisms/_site-header-zh.scss */
   .menu-top {
     text-align: center;
   }
 }
 
-/* line 107, ../sass/organisms/_site-header-zh.scss */
+/* line 104, ../sass/organisms/_site-header-zh.scss */
 .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
+  display: block;
   position: relative;
+  bottom: 0;
   z-index: 8;
-  padding: 69px 8px 6px;
-  padding:  4.3125rem 0.5rem 0.375rem;
+  padding: 80px 8px 8px;
+  padding:  5rem 0.5rem 0.5rem;
+  line-height: 1;
   font-size: 24px;
   font-size: 1.5rem;
-  color: #0375b3;
+  color: #024970;
   text-align: center;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
@@ -1049,51 +1057,72 @@ textarea {
   font-size: 22px;
   font-size: 1.375rem;
 }
-/* line 144, ../sass/organisms/_site-header-zh.scss */
+/* line 143, ../sass/organisms/_site-header-zh.scss */
 .lang:hover, .lang:focus {
   color: #0496e5;
 }
 
+/* line 154, ../sass/organisms/_site-header-zh.scss */
+.mclose, .mclose:link, .mclose:visited, .mclose:active, .mclose:focus, .mclose:hover {
+  display: none;
+}
+
 @media (max-width: 720px) {
-  /* line 153, ../sass/organisms/_site-header-zh.scss */
+  /* line 163, ../sass/organisms/_site-header-zh.scss */
   .mobile {
     display: auto;
     visibility: visible;
   }
 
-  /* line 159, ../sass/organisms/_site-header-zh.scss */
+  /* line 169, ../sass/organisms/_site-header-zh.scss */
   .mopen {
+    display: inline-block;
     float: right;
     font-size: 0;
     line-height: 0;
   }
-  /* line 169, ../sass/organisms/_site-header-zh.scss */
+
+  /* line 177, ../sass/organisms/_site-header-zh.scss */
   .mopen-img {
-    width: 64px;
-    width: 4rem;
+    width: 40px;
+    width: 2.5rem;
   }
 
-  /* line 175, ../sass/organisms/_site-header-zh.scss */
+  /* line 181, ../sass/organisms/_site-header-zh.scss */
+  .nav-top {
+    position: absolute;
+    float: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 59px 17px 0 0;
+    padding:  3.6875rem 1.0625rem 0 0;
+  }
+
+  /* line 194, ../sass/organisms/_site-header-zh.scss */
   .menu-top {
     margin: 0;
     position: absolute;
-    top: 10px;
-    top: 0.625rem;
+    top: 0;
     right: 0;
     left: 0;
+    padding: 0;
+    width: 100%;
     z-index: 1000;
   }
-  /* line 183, ../sass/organisms/_site-header-zh.scss */
+  /* line 204, ../sass/organisms/_site-header-zh.scss */
   .menu-top > li {
     display: block;
     width: 100%;
+    height: auto;
     border-bottom: 1px solid #8dd7c3;
   }
-  /* line 189, ../sass/organisms/_site-header-zh.scss */
+  /* line 211, ../sass/organisms/_site-header-zh.scss */
   .menu-top:target {
-    box-shadow: 0 5px 50px 20px rgba(50, 50, 50, 0.5);
+    box-shadow: 0 5px 50px 20px rgba(50, 50, 50, 0.57);
   }
-  /* line 192, ../sass/organisms/_site-header-zh.scss */
+  /* line 214, ../sass/organisms/_site-header-zh.scss */
   .menu-top:target > li > a {
     border-bottom-width: 1px;
     line-height: 52px;
@@ -1102,7 +1131,7 @@ textarea {
     height: 3rem;
   }
 
-  /* line 204, ../sass/organisms/_site-header-zh.scss */
+  /* line 226, ../sass/organisms/_site-header-zh.scss */
   .menu-link, .menu-link:link, .menu-link:visited, .menu-link:active {
     display: block;
     border-bottom-width: 0;
@@ -1116,35 +1145,23 @@ textarea {
     background-color: #e5f6f1;
     border: none;
   }
-  /* line 219, ../sass/organisms/_site-header-zh.scss */
+  /* line 241, ../sass/organisms/_site-header-zh.scss */
   .menu-link:focus, .menu-link:hover, .menu-link.active-nav {
     background-color: #ddf3ed;
     color: #037cbd;
     border: none;
   }
-  /* line 227, ../sass/organisms/_site-header-zh.scss */
+  /* line 249, ../sass/organisms/_site-header-zh.scss */
   .menu-link.mclose {
     background-color: #bfe9dd;
     color: #236453;
   }
-  /* line 233, ../sass/organisms/_site-header-zh.scss */
+  /* line 255, ../sass/organisms/_site-header-zh.scss */
   .menu-link.mclose:focus, .menu-link.mclose:hover {
     background-color: #ace2d3;
     color: #1a4b3e;
   }
 }
-@media (max-width: 720px) and (max-width: 720px) {
-  /* line 159, ../sass/organisms/_site-header-zh.scss */
-  .mopen {
-    display: inline-block;
-  }
-}
-
-/* line 263, ../sass/organisms/_site-header-zh.scss */
-i {
-  font-size: 120%;
-}
-
 /* line 10, ../sass/organisms/_site-footer-zh.scss */
 footer {
   background-color: white;

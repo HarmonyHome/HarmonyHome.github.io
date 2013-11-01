@@ -14,7 +14,7 @@ en:
     menu-press: 'Press'
     menu-contact: 'Contact'
     menu-lang: '中文'
-    menu-mobile-nav: 'Menu'
+    menu-mclose: 'Close'
 
   footer:
     menu-home: 'Home'
@@ -55,7 +55,7 @@ zh:
     menu-press: '新聞'
     menu-contact: '聯繫'
     menu-lang: 'English'
-    menu-mobile-nav: '選項'
+    menu-mclose: '關閉'
 
   footer:
     menu-home: '主頁'
