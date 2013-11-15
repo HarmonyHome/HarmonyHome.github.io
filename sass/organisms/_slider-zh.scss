@@ -1,0 +1,215 @@
+//=============================================================================/
+//                 THINKING ELEPHANTS, A DESIGN COOPERATIVE                    /
+//=============================================================================/
+//                                                                             /
+//  PROJECT: 130202                                                            /
+//   CLIENT: HOME Psychological Services                                       /
+//    CLASS: Organism                                                          /
+//    TITLE: CHI I Can't Believe I'm Making A Homepage Slider                  /
+//                                                                             /
+//=============================================================================/
+
+@import "utilities/slider-base";
+
+// TYPOGRAPHY
+
+%giga {
+    @extend %gppSubhead;
+    @include rem('font-size', 38px);
+    line-height: 1.625;
+    color: $xxDarkNavy;
+
+    // @include at-breakpoint($tablet) {
+    //     line-height: 1.5;
+    // }
+
+    @include at-breakpoint($tablet) {
+        @include rem('font-size', 34px);
+        // line-height: 1.5;
+    }
+
+    @include at-breakpoint($phablet) {
+        line-height: 1.5;
+    }
+
+    @include at-breakpoint($phone) {
+        @include rem('font-size', 32px);
+        line-height: 1.375;
+    }
+
+    @include at-breakpoint($iphone) {
+        @include rem('font-size', 31px);
+    }
+}
+
+%mega {
+    @extend %zhMedium;
+    @include rem('font-size', 26px);
+    line-height: 1.25;
+    color: $xDarkGreen;
+
+    @include at-breakpoint($breakpoint-smScreen) {
+        // @include rem('font-size', 22px);
+    }
+
+    @include at-breakpoint($phablet) {
+        // @include rem('font-size', 18px);
+    }
+
+    @include at-breakpoint($phone) {
+        // line-height: 1.375;
+    }
+}
+
+.blt {
+    font-size: 75%;
+}
+
+.slide-inner {
+    @include rem('padding-left', 56px);
+    @include rem('padding-right', 56px);
+
+    @include at-breakpoint($phone) {
+        @include rem('padding-left', 16px);
+        @include rem('padding-right', 16px);
+    }
+}
+
+.slide-top {
+    // margin: 0 auto;
+    @include rem('padding-bottom', 10px);
+
+    @extend %giga;
+
+    @include at-breakpoint($breakpoint-tablet) {
+    }
+
+    @include at-breakpoint($phone) {
+    }
+}
+
+.slide-bottom {
+    // margin: 0 auto;
+    @include rem('padding-top', 19px);
+    border-top: 2px solid $green;
+
+    @extend %mega;
+
+    @include at-breakpoint($phone) {
+        @include rem('padding-top', 12px);
+    }
+}
+
+.lede {
+
+    margin-top: 12%;
+
+    @include at-breakpoint($tablet) {
+        margin-top: 14%;
+    }
+
+    @include at-breakpoint($phablet) {
+        margin-top: 10%;
+    }
+
+    @include at-breakpoint($phone) {
+        margin-top: 7%;
+    }
+}
+
+.suppl {
+    @include at-breakpoint($phablet) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.quote {
+
+    margin-top: 14%;
+
+    @include at-breakpoint($tablet) {
+        margin-top: 21%;
+    }
+
+    @include at-breakpoint($phablet) {
+        margin-top: 17%;
+    }
+
+    @include at-breakpoint($phone) {
+        margin-top: 14%;
+    }
+}
+
+// STRUCTURE
+
+.hero {
+    position: relative;
+    z-index: 5;
+    @include rem('margin-top', -32px);
+    border-bottom: 1px solid $xDarkMint;
+}
+
+.flexslider {
+    margin: 0;
+    padding: 0;
+    @include rem('height', 496px);
+    position: relative;
+    z-index: 5;
+
+    @include at-breakpoint($phablet) {
+        // @include rem('height', 320px);
+    }
+
+    @include at-breakpoint($phone) {
+        @include rem('height', 360px);
+    }
+
+    @include at-breakpoint($breakpoint-iphone) {
+        @include rem('height', 428px);
+    }
+}
+
+.slide-panel {
+    width: 100%;
+    @include rem('height', 496px);
+
+    @include at-breakpoint($phablet) {
+        // @include rem('height', 320px);
+    }
+
+    @include at-breakpoint($phone) {
+        @include rem('height', 360px);
+    }
+
+    @include at-breakpoint($breakpoint-iphone) {
+        @include rem('height', 428px);
+    }
+}
+
+// SLIDER PHOTOS
+
+#slide-1 {
+    background: url(../assets/splash-1.jpg) no-repeat center 12%;
+    background-size: cover;
+}
+
+#slide-2 {
+    background: url(../assets/splash-2.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+#slide-3 {
+    background: url(../assets/splash-3.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+#slide-4 {
+    background: url(../assets/splash-4.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#slide-5 {
+    background: url(../assets/splash-5.jpg) no-repeat center top;
+    background-size: cover;
+}
