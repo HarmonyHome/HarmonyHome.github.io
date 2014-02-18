@@ -5,13 +5,13 @@ categories: zh services workshops
 
 title: 認字樂無窮
 
-excerpt: "A different way to engage your children in learning chinese vocabulary!"
+excerpt: "讓孩子用不一樣的方法學習中文！"
 
 "workshop-name": 認字樂無窮
 
 "target-audience": 小一或小二學童
 
-sessions: 
+sessions:
 
 published: true
 ---

@@ -6,7 +6,7 @@ description: "harmonyhome.com.hk redesign"
 
 baseurl: "/HarmonyHome"
 
-destination: _site/HarmonyHome/
+destination: /Users/mj12albert/TE Development/local.harmonyhome.com.hk/HarmonyHome
 
 url: "local.harmonyhome.com.hk"
 

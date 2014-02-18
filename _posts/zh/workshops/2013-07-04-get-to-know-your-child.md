@@ -5,7 +5,7 @@ categories: zh services workshops
 
 title: 認識孩子由互動開始
 
-excerpt: "A workshop to help parents bond with their children, strengthening the caregiver-child relationship to ensure healthy development."
+excerpt: "這個工作坊主要幫助父母學習怎樣跟孩子建立良好的關係，讓他們能開心健康地成長。"
 
 "workshop-name": 認識孩子由互動開始
 

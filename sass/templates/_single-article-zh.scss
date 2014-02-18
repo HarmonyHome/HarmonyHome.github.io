@@ -26,8 +26,16 @@
 
 article {
 	@include container;
-	width: columns(7,12);
+	width: columns(6,12);
 	margin: 48px auto 56px;
+
+	@include at-breakpoint($tablet) {
+		width: columns(10,12);
+	}
+
+	@include at-breakpoint($phone) {
+		width: 85%;
+	}
 }
 
 .article-body {
@@ -52,6 +60,7 @@ article {
 	}
 
 	> p {
+		@include rem('margin-right', 18px);
 		@include rem('margin-bottom', 20px);
 		@include rem('margin-left', 18px);
 		line-height: 1.4;

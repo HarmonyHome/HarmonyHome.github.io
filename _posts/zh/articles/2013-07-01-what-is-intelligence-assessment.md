@@ -7,7 +7,7 @@ title: 甚麼是智商?
 
 author: Eliza
 
-excerpt: An overview of intelligence assessments, commonly known as IQ tests, and how they might help you.
+excerpt: 智力評估究竟是什麼一回事？它能提供你什麼樣的有用資料？
 ---
 
 ## 智力/會能是甚麼?

@@ -5,7 +5,7 @@ categories: zh services workshops
 
 title: 學前兒童認知社交情緒訓練
 
-excerpt: Some of us are born with the natural skills to navigate in the social world, yet some of us experience great difficulties.
+excerpt: 有些人天生便好像懂得怎樣跟別人相處，但有些卻在社交互動上處處碰壁。
 
 workshop-name: 學前兒童認知社交情緒訓練
 
@@ -27,8 +27,8 @@ published: true
 * 嘗試學習獨自解決一些簡單問題
 
 ### 比賽性及合作性遊戲
-* 學習在緊張（比賽）的氣氛下處理不安情緒 
-* 學習在成功時讚嘗自己 
-* 學習在遇到挫折時激勵自己 
-* 學習與朋輩合作 
+* 學習在緊張（比賽）的氣氛下處理不安情緒
+* 學習在成功時讚嘗自己
+* 學習在遇到挫折時激勵自己
+* 學習與朋輩合作
 * 學習怎樣有效地與組員溝通

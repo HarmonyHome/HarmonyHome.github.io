@@ -7,7 +7,7 @@ title: 快樂之道
 
 author: Winnie
 
-excerpt: We live in a high-stress urban environment, here are some tips to help keep your spirits up during daily life.
+excerpt: 都市人每天都面對不同的壓力，以下是一些減壓的小貼士。
 ---
 
 路經中環看見某兩間銀行前佇足了幾位，我想是買了某某兄弟迷你債卷的客户在申訴銀行的不合理銷售方式，讓他們蒙受金錢上巨大的損失。畢生積蓄付諸流水，心情當然極之難受；但若將生命的餘下時間全都放在這場漫長的追討索償上實非最理想的做法，心情亦不難想像會被拖垮下來。

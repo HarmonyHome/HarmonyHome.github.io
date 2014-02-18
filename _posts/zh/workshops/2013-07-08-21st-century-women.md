@@ -5,7 +5,7 @@ categories: zh services workshops
 
 title: 提昇個人認知成長小組
 
-excerpt:
+excerpt: "現代女性在職場、家庭上都擔當重要的角色，她們每天都需要面對不同的挑戰，有時真的喘不過氣來，這個工作坊能讓她們分享各自在生活上的困難，彼此提供情緒支援。"
 
 "workshop-name": 提昇個人認知成長小組
 
