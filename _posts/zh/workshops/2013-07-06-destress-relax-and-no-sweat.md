@@ -5,7 +5,7 @@ categories: zh services workshops
 
 title: 齊來鬆一鬆!
 
-excerpt: "To help children gain an understanding of their anxiety, and how to manage stressful emotions in their daily life."
+excerpt: "增進孩子對焦慮的認識，並學習怎樣有效處理日常生活所帶來的壓力。"
 
 "workshop-name": 齊來鬆一鬆!
 

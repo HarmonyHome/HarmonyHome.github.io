@@ -24,9 +24,9 @@
     <meta name="description" content="We are a partnership of clinical psychologists in Hong Kong specializing in services for children, adolescents, and families.">
     <meta name="keywords" content="clinical psychology, child psychology, child development, hong kong">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.{{ page.lang }}.css"><script src="/js/html5shiv.min.js"></script><script src="/js/html5shiv-printshiv.min.js"></script><![endif]-->
-    <!--[if gte IE 9]><link rel="stylesheet" href="/css/manifest.{{ page.lang }}.css"><script src="/js/html5shiv.min.js"></script><script src="/js/html5shiv-printshiv.min.js"></script><![endif]-->
-    <!--[if !IE]><!--><link rel="stylesheet" href="/css/manifest.{{ page.lang }}.css"><!--<![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/css/ie8.{{ page.lang }}.css"><script src="{{ site.baseurl }}/js/html5shiv.min.js"></script><script src="{{ site.baseurl }}/js/html5shiv-printshiv.min.js"></script><![endif]-->
+    <!--[if gte IE 9]><link rel="stylesheet" href="{{ site.baseurl }}/css/manifest.{{ page.lang }}.css"><script src="{{ site.baseurl }}/js/html5shiv.min.js"></script><script src="{{ site.baseurl }}/js/html5shiv-printshiv.min.js"></script><![endif]-->
+    <!--[if !IE]><!--><link rel="stylesheet" href="{{ site.baseurl }}/css/manifest.{{ page.lang }}.css"><!--<![endif]-->
 </head>
 
 <body id="page" >
@@ -36,21 +36,21 @@
 <header class="site-header">
     <div class="wrapper">
         <div class="logo-nav">
-            <a href="{{ basedir }}/"><img class="logo-img" src="/assets/logo/home-logo.svg" onerror="this.src='/assets/logo/home-logo.png'" alt="HOME Psychological Services Logo" /></a>
+            <a href="{{ site.baseurl }}{{ basedir }}/"><img class="logo-img" src="{{ site.baseurl }}/assets/logo/home-logo.svg" onerror="this.src='{{ site.baseurl }}/assets/logo/home-logo.png'" alt="HOME Psychological Services Logo" /></a>
             <h1 class="logo-tag">{{ t.[page.lang].header.logo-tag }}</h1>
         </div>
         <nav class="nav-top">
             <ul class="menu-top" id="nav">
-                <li><a class="menu-link dir" href="{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a></li>
-                <li><a class="menu-link dir" href="{{ basedir }}/profile">{{ t.[page.lang].header.menu-profile }}</a></li>
-                <li><a class="menu-link dir" href="{{ basedir }}/services">{{ t.[page.lang].header.menu-services }}</a></li>
-                <li><a class="menu-link dir" href="{{ basedir }}/writing">{{ t.[page.lang].header.menu-writing }}</a></li>
-                <li><a class="menu-link dir" href="{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a></li>
-                <li><a class="menu-link dir" href="{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a></li>
-                <!-- {% if bilingual %}<li><a class="menu-link lang" href="{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>{% endif %} -->
-                <li><a class="menu-link mclose mobile" href="#page">Close</a></li>
+                <li><a class="menu-link dir" href="{{ site.baseurl }}{{ basedir }}/">{{ t.[page.lang].header.menu-home }}</a></li>
+                <li><a class="menu-link dir" href="{{ site.baseurl }}{{ basedir }}/profile">{{ t.[page.lang].header.menu-profile }}</a></li>
+                <li><a class="menu-link dir" href="{{ site.baseurl }}{{ basedir }}/services">{{ t.[page.lang].header.menu-services }}</a></li>
+                <li><a class="menu-link dir" href="{{ site.baseurl }}{{ basedir }}/writing">{{ t.[page.lang].header.menu-writing }}</a></li>
+                <li><a class="menu-link dir" href="{{ site.baseurl }}{{ basedir }}/press/">{{ t.[page.lang].header.menu-press }}</a></li>
+                <li><a class="menu-link dir" href="{{ site.baseurl }}{{ basedir }}/contact">{{ t.[page.lang].header.menu-contact }}</a></li>
+                {% if bilingual %}<li><a class="menu-link lang" href="{{ site.baseurl }}{{ basedir }}/" id="lang">{{ t.[page.lang].header.menu-lang }}</a></li>{% endif %}
+                <li><a class="menu-link mclose mobile" href="#page">{{ t.[page.lang].header.menu-mclose }}</a></li>
             </ul>
-            <a href="#nav" class="mopen mobile"><img class="mopen-img" src="/assets/mopen.svg" alt="Site Menu" /></a>
+            <a href="#nav" class="mopen mobile"><img class="mopen-img" src="{{ site.baseurl }}/assets/mopen.svg" alt="Site Menu" /></a>
         </nav>
     </div>
 </header>

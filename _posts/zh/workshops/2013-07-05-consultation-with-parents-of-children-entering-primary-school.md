@@ -5,7 +5,7 @@ categories: zh services workshops
 
 title: 準小一生家長輔導課程
 
-excerpt: "To help parents get an idea of what expectations to have for their relationship with their children as they reach primary school age."
+excerpt: "幫助父母對他們準備升讀小學的孩子有更深層的認識，對他們應訂立什麼樣的行為、學習目標。"
 
 "workshop-name": 準小一生家長輔導課程
 

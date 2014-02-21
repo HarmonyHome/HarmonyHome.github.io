@@ -8,7 +8,7 @@ title: 服務 | 如家心理服務
 
 <!-- BODY -->
 <!-- Counseling -->
-<section class="counseling">
+<section class="counseling" id="counseling-services">
     <div class="bubble-wrap"><h1 class="bubble-heading">輔導服務<div class="bubble-arrow"></div></h1></div>
 
     <div class="expertise-hero">
@@ -22,52 +22,47 @@ title: 服務 | 如家心理服務
         <h2 class="expt-item"><span class="expt-item-highlight">情緒及行為</span>發展或障礙</h2>
     </div>
 
-    <p class="expt-lede">HOME Psychological Services provides assessments, counseling, and intervention across a range of psychological disciplines. We have over 10 years of clinical experience working with children, adolescents, and families.</p>
+    <p class="expt-lede">如家心理服務為兒童、青少年、成人、家庭提供評估、輔導及心理治療服務。我們的臨床心理學家擁有超過十年的臨床經驗。</p>
 
-    <p class="expt-body">Our practice is guided by the tenets of positive psychology – seeking fulfillment in normal life by focusing on positive human qualities, diverting mainstream psychology’s preoccupation with human weaknesses. Consultations and sessions can be held individually or in a group setting. Our practice is conducted in English, Cantonese, or Mandarin. We are also experienced in assessing and treating more specialized issues in adults with a focus on females, the elderly, and married couples.</p>
+    <p class="expt-body">我們服務的理念主要是為尋求服務者對自身所處的狀態有深一層的認識，學習正面的思考模式，治療焦點不單純放在負面情緒和思想上。會面可安排個人、家庭或小組形式進行。會面可以廣東話、普通話或英語進行。此外，我們亦為成人進行心理評估和治療，主要尋求服務人士包括女性、長者、伴侶或夫婦。</p>
 
 </section>
 
 
 <!-- Workshops -->
-<section class="workshops">
-
+<section class="workshops" id="workshops">
     <div class="bubble-wrap"><h1 class="bubble-heading">課程<div class="bubble-arrow"></div></h1></div>
-
     <div class="workshop-panel">
-        <p class="workshop-descr">In addition to our regular counseling services, we offer a variety of workshops, courses, and training sessions addressing specific issues. All workshops are scheduled on-demand, and can be tailored to meet your individual needs. <a href="/zh/contact">Get in touch with us</a> to find out more, or to book a course!</p>
+        <p class="workshop-descr">除了心理評估及治療外，我們還提供針對不同行為、情緒問題的工作坊、課程和訓練。我們亦可按照個別情況度身設計課程內容，想了解更多關於工作坊等資料，可聯絡我們作進一步了解。</p>
     </div>
     {% for post in site.categories.workshops %}
         {% if post.lang == page.lang %}
             <div class="workshop-unit">
-                <a href="{{ post.url }}"><h2 class="sku-title">{{ post.title }}</h2></a>
+                <a href="{{ site.baseurl }}{{ post.url }}"><h2 class="sku-title">{{ post.title }}</h2></a>
                 <p class="sku-descr">{{ post.excerpt }}</p>
-                <a class="sku-follow" href="{{ post.url }}">詳細了解&nbsp;&raquo;</a>
+                <a class="sku-follow" href="{{ site.baseurl }}{{ post.url }}">詳細了解&nbsp;&raquo;</a>
             </div>
         {% endif %}
     {% endfor %}
     <a class="bubble-link" href="workshops">更多課程&nbsp;&raquo;<div class="bubble-link-arrow"></div></a>
-
 </section>
 
 
 <!-- Outreach -->
-<section class="outreach">
+<section class="outreach" id="outreach-services">
     <div class="bubble-wrap"><h1 class="bubble-heading">社區外展服務<div class="bubble-arrow"></div></h1></div>
     <div class="outreach-panel">
-        <p class="outreach-descr">We perform outreach services at community organizations and schools in Hong Kong like these. We provide general consultation services, or seminars and workshops on specialized topics such as stress management or parenting skills. If you represent a similar organization, <a href="/zh/contact">get in touch with us</a> to see how we might partner together.</p>
+        <p class="outreach-descr">我們亦會到不同機構和學校提供心理服務，例如心理諮詢、講座、工作坊，內容包括壓力處理、有效的管教方法等。如有興趣進一步了解有關安排，可與我們聯絡。</p>
     </div>
     <div class="outreach-grid">
-        <a href="http://www.amazelearning.com/en_index.html" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/amaze-learning-solutions.jpg"></a>
-        <a href="http://www.heat.org.hk/heat_main.html" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/caritas-heat.jpg"></a>
-        <a href="http://www.caritas.org.hk" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/caritas-hk.jpg"></a>
-        <a href="http://www.pelletier.edu.hk/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/caritas-pelletier-school.jpg"></a>
-        <a href="http://www.children818.com/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/children-818.jpg"></a>
-        <a href="http://www.greenfieldicnc.org/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/greenfield-icnc.jpg"></a>
-        <a href="http://www.hkdpc.com/index.html" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/hkdpc.jpg"></a>
-        <a href="http://www.linkscdc.com/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/links-cdc.jpg"></a>
-        <a href="http://ujcdc.sjs.org.hk/" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/st-james-settlement-uncle-james.jpg"></a>
-        <a href="http://www.stpaul.org.hk/internet/index.php/services/specialist/child_dev" target="_blank"><img class="outreach-thumbnail" src="/assets/outreach-partners/st-pauls-hospital.jpg"></a>
+        <a href="http://www.amazelearning.com/en_index.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/amaze-learning-solutions.jpg"></a>
+        <a href="http://www.heat.org.hk/heat_main.html" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-heat.jpg"></a>
+        <a href="http://www.pelletier.edu.hk/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/caritas-pelletier-school.jpg"></a>
+        <a href="http://www.children818.com/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/children-818.jpg"></a>
+        <a href="http://www.greenfieldicnc.org/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/greenfield-icnc.jpg"></a>
+        <a href="http://www.linkscdc.com/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/links-cdc.jpg"></a>
+        <a href="http://ujcdc.sjs.org.hk/" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/st-james-settlement-uncle-james.jpg"></a>
+        <a href="http://www.stpaul.org.hk/internet/index.php/services/specialist/child_dev" target="_blank"><img class="outreach-thumbnail" src="{{ site.baseurl }}/assets/outreach-partners/st-pauls-hospital.jpg"></a>
     </div>
 </section>
 

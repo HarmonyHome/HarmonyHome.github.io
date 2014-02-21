@@ -1,14 +1,12 @@
 # JEKYLL CONFIG
 # Do not use tabs in this file, it will fuck up build!
 
-name: "HOME Psychological Services"
-description: "www.harmonyhome.com.hk redesign"
+name: "HOME Psychological Services | Jekyll Prototype"
+description: "harmonyhome.com.hk redesign"
 
-#baseurl: "/HarmonyHome"
+# baseurl:
 
-#destination: /Users/mj12albert/TE Development/local.harmonyhome.com.hk/HarmonyHome
-
-url: "www.harmonyhome.com.hk"
+url: "local.harmonyhome.com.hk"
 
 host:
 
@@ -33,7 +31,7 @@ pygments: false
 
 prose:
   rooturl: "_posts"
-  siteurl: "http://harmonyhome.github.io/"
+  siteurl: "http://harmonyhome.github.io"
   relativeLinks: "http://harmonyhome.github.io/links.jsonp"
   media: "media"
   metadata:
