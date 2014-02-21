@@ -30,12 +30,12 @@ function Harmony() {
     var site = $.url().attr('host');
     var path = $.url().attr('path');
 
-    if ($.url().segment(2) == 'zh') {
+    if ($.url().segment(1) == 'zh') {
       var lang = 'zh';
-      var curDir = $.url().segment(3);
+      var curDir = $.url().segment(2);
     } else {
       var lang = 'en';
-      var curDir = $.url().segment(2);
+      var curDir = $.url().segment(1);
     }
 
     console.log("site: " + site);
