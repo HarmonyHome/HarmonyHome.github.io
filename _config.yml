@@ -5,6 +5,7 @@ name: "HOME Psychological Services"
 description: "www.harmonyhome.com.hk redesign"
 
 #baseurl: "/HarmonyHome"
+baseurl: ""
 
 #destination: /Users/mj12albert/TE Development/local.harmonyhome.com.hk/HarmonyHome
 
