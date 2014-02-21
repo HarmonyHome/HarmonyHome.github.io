@@ -92,12 +92,11 @@ function Harmony() {
         // ZH to EN
         // path = "/HarmonyHome" + path.substring(15).slice(0,-1); // with baseurl="/HarmonyHome"
         path = path.slice(0,-1);
-      }
-      // else {
+      } else {
         // EN to ZH
         // path = "/HarmonyHome/zh" + path.substring(12); // with baseurl="/HarmonyHome"
-        // path = path.substring(12);
-      // }
+        path = "/zh" + path;
+      }
 
       window.location = "http://" + site + path;
 
