@@ -10,6 +10,8 @@ published: true
 
 A tantrum can be categorized by an irrational fit of crying, screaming, defiance, and a resistance to every attempt at pacification in which even physical control is lost. The person may not stand or sit on his own. Even when the "goal" of the person is met, he or she is not calmed.
 
+![Waterfall](/media/waterfall.jpg)
+
 Usually tantrums are seen in children of the ages of 2-6 but sometimes 7-9 manifested a similar pattern. People who have neurological disorders such as the combination of autism and/or mental retardation are more prone to tantrums than others, although anyone experiencing forebrain damage -- temporary or permanent -- can suffer from tantrums.
 
 Everyone has tantrums once in a while. In infants, it is important to differentiate between developmental etiologies of tantrums as fostered by environment versus temperamental etiologies of tantrums as determined by innate organic idiosyncrasies. From a psychological standpoint, there may be several goals to a tantrum, which may or may not be the "reward(s)" that are consciously desired by the person.
