@@ -1,16 +1,16 @@
 ---
-layout: article
-lang: en
 categories: writing articles
-
-title: What Are Temper Tantrums?
-
+lang: en
+layout: article
+title: "What Are Temper Tantrums?"
 author: Eliza
-
-excerpt: An explanation of temper tantrums, its causes, and a few intervention methods for parents.
+excerpt: "An explanation of temper tantrums, its causes, and a few intervention methods for parents."
+published: true
 ---
 
 A tantrum can be categorized by an irrational fit of crying, screaming, defiance, and a resistance to every attempt at pacification in which even physical control is lost. The person may not stand or sit on his own. Even when the "goal" of the person is met, he or she is not calmed.
+
+![kids.jpg](/media/kids.jpg)
 
 Usually tantrums are seen in children of the ages of 2-6 but sometimes 7-9 manifested a similar pattern. People who have neurological disorders such as the combination of autism and/or mental retardation are more prone to tantrums than others, although anyone experiencing forebrain damage -- temporary or permanent -- can suffer from tantrums.
 
