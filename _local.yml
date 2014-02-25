@@ -4,18 +4,18 @@
 name: "HOME Psychological Services"
 description: "www.harmonyhome.com.hk redesign"
 
-#baseurl: "/HarmonyHome"
-baseurl: ""
+baseurl: "/HarmonyHome"
+# baseurl: ""
 
-#destination: /Users/mj12albert/TE Development/local.harmonyhome.com.hk/HarmonyHome
+destination: /Users/mj12albert/TE Development/local.harmonyhome.com.hk/HarmonyHome
 
-url: "www.harmonyhome.com.hk"
+url: "local.harmonyhome.com.hk"
 
 host:
 
 port: 4000
 
-siteurl: "http://www.harmonyhome.com.hk/"
+siteurl: "http://thinkingelephants.github.io/"
 
 # paginate: 10
 
@@ -34,8 +34,8 @@ pygments: false
 
 prose:
   rooturl: "_posts"
-  siteurl: "www.harmonyhome.com.hk/"
-  relativeLinks: "www.harmonyhome.com.hk/links.jsonp"
+  siteurl: "thinkingelephants.github.io/"
+  relativeLinks: "thinkingelephants.github.io/links.jsonp"
   media: "media"
   metadata:
     _posts/articles:

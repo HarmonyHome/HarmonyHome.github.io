@@ -30,12 +30,12 @@ function Harmony() {
     var site = $.url().attr('host');
     var path = $.url().attr('path');
 
-    if ($.url().segment(1) == 'zh') { // Use .segment(2) for dev site
+    if ($.url().segment(2) == 'zh') { // Use .segment(2) for dev site
       var lang = 'zh';
-      var curDir = $.url().segment(2); // Use .segment(3) for dev site
+      var curDir = $.url().segment(3); // Use .segment(3) for dev site
     } else {
       var lang = 'en';
-      var curDir = $.url().segment(1); // Use .segment(2) for dev site
+      var curDir = $.url().segment(2); // Use .segment(2) for dev site
     }
 
     console.log("site: " + site);
@@ -90,12 +90,12 @@ function Harmony() {
 
       if (lang == 'zh') {
         // ZH to EN
-        // path = "/HarmonyHome" + path.substring(15).slice(0,-1); // For baseurl="/HarmonyHome"
-        path = path.substring(3).slice(0,-1); // For production site, baseurl=""
+        path = "/HarmonyHome" + path.substring(15).slice(0,-1); // For baseurl="/HarmonyHome"
+        // path = path.substring(3).slice(0,-1); // For production site, baseurl=""
       } else {
         // EN to ZH
-        // path = "/HarmonyHome/zh" + path.substring(12); // For baseurl="/HarmonyHome"
-        path = "/zh" + path; // For production site, baseurl=""
+        path = "/HarmonyHome/zh" + path.substring(12); // For baseurl="/HarmonyHome"
+        // path = "/zh" + path; // For production site, baseurl=""
       }
 
       window.location = "http://" + site + path;
