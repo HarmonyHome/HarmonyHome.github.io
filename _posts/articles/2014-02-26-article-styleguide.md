@@ -2,8 +2,10 @@
 categories: writing articles
 lang: en
 layout: article
-published: false
+published: true
 title: Article Styleguide
+author: Albert
+excerpt: A demo showing markdown semantics
 ---
 
 ## This is a level 2 heading
@@ -23,7 +25,3 @@ _This is also a paragraph._ A paragraph (from the Greek paragraphos, "to write b
 1. Ordered means numbered
 2. This is item number 2
 3. This is item number 3
-
-
-
-
