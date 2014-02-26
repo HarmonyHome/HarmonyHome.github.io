@@ -8,10 +8,10 @@ author: Albert
 excerpt: 示範文章
 ---
 
-## 第2級標題 Level 2 heading
+## 第2級標題
 _This is a paragraph._ A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph has 5 types (Br. Anton Heitman). A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
 
-### 第3級標題 Level 3 heading
+### 第3級標題
 **This is also a paragraph.** A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph has 5 types (Br. Anton Heitman). A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
 
 ## 無序列表
