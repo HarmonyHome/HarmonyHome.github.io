@@ -17,7 +17,7 @@ _This is a paragraph._ A paragraph (from the Greek paragraphos, "to write beside
 ## An Unordered List follows this heading
 - Unordered means bulleted
 - This is an item in the list
-	- You can nests within lists
+	- You can nest lists within lists
     - But should avoid doing so when possible for simplicity
 - This is another item in the list
 
