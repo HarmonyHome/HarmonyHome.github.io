@@ -2,7 +2,7 @@
 categories: writing articles
 lang: en
 layout: article
-published: false
+published: true
 title: This is a demo
 author: Author
 excerpt: This is the short description that shows in the listing.
