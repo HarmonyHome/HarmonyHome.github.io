@@ -2,7 +2,7 @@
 categories: zh writing articles
 lang: zh
 layout: article
-published: false
+published: true
 title: 示範文章
 author: Albert
 excerpt: 示範文章
