@@ -4,8 +4,8 @@ lang: en
 layout: article
 published: false
 title: Article Styleguide
-excerpt: Sample styles
-author: Albert
+excerpt: This is a sample article for demonstrating style and semantics.
+author: Author
 ---
 
 ## This is a level 2 heading
