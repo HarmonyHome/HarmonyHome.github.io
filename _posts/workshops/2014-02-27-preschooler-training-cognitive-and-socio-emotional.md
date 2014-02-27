@@ -2,7 +2,7 @@
 categories: services workshops
 lang: en
 layout: workshop
-published: false
+published: true
 title: "Preschooler Training Cognitive And Socio-Emotional"
 excerpt: Preschooler Training
 "workshop-name": "Preschooler Training Cognitive And Socio-Emotional"
