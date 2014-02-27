@@ -2,7 +2,7 @@
 categories: writing articles
 lang: en
 layout: article
-published: true
+published: false
 title: Article Styleguide
 excerpt: Sample styles
 author: Albert
