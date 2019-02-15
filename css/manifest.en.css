@@ -940,7 +940,6 @@ a.bubble-link:focus, a.bubble-link:hover {
 .logo-nav > a {
   position: relative;
   display: block;
-  width: 20%;
   z-index: 999;
 }
 @media (max-width: 768px) {
