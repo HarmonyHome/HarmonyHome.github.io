@@ -933,6 +933,7 @@ a.bubble-link:focus, a.bubble-link:hover {
 /* line 36, ../sass/organisms/_site-header.scss */
 .logo-nav {
   display: inline-block;
+  width: 55%;
   margin: 28px auto 0;
   margin:  1.75rem auto 0;
 }
