@@ -88,7 +88,7 @@ strong {
 dfn {
   font-style: italic;
 }
-
+width: 50%;
 /* line 155, ../sass/utilities/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
@@ -933,7 +933,7 @@ a.bubble-link:focus, a.bubble-link:hover {
 /* line 36, ../sass/organisms/_site-header.scss */
 .logo-nav {
   display: inline-block;
-  width: 55%;
+  width: 20%;
   margin: 28px auto 0;
   margin:  1.75rem auto 0;
 }
@@ -982,7 +982,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   right: 0;
 }
 
-/* line 81, ../sass/organisms/_site-header.scss */
+/* line 81, ../sass/organisms/_site-headerlogo-nav.scss */
 .menu-top > li {
   display: inline-block;
   position: relative;
@@ -1023,7 +1023,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-
+logo-nav
 /* line 125, ../sass/organisms/_site-header.scss */
 .dir:hover, .dir:focus, .dir.active-nav {
   color: #037fc3;
