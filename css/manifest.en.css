@@ -933,7 +933,6 @@ a.bubble-link:focus, a.bubble-link:hover {
 /* line 36, ../sass/organisms/_site-header.scss */
 .logo-nav {
   display: inline-block;
-  width: 20%;
   margin: 28px auto 0;
   margin:  1.75rem auto 0;
 }
@@ -941,6 +940,7 @@ a.bubble-link:focus, a.bubble-link:hover {
 .logo-nav > a {
   position: relative;
   display: block;
+  width: 20%;
   z-index: 999;
 }
 @media (max-width: 768px) {
@@ -966,7 +966,7 @@ a.bubble-link:focus, a.bubble-link:hover {
   font-size: 18px;
   font-size: 1.125rem;
   color: #4db4ae;
-}
+}width: 20%;
 @media (min-width: 810px) {
   /* line 55, ../sass/organisms/_site-header.scss */
   .logo-tag {
