@@ -24,7 +24,7 @@ en:
     menu-press: Press
     menu-contact: Contact
     info-name: HOME&nbsp;&nbsp;Psychological&nbsp;&nbsp;Services Limited
-    info-adr1: '602, Level6 Everglory Centre'
+    info-adr1: '602, Level 6 Everglory Centre'
     info-adr2: 1B Kimberley Street
     info-adr3: 'Tsim Sha Tsui, Kowloon'
     info-tel: T
