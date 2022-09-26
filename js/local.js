@@ -141,8 +141,11 @@ function initializeGmap() {
     var marker = new google.maps.Marker({
           position: harmonyPos,
           map: map,
-          icon: harmonyMarker,
-          title:"We’re right next to Tsui Wah Restaurant!"
+          icon: {
+                  url: '{{ site.baseurl }}/assets/map-marker.png',
+		  size: new google.maps.Size(10,10)
+                },
+          title:"We’re right on TST Korean Street!"
         });
 
 }
