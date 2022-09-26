@@ -117,7 +117,7 @@ function initializeGmap() {
     var mapCanvas = document.getElementById('map-canvas');
 
     var mapOptions = {
-      	center: new google.maps.LatLng(22.297690266685755, 114.17220516718079),
+      	center: new google.maps.LatLng(22.300702195863913, 114.1752048719426),
         zoom: 19,
 		    mapTypeControl: false,
 		    streetViewControl: false,
@@ -134,7 +134,7 @@ function initializeGmap() {
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
 
-    var harmonyPos = new google.maps.LatLng(22.301005707506203, 114.1754989198814);
+    var harmonyPos = new google.maps.LatLng(22.300788104892277, 114.17547327126705);
 
     var harmonyMarker = new google.maps.MarkerImage('{{ site.baseurl }}/assets/map-marker.png');
 
